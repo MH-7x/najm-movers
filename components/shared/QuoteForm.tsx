@@ -229,8 +229,8 @@ export default function QuoteForm({
             <Send size={16} />
             Get My Free Quote
           </Button>
-          <a href="tel:+971554495331">
-            <Button size={"lg"} variant={"secondary"}>
+          <a href="tel:+971554495331" className="md:w-max w-full">
+            <Button size={"lg"} variant={"secondary"} className="w-full">
               <Phone size={16} />
               Call Instead
             </Button>

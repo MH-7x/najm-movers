@@ -12,7 +12,7 @@ export default function QuoteFormSection({
 }: QuoteFormSectionProps) {
   return (
     <section className="py-16 mt-10 px-4 bg-[#00357A]">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: info */}
           <div>

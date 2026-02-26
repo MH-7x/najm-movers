@@ -11,13 +11,27 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: {
-    default: "Movers and Packers in Dubai | Najm Al Dhahabih Furniture Movers",
-    template: "%s | Najm Al Dhahabih Furniture Movers",
+  applicationName: "Najm Al Dhahabih Movers",
+  robots: {
+    "max-image-preview": "large",
+    follow: true,
+    googleBot: {
+      notranslate: true,
+      "max-image-preview": "large",
+      index: true,
+      follow: true,
+    },
+    index: true,
+    notranslate: true,
   },
-  description:
-    "Looking for trusted movers and packers in Dubai? Najm Al Dhahabih offers house, villa, office & furniture moving services across UAE. Call +971-55-4495331 for a free quote.",
-  metadataBase: new URL("https://najmaldhahbih.com"),
+  icons: {
+    icon: [
+      { url: "/icons/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/icons/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: "/icons/apple-touch-icon.png",
+    shortcut: "/icons/favicon-32x32.png",
+  },
 };
 
 export default function RootLayout({

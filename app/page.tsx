@@ -19,16 +19,24 @@ import {
   MapPinHouse,
   ShieldCheck,
 } from "lucide-react";
-import ReviewsSection from "@/components/shared/ReviewsSection";
+import ReviewSection from "@/components/shared/ReviewsSection";
 import CTASection from "@/components/shared/CTASection";
 import QuoteFormSection from "@/components/shared/QuoteFormSection";
 import FAQSection from "@/components/shared/FAQSection";
 
-export const metadata: Metadata = {
-  title: "Movers and Packers in Dubai | Najm Al Dhahabih Furniture Movers",
-  description:
-    "Looking for trusted movers and packers in Dubai? Najm Al Dhahabih offers house, villa, office & furniture moving services across UAE. Call +971-55-4495331 for a free quote.",
-};
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Movers and Packers in Dubai | Najm Al Dhahabih Furniture Movers",
+      desc: "Looking for trusted movers and packers in Dubai? Najm Al Dhahabih offers house, villa, office & furniture moving services across UAE. Call +971-55-4495331 for a free quote.",
+    },
+    image: {
+      path: "/Najm-Al-Dhahabih-Movers-LLC.jpg",
+      alt: "Najm Al Dhahabih Movers LLC",
+    },
+    path: "",
+  },
+});
 
 const services = [
   {
@@ -218,10 +226,20 @@ const homeFaqs = [
 
 import imageSrc from "@/public/Najm-Al-Dhahabih-Movers-LLC.jpg";
 import Image from "next/image";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
+import Script from "next/script";
+
+const FaqSchema = generateFAQSchema(homeFaqs);
 
 export default function HomePage() {
   return (
     <>
+      <Script
+        id="FAQSchema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: FaqSchema }}
+      />
       {/* Hero Section */}
       <section className="relative bg-brand-secondary/70 overflow-hidden px-4 py-16 lg:py-24">
         <Image
@@ -343,8 +361,8 @@ export default function HomePage() {
       </section>
 
       {/* Stats bar */}
-
-      <section className="max-w-5xl mx-auto px-4 bg-brand-primary py-8 rounded-2xl">
+      <QuoteFormSection />
+      <section className="max-w-5xl mx-auto px-4 bg-brand-primary py-8 md:rounded-2xl mt-24">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
           {[
             { num: "5,000+", label: "Successful Moves" },
@@ -378,27 +396,13 @@ export default function HomePage() {
             </p>
           </div>
           {/* Banner image */}
-          <div className="mb-24 rounded-2xl overflow-hidden aspect-video bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="52"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-slate-300"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-            <p className="text-slate-400 text-sm font-medium text-center px-4">
-              Our dedicated moving team — trained, professional, and ready for
-              any job
-            </p>
+          <div className="mb-24 rounded-2xl overflow-hidden w-full md:h-[500px] h-72 bg-muted relative">
+            <Image
+              src={"/moving-truck-park-outside-house-in-dubai.jpg"}
+              alt="Moving truck park outside house in dubai"
+              fill
+              className="object-cover object-bottom"
+            />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -421,7 +425,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
+      <ReviewSection />
       {/* Services Section */}
       <section className="pt-16 pb-24 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
@@ -553,26 +557,13 @@ export default function HomePage() {
               ))}
             </div>
             {/* Side image */}
-            <div className="rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200 sticky top-8">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="52"
-                height="52"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-slate-300"
-              >
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <polyline points="21 15 16 10 5 21" />
-              </svg>
-              <p className="text-slate-400 text-sm font-medium text-center px-4">
-                Moving day in action — from loading to final setup
-              </p>
+            <div className="rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100 relative">
+              <Image
+                src={"/najm-al-dhahabih-movers-in-work.jpg"}
+                alt="najm al dhahabih movers in work"
+                fill
+                className="object-cover"
+              />
             </div>
           </div>
         </div>
@@ -604,13 +595,11 @@ export default function HomePage() {
       </section>
 
       {/* Reviews */}
-      <ReviewsSection />
 
       {/* FAQ */}
       <FAQSection faqs={homeFaqs} />
 
       {/* Quote Form */}
-      <QuoteFormSection />
 
       {/* Final CTA */}
       <CTASection
