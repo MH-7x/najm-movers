@@ -1,5 +1,5 @@
 export const APP = {
-    url : "http://localhost:3000",
+    url : process.env.APP_URL,
     phone : "+971554495331",
     name : "Najm Al Dhahabih Movers "
 }
