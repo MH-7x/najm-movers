@@ -5,9 +5,11 @@ import CTASection from "./CTASection";
 import QuoteFormSection from "./QuoteFormSection";
 import FAQSection from "./FAQSection";
 import { CheckCircle, ArrowRight } from "lucide-react";
+import Image, { StaticImageData } from "next/image";
 
 interface LocationService {
   title: string;
+
   desc: string;
   href: string;
 }
@@ -20,6 +22,7 @@ interface LocationFAQ {
 interface LocationPageProps {
   locationName: string;
   heroTitle: string;
+  imageSrc: StaticImageData;
   heroDescription: string;
   heroSubtitle?: string;
   services: LocationService[];
@@ -35,6 +38,7 @@ interface LocationPageProps {
 export default function LocationPage({
   locationName,
   heroTitle,
+  imageSrc,
   heroDescription,
   heroSubtitle,
   services,
@@ -48,24 +52,36 @@ export default function LocationPage({
     <>
       <ServiceHero
         title={heroTitle}
+        imageSrc={imageSrc}
         subtitle={heroSubtitle || `Professional Movers in ${locationName}`}
         description={heroDescription}
         breadcrumb={{ label: `Movers in ${locationName}` }}
       />
-
+      <ReviewsSection />
       {/* Location showcase image */}
-      <section className="py-10 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <section className="pb-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
             {[
-              `Professional moving crew servicing ${locationName} residents`,
-              `Fully loaded moving truck on the route to ${locationName}`,
+              {
+                src: "/moving-crew servicing-Abu-Dhabi-residents.jpg",
+                alt: "Najm Al Dhahabih Furniture Movers Moving Crew Servicing Abu Dhabi Residents",
+              },
+              {
+                src: "/Fully-loaded moving-truck-on-the-route-to-Abu-Dhabi.jpg",
+                alt: "Najm Al Dhahabih Furniture Movers Fully Loaded Moving Truck On The Route To Abu Dhabi",
+              },
             ].map((label, i) => (
-              <div key={i} className="rounded-2xl overflow-hidden aspect-video bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-slate-300">
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
-                </svg>
-                <p className="text-slate-400 text-xs font-medium text-center px-4">{label}</p>
+              <div
+                key={i}
+                className="rounded-2xl overflow-hidden aspect-4/3 bg-slate-100 relative"
+              >
+                <Image
+                  src={label.src}
+                  alt={label.alt}
+                  fill
+                  className="object-cover"
+                />
               </div>
             ))}
           </div>
@@ -73,10 +89,11 @@ export default function LocationPage({
       </section>
 
       {/* Services */}
-      <section className="py-16 px-4 bg-white">
+      <section className="pt-16 pb-24 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
-            Our Moving Services in {locationName}
+            Our Moving Services in{" "}
+            <span className="text-brand-primary">{locationName}</span>
           </h2>
           <p className="text-[#666666] text-center mb-12">
             Complete relocation services available across {locationName}
@@ -91,7 +108,9 @@ export default function LocationPage({
                 <h3 className="text-[#00357A] font-bold text-lg mb-2 group-hover:text-[#FF2828] transition-colors">
                   {s.title}
                 </h3>
-                <p className="text-[#666666] text-sm leading-relaxed mb-3">{s.desc}</p>
+                <p className="text-[#666666] text-sm leading-relaxed mb-3">
+                  {s.desc}
+                </p>
                 <span className="text-[#FF2828] text-sm font-semibold flex items-center gap-1">
                   Learn More <ArrowRight size={14} />
                 </span>
@@ -108,8 +127,8 @@ export default function LocationPage({
       />
 
       {/* Areas */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
             Areas We Cover in {locationName}
           </h2>
@@ -117,11 +136,17 @@ export default function LocationPage({
             We provide moving services across all areas of {locationName}
           </p>
           {/* City/areas banner */}
-          <div className="mb-8 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-slate-300">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
-            </svg>
-            <p className="text-slate-400 text-sm font-medium text-center px-4">{locationName} city skyline — we serve every neighbourhood and community</p>
+          <div className="mb-8 rounded-2xl overflow-hidden md:aspect-21/9 aspect-4/3 bg-slate-100 relative">
+            <Image
+              src={"/serve-all-areas-in-abu-dhabi.jpg"}
+              alt="Serve All Areas in Abu Dhabi"
+              fill
+              className="object-cover"
+            />
+            <div className="text-white text-sm text-shadow-2xs absolute left-2 bg-black/30 p-1 bottom-2 ">
+              Abu Dhabi city skyline — we serve every neighbourhood and
+              community
+            </div>
           </div>
           <div className="flex flex-wrap gap-3 justify-center">
             {areas.map((area) => (
@@ -144,14 +169,23 @@ export default function LocationPage({
               Moving Between {locationName} and Other Emirates
             </h2>
             <p className="text-blue-200 text-center mb-10">
-              We handle daily moves between {locationName} and all other UAE emirates
+              We handle daily moves between {locationName} and all other UAE
+              emirates
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {crossEmirate.map((route) => (
-                <div key={route.name} className="flex items-center gap-3 bg-white/10 rounded-lg px-5 py-3.5">
-                  <CheckCircle size={16} className="text-[#FF2828] flex-shrink-0" />
+                <div
+                  key={route.name}
+                  className="flex items-center gap-3 bg-white/10 rounded-lg px-5 py-3.5"
+                >
+                  <CheckCircle
+                    size={16}
+                    className="text-[#FF2828] flex-shrink-0"
+                  />
                   <div>
-                    <p className="text-white font-semibold text-sm">{locationName} ↔ {route.name}</p>
+                    <p className="text-white font-semibold text-sm">
+                      {locationName} ↔ {route.name}
+                    </p>
                     <p className="text-blue-200 text-xs">{route.desc}</p>
                   </div>
                 </div>
@@ -169,16 +203,28 @@ export default function LocationPage({
               Why {locationName} Residents Choose Us
             </h2>
             {/* Why choose us banner */}
-            <div className="mb-10 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-              <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-slate-300">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
-              </svg>
-              <p className="text-slate-400 text-sm font-medium text-center px-4">Trusted by families and businesses across {locationName} for reliable, professional moves</p>
+            <div className="mb-10 rounded-2xl overflow-hidden md:aspect-21/9 aspect-4/3 bg-slate-100 relative">
+              <Image
+                src={"/premium-house-movers-in-abu-dhabi.jpg"}
+                alt="Premium House Movers in Abu Dhabi"
+                fill
+                className="object-cover"
+              />
+              <div className="text-white text-sm text-shadow-2xs absolute left-2 bg-black/30 p-1 bottom-2 ">
+                Trusted by families and businesses across Abu Dhabi for
+                reliable, professional moves
+              </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {whyChooseUs.map((item) => (
-                <div key={item} className="flex items-center gap-3 bg-gray-50 rounded-lg px-5 py-3.5 border border-gray-100">
-                  <CheckCircle size={16} className="text-[#FF2828] flex-shrink-0" />
+                <div
+                  key={item}
+                  className="flex items-center gap-3 bg-gray-50 rounded-lg px-5 py-3.5 border border-gray-100"
+                >
+                  <CheckCircle
+                    size={16}
+                    className="text-[#FF2828] flex-shrink-0"
+                  />
                   <p className="text-[#666666] text-sm">{item}</p>
                 </div>
               ))}
@@ -196,7 +242,10 @@ export default function LocationPage({
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
               {pricing.map((p) => (
-                <div key={p.type} className="bg-white rounded-xl p-6 border border-gray-100 text-center hover:shadow-md transition-shadow">
+                <div
+                  key={p.type}
+                  className="bg-white rounded-xl p-6 border border-gray-100 text-center hover:shadow-md transition-shadow"
+                >
                   <h3 className="text-[#00357A] font-bold mb-2">{p.type}</h3>
                   <p className="text-[#FF2828] font-bold text-xl">{p.price}</p>
                 </div>
@@ -204,14 +253,18 @@ export default function LocationPage({
             </div>
             <p className="text-center text-[#666666] text-sm mt-5">
               These are estimates. Call{" "}
-              <a href="tel:+971554495331" className="text-[#FF2828] font-semibold">+971-55-4495331</a>{" "}
+              <a
+                href="tel:+971554495331"
+                className="text-[#FF2828] font-semibold"
+              >
+                +971-55-4495331
+              </a>{" "}
               for an exact quote.
             </p>
           </div>
         </section>
       )}
 
-      <ReviewsSection />
       <FAQSection faqs={faqs} title={`${locationName} Moving Questions`} />
       <QuoteFormSection
         title={`Get a Free Moving Quote in ${locationName}`}

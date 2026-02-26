@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import LocationPage from "@/components/shared/LocationPage";
-
+import imageSrc from "@/public/Movers-and-Packers-in-Abu-Dhabi.jpg";
 export const metadata: Metadata = {
-  title: "Movers and Packers in Abu Dhabi | Best Moving Company | Najm Al Dhahabih",
+  title:
+    "Movers and Packers in Abu Dhabi | Best Moving Company | Najm Al Dhahabih",
   description:
     "Trusted movers and packers in Abu Dhabi. Villa, house, office & furniture moving services across Abu Dhabi. Call +971-55-4495331 for a free quote.",
 };
@@ -12,6 +13,7 @@ export default function AbuDhabiMoversPage() {
     <LocationPage
       locationName="Abu Dhabi"
       heroTitle="Movers and Packers in Abu Dhabi — Best Moving Company"
+      imageSrc={imageSrc}
       heroSubtitle="Trusted Abu Dhabi Movers"
       heroDescription="Looking for a reliable moving company in Abu Dhabi? Najm Al Dhahabih Furniture Movers provides complete moving and packing services across the capital — from small apartment shifts in Khalifa City to full villa relocations in Saadiyat Island. We handle everything: packing, furniture disassembly, loading, transport, unloading, reassembly, and unpacking."
       services={[
@@ -47,17 +49,44 @@ export default function AbuDhabiMoversPage() {
         },
       ]}
       areas={[
-        "Al Reem Island", "Saadiyat Island", "Yas Island", "Al Raha Beach",
-        "Khalifa City A & B", "Mohammed Bin Zayed City (MBZ)", "Mussafah",
-        "Al Reef", "Al Shamkha", "Al Falah", "Corniche Area", "Tourist Club Area",
-        "Electra Street", "Hamdan Street", "Al Nahyan", "Al Mushrif",
-        "Al Bateen", "Al Maqtaa", "Al Karamah", "Bain Al Jessrain",
+        "Al Reem Island",
+        "Saadiyat Island",
+        "Yas Island",
+        "Al Raha Beach",
+        "Khalifa City A & B",
+        "Mohammed Bin Zayed City (MBZ)",
+        "Mussafah",
+        "Al Reef",
+        "Al Shamkha",
+        "Al Falah",
+        "Corniche Area",
+        "Tourist Club Area",
+        "Electra Street",
+        "Hamdan Street",
+        "Al Nahyan",
+        "Al Mushrif",
+        "Al Bateen",
+        "Al Maqtaa",
+        "Al Karamah",
+        "Bain Al Jessrain",
       ]}
       crossEmirate={[
-        { name: "Dubai", desc: "Our most popular cross-emirate route. Full moving service available daily." },
-        { name: "Al Ain", desc: "Regular moves between the capital and the Garden City." },
-        { name: "Sharjah", desc: "Full service available for Sharjah–Abu Dhabi moves." },
-        { name: "Ajman & RAK", desc: "Long-distance moves handled with care and proper planning." },
+        {
+          name: "Dubai",
+          desc: "Our most popular cross-emirate route. Full moving service available daily.",
+        },
+        {
+          name: "Al Ain",
+          desc: "Regular moves between the capital and the Garden City.",
+        },
+        {
+          name: "Sharjah",
+          desc: "Full service available for Sharjah–Abu Dhabi moves.",
+        },
+        {
+          name: "Ajman & RAK",
+          desc: "Long-distance moves handled with care and proper planning.",
+        },
       ]}
       whyChooseUs={[
         "We know Abu Dhabi's communities, building rules, and logistics",
@@ -75,19 +104,23 @@ export default function AbuDhabiMoversPage() {
       faqs={[
         {
           question: "How much do movers charge in Abu Dhabi?",
-          answer: "Studio/1BHK moves start from AED 1,000–1,500. 2BHK apartments range from AED 1,800–3,000. Villas start from AED 3,500. These are estimates — call us for an exact quote.",
+          answer:
+            "Studio/1BHK moves start from AED 1,000–1,500. 2BHK apartments range from AED 1,800–3,000. Villas start from AED 3,500. These are estimates — call us for an exact quote.",
         },
         {
           question: "Can you move my furniture from Abu Dhabi to Dubai?",
-          answer: "Yes. Abu Dhabi to Dubai is one of our most common routes. We do it daily.",
+          answer:
+            "Yes. Abu Dhabi to Dubai is one of our most common routes. We do it daily.",
         },
         {
           question: "Do you serve Mussafah industrial area?",
-          answer: "Yes. We handle both residential and commercial moves in Mussafah.",
+          answer:
+            "Yes. We handle both residential and commercial moves in Mussafah.",
         },
         {
           question: "How early should I book?",
-          answer: "3–5 days in advance is ideal. But if you need a last-minute move, call us — we'll do our best to fit you in.",
+          answer:
+            "3–5 days in advance is ideal. But if you need a last-minute move, call us — we'll do our best to fit you in.",
         },
       ]}
       metaTitle="Movers and Packers in Abu Dhabi | Best Moving Company | Najm Al Dhahabih"

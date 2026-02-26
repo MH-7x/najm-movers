@@ -91,7 +91,7 @@ export default function ReviewSection() {
   return (
     <section className="mt-16 max-w-6xl md:px-0 px-3 pb-24 mx-auto">
       <div className="flex items-center justify-center text-center flex-col">
-        <h2 className="font-bold text-brand-secondary whitespace-normal md:text-5xl text-4xl! wrap-break-word">
+        <h2 className="font-bold text-brand-secondary whitespace-normal text-4xl wrap-break-word">
           What Our Customers Says
         </h2>
         <p className="text-brand-text max-w-2xl mx-auto mt-5">

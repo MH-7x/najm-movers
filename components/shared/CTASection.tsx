@@ -32,9 +32,9 @@ export default function CTASection({
         </h2>
         <p className={`text-base mb-8 ${subtitleClass}`}>{subtitle}</p>
 
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a href="tel:+971554495331">
-            <Button variant={"outline"} size={"lg"}>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full">
+          <a href="tel:+971554495331" className="md:w-max w-full">
+            <Button variant={"outline"} className=" w-full" size={"lg"}>
               <Phone size={18} />
               +971-55-4495331
             </Button>
@@ -42,11 +42,12 @@ export default function CTASection({
           <a
             href="https://wa.me/971554495331"
             target="_blank"
+            className="md:w-max w-full"
             rel="noopener noreferrer"
           >
             <Button
               variant={"outline"}
-              className="bg-green-500 hover:bg-green-600 text-white text-shadow-2xs"
+              className="bg-green-500 hover:bg-green-600 text-white text-shadow-2xs w-full"
               size={"lg"}
             >
               <MessageCircle size={18} />
@@ -54,8 +55,8 @@ export default function CTASection({
             </Button>
           </a>
 
-          <Link href="/contact-us">
-            <Button size={"lg"} variant={"secondary"}>
+          <Link href="/contact-us" className="md:w-max w-full">
+            <Button size={"lg"} variant={"secondary"} className="w-full">
               {" "}
               Get Free Quote
               <ArrowRight size={18} />
