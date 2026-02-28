@@ -1,15 +1,42 @@
-import type { Metadata } from "next";
 import LocationPage from "@/components/shared/LocationPage";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import imageSrc from "@/public/Movers-and-Packers-in-Ajman.jpg";
 
-export const metadata: Metadata = {
-  title: "Movers and Packers in Ajman | Affordable Moving Company | Najm Al Dhahabih",
-  description:
-    "Affordable movers and packers in Ajman. Complete moving services for houses, offices & furniture. Call +971-55-4495331 for a free Ajman moving quote.",
-};
-
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Movers and Packers in Ajman | Affordable Moving Company",
+      desc: "Affordable movers and packers in Ajman. Complete moving services for houses, offices & furniture. Call +971-55-4495331 for a free Ajman moving quote.",
+    },
+    image: {
+      path: "/Movers-and-Packers-in-Ajman.jpg",
+      alt: "Movers and Packers in Ajman",
+    },
+    path: "/movers-and-packers-in-ajman",
+  },
+});
 export default function AjmanMoversPage() {
   return (
     <LocationPage
+      imageSrc={imageSrc}
+      images={[
+        {
+          src: "/house-movers-ajman-furniture-packing-services.jpg",
+          alt: "house movers ajman furniture packing services",
+        },
+        {
+          src: "/office-movers-ajman-cheap-moving-company.jpg",
+          alt: "office movers ajman cheap moving company",
+        },
+        {
+          src: "/moving-services-all-areas-ajman-uae.jpg",
+          alt: "moving services all areas ajman uae",
+        },
+        {
+          src: "/budget-friendly-movers-ajman-professional-relocation.jpg",
+          alt: "budget friendly movers ajman professional relocation",
+        },
+      ]}
       locationName="Ajman"
       heroTitle="Movers and Packers in Ajman — Affordable Moving Services"
       heroSubtitle="Budget-Friendly Ajman Movers"
@@ -47,15 +74,30 @@ export default function AjmanMoversPage() {
         },
       ]}
       areas={[
-        "Al Rashidiya", "Al Nuaimiya", "Al Jurf", "Al Bustan", "Ajman Industrial Area",
-        "Al Hamidiya", "Al Mowaihat", "Ajman Downtown", "Emirates City",
-        "Garden City", "Al Zahra", "Al Rawda",
+        "Al Rashidiya",
+        "Al Nuaimiya",
+        "Al Jurf",
+        "Al Bustan",
+        "Ajman Industrial Area",
+        "Al Hamidiya",
+        "Al Mowaihat",
+        "Ajman Downtown",
+        "Emirates City",
+        "Garden City",
+        "Al Zahra",
+        "Al Rawda",
       ]}
       crossEmirate={[
-        { name: "Sharjah", desc: "Just across the border — often a 15-minute move." },
+        {
+          name: "Sharjah",
+          desc: "Just across the border — often a 15-minute move.",
+        },
         { name: "Dubai", desc: "Daily moves between Ajman and Dubai." },
         { name: "Ras Al Khaimah", desc: "Straightforward highway trip." },
-        { name: "Abu Dhabi", desc: "Longer route, but we handle it regularly." },
+        {
+          name: "Abu Dhabi",
+          desc: "Longer route, but we handle it regularly.",
+        },
       ]}
       whyChooseUs={[
         "Low prices — Ajman is an affordable emirate and our prices reflect that",
@@ -73,19 +115,23 @@ export default function AjmanMoversPage() {
       faqs={[
         {
           question: "How much does moving cost in Ajman?",
-          answer: "Ajman moves are among the most affordable. Studios start from AED 500–700. 2BHK moves range from AED 1,000–1,800. Call for your specific price.",
+          answer:
+            "Ajman moves are among the most affordable. Studios start from AED 500–700. 2BHK moves range from AED 1,000–1,800. Call for your specific price.",
         },
         {
           question: "Can you move from Ajman to Dubai?",
-          answer: "Yes. We handle Ajman to Dubai moves every day. It's one of our most frequent routes.",
+          answer:
+            "Yes. We handle Ajman to Dubai moves every day. It's one of our most frequent routes.",
         },
         {
           question: "How long does an Ajman move take?",
-          answer: "Most small Ajman moves are completed in half a day. Cross-emirate moves to Sharjah or Dubai take slightly longer depending on traffic.",
+          answer:
+            "Most small Ajman moves are completed in half a day. Cross-emirate moves to Sharjah or Dubai take slightly longer depending on traffic.",
         },
         {
           question: "Do you work on weekends in Ajman?",
-          answer: "Yes. We operate 7 days a week including Fridays and public holidays.",
+          answer:
+            "Yes. We operate 7 days a week including Fridays and public holidays.",
         },
       ]}
       metaTitle="Movers and Packers in Ajman | Affordable Moving Company | Najm Al Dhahabih"

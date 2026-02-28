@@ -31,6 +31,7 @@ interface LocationPageProps {
   whyChooseUs?: string[];
   pricing?: { type: string; price: string }[];
   faqs: LocationFAQ[];
+  images?: { src: string; alt: string }[];
   metaTitle: string;
   metaDescription: string;
 }
@@ -47,6 +48,7 @@ export default function LocationPage({
   whyChooseUs,
   pricing,
   faqs,
+  images,
 }: LocationPageProps) {
   return (
     <>
@@ -62,28 +64,42 @@ export default function LocationPage({
       <section className="pb-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-            {[
-              {
-                src: "/moving-crew servicing-Abu-Dhabi-residents.jpg",
-                alt: "Najm Al Dhahabih Furniture Movers Moving Crew Servicing Abu Dhabi Residents",
-              },
-              {
-                src: "/Fully-loaded moving-truck-on-the-route-to-Abu-Dhabi.jpg",
-                alt: "Najm Al Dhahabih Furniture Movers Fully Loaded Moving Truck On The Route To Abu Dhabi",
-              },
-            ].map((label, i) => (
-              <div
-                key={i}
-                className="rounded-2xl overflow-hidden aspect-4/3 bg-slate-100 relative"
-              >
-                <Image
-                  src={label.src}
-                  alt={label.alt}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-            ))}
+            {images
+              ? images.slice(0, 2).map((label, i) => (
+                  <div
+                    key={i}
+                    className="rounded-2xl overflow-hidden aspect-4/3 bg-slate-100 relative"
+                  >
+                    <Image
+                      src={label.src}
+                      alt={label.alt}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                ))
+              : [
+                  {
+                    src: "/moving-crew servicing-Abu-Dhabi-residents.jpg",
+                    alt: "Najm Al Dhahabih Furniture Movers Moving Crew Servicing Abu Dhabi Residents",
+                  },
+                  {
+                    src: "/Fully-loaded moving-truck-on-the-route-to-Abu-Dhabi.jpg",
+                    alt: "Najm Al Dhahabih Furniture Movers Fully Loaded Moving Truck On The Route To Abu Dhabi",
+                  },
+                ].map((label, i) => (
+                  <div
+                    key={i}
+                    className="rounded-2xl overflow-hidden aspect-4/3 bg-slate-100 relative"
+                  >
+                    <Image
+                      src={label.src}
+                      alt={label.alt}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                ))}
           </div>
         </div>
       </section>
@@ -136,18 +152,33 @@ export default function LocationPage({
             We provide moving services across all areas of {locationName}
           </p>
           {/* City/areas banner */}
-          <div className="mb-8 rounded-2xl overflow-hidden md:aspect-21/9 aspect-4/3 bg-slate-100 relative">
-            <Image
-              src={"/serve-all-areas-in-abu-dhabi.jpg"}
-              alt="Serve All Areas in Abu Dhabi"
-              fill
-              className="object-cover"
-            />
-            <div className="text-white text-sm text-shadow-2xs absolute left-2 bg-black/30 p-1 bottom-2 ">
-              Abu Dhabi city skyline — we serve every neighbourhood and
-              community
+          {images && images[2] ? (
+            <div className="mb-8 rounded-2xl overflow-hidden md:aspect-video aspect-4/3 bg-slate-100 relative">
+              <Image
+                src={images[2].src}
+                alt={images[2].alt}
+                fill
+                className="object-cover"
+              />
+              <div className="text-white text-sm text-shadow-2xs absolute left-2 bg-black/30 p-1 bottom-2 ">
+                {locationName} city skyline — we serve every neighbourhood and
+                community
+              </div>
             </div>
-          </div>
+          ) : (
+            <div className="mb-8 rounded-2xl overflow-hidden md:aspect-video aspect-4/3 bg-slate-100 relative">
+              <Image
+                src={"/serve-all-areas-in-abu-dhabi.jpg"}
+                alt="Serve All Areas in Abu Dhabi"
+                fill
+                className="object-cover"
+              />
+              <div className="text-white text-sm text-shadow-2xs absolute left-2 bg-black/30 p-1 bottom-2 ">
+                {locationName} city skyline — we serve every neighbourhood and
+                community
+              </div>
+            </div>
+          )}
           <div className="flex flex-wrap gap-3 justify-center">
             {areas.map((area) => (
               <span
@@ -203,15 +234,24 @@ export default function LocationPage({
               Why {locationName} Residents Choose Us
             </h2>
             {/* Why choose us banner */}
-            <div className="mb-10 rounded-2xl overflow-hidden md:aspect-21/9 aspect-4/3 bg-slate-100 relative">
-              <Image
-                src={"/premium-house-movers-in-abu-dhabi.jpg"}
-                alt="Premium House Movers in Abu Dhabi"
-                fill
-                className="object-cover"
-              />
+            <div className="mb-10 rounded-2xl overflow-hidden md:aspect-16/9 aspect-4/3 bg-slate-100 relative">
+              {images && images[3] ? (
+                <Image
+                  src={images[3].src}
+                  alt={images[3].alt}
+                  fill
+                  className="object-cover"
+                />
+              ) : (
+                <Image
+                  src={"/premium-house-movers-in-abu-dhabi.jpg"}
+                  alt="Premium House Movers in Abu Dhabi"
+                  fill
+                  className="object-cover"
+                />
+              )}
               <div className="text-white text-sm text-shadow-2xs absolute left-2 bg-black/30 p-1 bottom-2 ">
-                Trusted by families and businesses across Abu Dhabi for
+                Trusted by families and businesses across {locationName} for
                 reliable, professional moves
               </div>
             </div>

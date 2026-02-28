@@ -1,15 +1,43 @@
-import type { Metadata } from "next";
 import LocationPage from "@/components/shared/LocationPage";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import imageSrc from "@/public/Movers-and-Packers-in-Sharjah.jpg";
 
-export const metadata: Metadata = {
-  title: "Movers and Packers in Sharjah | Reliable Moving Company | Najm Al Dhahabih",
-  description:
-    "Trusted movers and packers in Sharjah. Affordable house, villa, office & furniture moving services. Call +971-55-4495331 for a free Sharjah moving quote.",
-};
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Movers and Packers in Sharjah | Najm Al Dhahabih",
+      desc: "Trusted movers and packers in Sharjah. Affordable house, villa, office & furniture moving services. Call +971-55-4495331 for a free Sharjah moving quote.",
+    },
+    image: {
+      path: "/Movers-and-Packers-in-Sharjah.jpg",
+      alt: "Movers and Packers in Sharjah",
+    },
+    path: "/movers-and-packers-in-sharjah",
+  },
+});
 
 export default function SharjahMoversPage() {
   return (
     <LocationPage
+      imageSrc={imageSrc}
+      images={[
+        {
+          src: "/villa-movers-in-sharjah-reliable-moving-company.jpg",
+          alt: "villa movers in sharjah reliable moving company",
+        },
+        {
+          src: "/house-movers-in-sharjah-packing-and-moving-services.jpg",
+          alt: "house movers in sharjah packing and moving services",
+        },
+        {
+          src: "/sharjah-moving-services-all-areas-covered.jpg",
+          alt: "sharjah moving services all areas covered",
+        },
+        {
+          src: "/reliable-sharjah-to-dubai-movers-affordable-pricing.jpg",
+          alt: "reliable sharjah to dubai movers affordable pricing",
+        },
+      ]}
       locationName="Sharjah"
       heroTitle="Movers and Packers in Sharjah — Reliable Moving Company"
       heroSubtitle="Sharjah to Dubai & Beyond"
@@ -47,16 +75,40 @@ export default function SharjahMoversPage() {
         },
       ]}
       areas={[
-        "Al Nahda", "Al Majaz", "Al Khan", "Al Taawun", "Muwaileh", "Al Mamzar",
-        "Bu Tina", "Al Qasimia", "Abu Shagara", "Al Ramla", "Al Ramaqia",
-        "Al Jazzat", "University City", "Sharjah Industrial Area", "Al Yarmook",
-        "Al Gulaya", "Al Fisht", "Al Gharb", "Al Wahda",
+        "Al Nahda",
+        "Al Majaz",
+        "Al Khan",
+        "Al Taawun",
+        "Muwaileh",
+        "Al Mamzar",
+        "Bu Tina",
+        "Al Qasimia",
+        "Abu Shagara",
+        "Al Ramla",
+        "Al Ramaqia",
+        "Al Jazzat",
+        "University City",
+        "Sharjah Industrial Area",
+        "Al Yarmook",
+        "Al Gulaya",
+        "Al Fisht",
+        "Al Gharb",
+        "Al Wahda",
       ]}
       crossEmirate={[
-        { name: "Dubai", desc: "Our most common cross-emirate route. Multiple Sharjah–Dubai moves daily." },
-        { name: "Abu Dhabi", desc: "Full service available for longer cross-emirate moves." },
+        {
+          name: "Dubai",
+          desc: "Our most common cross-emirate route. Multiple Sharjah–Dubai moves daily.",
+        },
+        {
+          name: "Abu Dhabi",
+          desc: "Full service available for longer cross-emirate moves.",
+        },
         { name: "Ajman", desc: "Very short trip — just across the border." },
-        { name: "Ras Al Khaimah", desc: "Highway move with full cargo security." },
+        {
+          name: "Ras Al Khaimah",
+          desc: "Highway move with full cargo security.",
+        },
       ]}
       whyChooseUs={[
         "We run the Sharjah–Dubai route daily — our drivers know every road",
@@ -74,19 +126,23 @@ export default function SharjahMoversPage() {
       faqs={[
         {
           question: "How much do movers charge in Sharjah?",
-          answer: "Sharjah moves tend to be more affordable than Dubai moves. Studio moves start from around AED 600–800. 2BHK moves range from AED 1,200–2,000. Call for an exact quote.",
+          answer:
+            "Sharjah moves tend to be more affordable than Dubai moves. Studio moves start from around AED 600–800. 2BHK moves range from AED 1,200–2,000. Call for an exact quote.",
         },
         {
           question: "Can you move from Sharjah to Dubai?",
-          answer: "Yes. It's our most common cross-emirate route. We do multiple Sharjah–Dubai moves every day.",
+          answer:
+            "Yes. It's our most common cross-emirate route. We do multiple Sharjah–Dubai moves every day.",
         },
         {
           question: "Do you work in Sharjah Industrial Area?",
-          answer: "Yes. We handle both residential and commercial moves in all parts of Sharjah, including the industrial areas.",
+          answer:
+            "Yes. We handle both residential and commercial moves in all parts of Sharjah, including the industrial areas.",
         },
         {
           question: "How do you avoid traffic on the Sharjah–Dubai route?",
-          answer: "Our drivers know the best times and routes to avoid the peak-hour traffic on the main Sharjah–Dubai highway. We factor this into your move schedule.",
+          answer:
+            "Our drivers know the best times and routes to avoid the peak-hour traffic on the main Sharjah–Dubai highway. We factor this into your move schedule.",
         },
       ]}
       metaTitle="Movers and Packers in Sharjah | Reliable Moving Company | Najm Al Dhahabih"

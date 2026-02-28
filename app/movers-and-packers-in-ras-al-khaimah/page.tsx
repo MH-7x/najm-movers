@@ -1,17 +1,45 @@
-import type { Metadata } from "next";
 import LocationPage from "@/components/shared/LocationPage";
+import imageSrc from "@/public/Movers-and-Packers-in-Ras-Al-Khaimah.jpg";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 
-export const metadata: Metadata = {
-  title: "Movers and Packers in Ras Al Khaimah | Najm Al Dhahabih Movers",
-  description:
-    "Reliable movers and packers in Ras Al Khaimah. House, villa & office moving with full packing. Call +971-55-4495331 for a free RAK moving quote.",
-};
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Movers and Packers in Ras Al Khaimah | Instant Quotes",
+      desc: "Reliable movers and packers in Ras Al Khaimah. House, villa & office moving with full packing. Call +971-55-4495331 for a free RAK moving quote.",
+    },
+    image: {
+      path: "/Movers-and-Packers-in-Ras-Al-Khaimah.jpg",
+      alt: "Movers and Packers in Ras Al Khaimah",
+    },
+    path: "/movers-and-packers-in-ras-al-khaimah",
+  },
+});
 
 export default function RAKMoversPage() {
   return (
     <LocationPage
+      imageSrc={imageSrc}
+      images={[
+        {
+          src: "/villa-house-movers-ras-al-khaimah.jpg",
+          alt: "villa house movers ras al khaimah",
+        },
+        {
+          src: "/office-relocation-ras-al-khaimah.jpg",
+          alt: "office relocation ras al khaimah",
+        },
+        {
+          src: "/ras-al-khaimah-areas-map-movers-packers-rak-uae.jpg",
+          alt: "ras al khaimah areas map movers packers rak uae",
+        },
+        {
+          src: "/professional-moving-team-ras-al-khaimah.jpg",
+          alt: "professional moving team ras al khaimah",
+        },
+      ]}
       locationName="Ras Al Khaimah"
-      heroTitle="Movers and Packers in Ras Al Khaimah"
+      heroTitle="Movers and Packers in Ras Al Khaimah - Free Moving Quotes"
       heroSubtitle="Professional RAK Movers"
       heroDescription="Ras Al Khaimah might be further from Dubai, but that doesn't mean you should settle for less when it comes to your moving service. Najm Al Dhahabih provides the same professional, fully-equipped moving service in RAK that we deliver in every other emirate. Whether you're relocating within RAK, moving from RAK to Dubai, or shifting from Dubai up to RAK, we've got you covered."
       services={[
@@ -47,16 +75,41 @@ export default function RAKMoversPage() {
         },
       ]}
       areas={[
-        "Al Nakheel", "Al Hamra", "Al Jazeera Al Hamra", "Khuzam", "Al Dhait North",
-        "Al Dhait South", "Al Mairid", "Al Qusaidat", "Al Rams", "Digdaga",
-        "RAK Free Trade Zone", "Al Marjan Island", "Mina Al Arab",
+        "Al Nakheel",
+        "Al Hamra",
+        "Al Jazeera Al Hamra",
+        "Khuzam",
+        "Al Dhait North",
+        "Al Dhait South",
+        "Al Mairid",
+        "Al Qusaidat",
+        "Al Rams",
+        "Digdaga",
+        "RAK Free Trade Zone",
+        "Al Marjan Island",
+        "Mina Al Arab",
       ]}
       crossEmirate={[
-        { name: "Dubai", desc: "About 1–1.5 hours drive. We make this trip regularly." },
-        { name: "Sharjah", desc: "Highway move, all items secured for the journey." },
-        { name: "Abu Dhabi", desc: "Long-distance move handled with full cargo protection." },
-        { name: "Ajman", desc: "Available upon request — fair price, professional service." },
-        { name: "Al Ain", desc: "Cross-country RAK to Al Ain moves handled regularly." },
+        {
+          name: "Dubai",
+          desc: "About 1–1.5 hours drive. We make this trip regularly.",
+        },
+        {
+          name: "Sharjah",
+          desc: "Highway move, all items secured for the journey.",
+        },
+        {
+          name: "Abu Dhabi",
+          desc: "Long-distance move handled with full cargo protection.",
+        },
+        {
+          name: "Ajman",
+          desc: "Available upon request — fair price, professional service.",
+        },
+        {
+          name: "Al Ain",
+          desc: "Cross-country RAK to Al Ain moves handled regularly.",
+        },
       ]}
       whyChooseUs={[
         "We're trusted in RAK — known for professional and reliable service",
@@ -74,11 +127,13 @@ export default function RAKMoversPage() {
       faqs={[
         {
           question: "How much does moving cost in Ras Al Khaimah?",
-          answer: "Local RAK moves (within the city) are affordable — studios start from around AED 700. Cross-emirate moves from RAK to Dubai start from AED 1,500–2,500 depending on the volume. Call for an exact price.",
+          answer:
+            "Local RAK moves (within the city) are affordable — studios start from around AED 700. Cross-emirate moves from RAK to Dubai start from AED 1,500–2,500 depending on the volume. Call for an exact price.",
         },
         {
           question: "Can you move from Dubai to RAK?",
-          answer: "Yes. We move both directions — Dubai to RAK and RAK to Dubai.",
+          answer:
+            "Yes. We move both directions — Dubai to RAK and RAK to Dubai.",
         },
         {
           question: "Do you serve Al Hamra Village and Mina Al Arab?",
@@ -86,7 +141,8 @@ export default function RAKMoversPage() {
         },
         {
           question: "How do you secure items for the long highway journey?",
-          answer: "All items are padded with moving blankets, wrapped in stretch film, and secured with tie-down straps in the truck. Nothing moves during the highway drive.",
+          answer:
+            "All items are padded with moving blankets, wrapped in stretch film, and secured with tie-down straps in the truck. Nothing moves during the highway drive.",
         },
       ]}
       metaTitle="Movers and Packers in Ras Al Khaimah | Najm Al Dhahabih Movers"

@@ -1,15 +1,43 @@
-import type { Metadata } from "next";
 import LocationPage from "@/components/shared/LocationPage";
+import imageSrc from "@/public/Movers-and-Packers-in-Al-Ain.jpg";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 
-export const metadata: Metadata = {
-  title: "Movers and Packers in Al Ain | Trusted Moving Company | Najm Al Dhahabih",
-  description:
-    "Professional movers and packers in Al Ain. House, villa & office relocation with full packing services. Call +971-55-4495331 for a free Al Ain moving quote.",
-};
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Movers and Packers in Al Ain | Trusted Moving Company",
+      desc: "Professional movers and packers in Al Ain. House, villa & office relocation with full packing services. Call +971-55-4495331 for a free Al Ain moving quote.",
+    },
+    image: {
+      path: "/Movers-and-Packers-in-in-Al-Ain.jpg",
+      alt: "Movers and Packers in in-Al-Ain",
+    },
+    path: "/movers-and-packers-in-al-ain",
+  },
+});
 
 export default function AlAinMoversPage() {
   return (
     <LocationPage
+      imageSrc={imageSrc}
+      images={[
+        {
+          src: "/House-Movers-in-Al-Ain.jpg",
+          alt: "House Movers in Al Ain",
+        },
+        {
+          src: "/Packing-Moving-Services-in-al-ain.jpg",
+          alt: "Packing Moving Services in al ain",
+        },
+        {
+          src: "/moving-services-across-all-areas-of-Al-Ain.jpg",
+          alt: "moving services across all areas of Al Ain",
+        },
+        {
+          src: "/best-movers-in-al-ain.jpg",
+          alt: "best movers in al ain",
+        },
+      ]}
       locationName="Al Ain"
       heroTitle="Movers and Packers in Al Ain — Trusted Moving Company"
       heroSubtitle="The Garden City's Trusted Movers"
@@ -47,15 +75,35 @@ export default function AlAinMoversPage() {
         },
       ]}
       areas={[
-        "Al Jimi", "Al Muwaiji", "Al Khabisi", "Al Mutarad", "Al Towayya",
-        "Al Markhaniya", "Al Bateen", "Al Sarooj", "Zakher", "Al Ain Industrial Area",
-        "Al Hili", "Al Foah", "Mezyad", "Al Yahar",
+        "Al Jimi",
+        "Al Muwaiji",
+        "Al Khabisi",
+        "Al Mutarad",
+        "Al Towayya",
+        "Al Markhaniya",
+        "Al Bateen",
+        "Al Sarooj",
+        "Zakher",
+        "Al Ain Industrial Area",
+        "Al Hili",
+        "Al Foah",
+        "Mezyad",
+        "Al Yahar",
       ]}
       crossEmirate={[
-        { name: "Abu Dhabi", desc: "Our most common Al Ain route — about 1.5 hours away." },
-        { name: "Dubai", desc: "Highway move with full cargo security — about 1.5 hours." },
+        {
+          name: "Abu Dhabi",
+          desc: "Our most common Al Ain route — about 1.5 hours away.",
+        },
+        {
+          name: "Dubai",
+          desc: "Highway move with full cargo security — about 1.5 hours.",
+        },
         { name: "Sharjah", desc: "Available upon request." },
-        { name: "Ajman & RAK", desc: "Long-distance moves handled with extra care." },
+        {
+          name: "Ajman & RAK",
+          desc: "Long-distance moves handled with extra care.",
+        },
       ]}
       whyChooseUs={[
         "Family-friendly service suited to Al Ain's family-oriented community",
@@ -73,7 +121,8 @@ export default function AlAinMoversPage() {
       faqs={[
         {
           question: "How much does moving cost in Al Ain?",
-          answer: "Local moves within Al Ain are affordable — starting from AED 700 for studios. Moves from Al Ain to Abu Dhabi start from AED 1,500. Al Ain to Dubai starts from AED 2,000. Call for your specific quote.",
+          answer:
+            "Local moves within Al Ain are affordable — starting from AED 700 for studios. Moves from Al Ain to Abu Dhabi start from AED 1,500. Al Ain to Dubai starts from AED 2,000. Call for your specific quote.",
         },
         {
           question: "Do you move from Dubai to Al Ain?",
@@ -85,7 +134,8 @@ export default function AlAinMoversPage() {
         },
         {
           question: "How long does an Al Ain to Dubai move take?",
-          answer: "The drive is about 1.5 hours. With loading and unloading, a full move from Al Ain to Dubai typically takes one full day.",
+          answer:
+            "The drive is about 1.5 hours. With loading and unloading, a full move from Al Ain to Dubai typically takes one full day.",
         },
       ]}
       metaTitle="Movers and Packers in Al Ain | Trusted Moving Company | Najm Al Dhahabih"
