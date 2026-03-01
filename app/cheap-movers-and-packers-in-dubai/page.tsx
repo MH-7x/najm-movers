@@ -74,7 +74,8 @@ const cheapClients = [
   "Furnished apartment tenants who only have personal belongings to move",
   "Anyone on a tight budget who still wants reliable service",
 ];
-import imageSrc from "@/public/Najm-Al-Dhahabih-Movers-LLC.jpg";
+import imageSrc from "@/public/Cheap-Movers-and-Packers-in-Dubai.jpg";
+import Image from "next/image";
 export default function CheapMoversPage() {
   return (
     <>
@@ -85,43 +86,6 @@ export default function CheapMoversPage() {
         description="Let's be real — moving is expensive. Between the new rent deposit, DEWA connection, and a hundred other costs, the last thing you want is a moving bill that makes you wince. Najm Al Dhahabih offers affordable moving packages that are actually affordable — not 'affordable' with a bunch of hidden fees at the end."
         breadcrumb={{ label: "Cheap Movers Dubai" }}
       />
-
-      {/* Budget Gallery */}
-      <section className="py-10 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {[
-              "Affordable moving service — same trained crew, same quality materials",
-              "Budget-friendly pickup truck service for small loads across Dubai",
-            ].map((label, i) => (
-              <div
-                key={i}
-                className="rounded-2xl overflow-hidden aspect-video bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="44"
-                  height="44"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-slate-300"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                  <circle cx="8.5" cy="8.5" r="1.5" />
-                  <polyline points="21 15 16 10 5 21" />
-                </svg>
-                <p className="text-slate-400 text-xs font-medium text-center px-4">
-                  {label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* What Cheap Doesn't Mean */}
       <section className="py-16 px-4 bg-white">
@@ -168,6 +132,35 @@ export default function CheapMoversPage() {
         </div>
       </section>
 
+      <section className="py-10 px-4 bg-white border-t border-slate-100">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              {
+                src: "/affordable-movers-packers-services-dubai.jpg",
+                alt: "affordable movers packers services dubai",
+              },
+              {
+                src: "/Najm-al-dhahabih-affordable-movers-in-dubai.jpg",
+                alt: "najm al dhahabih affordable movers in dubai",
+              },
+            ].map((img, i) => (
+              <div
+                key={i}
+                className="rounded-2xl overflow-hidden aspect-4/3 bg-slate-100 relative "
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Packages */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
@@ -178,29 +171,7 @@ export default function CheapMoversPage() {
             All prices are starting rates. Your actual quote depends on the
             distance and volume — but we promise, no surprises.
           </p>
-          {/* Packages banner */}
-          <div className="mb-8 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="52"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-slate-300"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-            <p className="text-slate-400 text-sm font-medium text-center px-4">
-              Affordable full home move — studio to 3BHK packages starting from
-              AED 800
-            </p>
-          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {packages.map((pkg) => (
               <div
@@ -312,29 +283,19 @@ export default function CheapMoversPage() {
 
       {/* Affordable UAE-wide */}
       <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-[#00357A] text-center mb-8">
             Cheap Movers in Abu Dhabi, Sharjah, Ajman & More
           </h2>
           {/* UAE-wide affordable moving banner */}
-          <div className="mb-8 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="52"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-slate-300"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-            <p className="text-slate-400 text-sm font-medium text-center px-4">
+          <div className="mb-8 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 relative">
+            <Image
+              src={"/Villa-Movers-and-Packers-in-Dubai.jpg"}
+              alt="Cheap Movers in Abu Dhabi, Sharjah, Ajman & More"
+              fill
+              className="object-cover"
+            />
+            <p className="text-white text-sm font-medium text-center px-4 py-2 bg-black/30 absolute bottom-1 left-1">
               Affordable movers serving all UAE emirates — from Sharjah to Ras
               Al Khaimah
             </p>

@@ -27,7 +27,7 @@ const services = [
   },
   {
     name: "Storage & Warehousing",
-    href: "/storage-and-warehousing-services-dubai/",
+    href: "/",
   },
 ];
 

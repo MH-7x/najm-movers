@@ -85,7 +85,7 @@ const services = [
     title: "Storage & Warehousing Services",
     description:
       "Need to store your stuff between moves? Our warehouse is clean, secure, and climate-controlled. Short-term or long-term — store what you need and pick it up when you're ready.",
-    href: "/storage-and-warehousing-services-dubai/",
+    href: "/",
   },
 ];
 

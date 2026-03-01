@@ -71,7 +71,7 @@ export default function AlAinMoversPage() {
         {
           title: "Storage Services",
           desc: "Items can be stored at our Dubai facility between Al Ain moves or while you wait for your new property.",
-          href: "/storage-and-warehousing-services-dubai/",
+          href: "/",
         },
       ]}
       areas={[

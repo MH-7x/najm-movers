@@ -71,7 +71,7 @@ export default function RAKMoversPage() {
         {
           title: "Storage Services",
           desc: "Need to store your belongings between moves? Our secure Dubai warehouse is accessible for RAK customers.",
-          href: "/storage-and-warehousing-services-dubai/",
+          href: "/",
         },
       ]}
       areas={[
