@@ -346,28 +346,7 @@ export default function HouseMoversPage() {
             Dubai
           </p>
           {/* Dubai cityscape / areas banner */}
-          <div className="mb-8 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="52"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-slate-300"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-            <p className="text-slate-400 text-sm font-medium text-center px-4">
-              Serving all neighbourhoods across Dubai — from Deira to Dubai
-              South
-            </p>
-          </div>
+
           <div className="flex flex-wrap gap-3 justify-center">
             {dubaiAreas.map((area) => (
               <span

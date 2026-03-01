@@ -97,13 +97,14 @@ const checklist = [
   "If you have pets, arrange for someone to watch them on moving day.",
   "Let your building security or villa community management know about the move in advance.",
 ];
-import imageSrc from "@/public/Najm-Al-Dhahabih-Movers-LLC.jpg";
+import imageSrc from "@/public/Villa-Movers-and-Packers-in-Dubai.jpg";
+import Image from "next/image";
 export default function VillaMoversPage() {
   return (
     <>
       <ServiceHero
         imageSrc={imageSrc}
-        title="Villa Movers and Packers in Dubai"
+        title="Villa Movers and Packers in Dubai - Najm Al Dhahabih"
         subtitle="Professional Villa Relocation"
         description="Moving out of a villa is a different kind of job — more rooms, heavier furniture, outdoor items. At Najm Al Dhahabih, villa relocations are one of our core services. We've moved families out of villas in Arabian Ranches, Emirates Hills, JVC, Mirdif, Palm Jumeirah, Al Barsha, and just about every villa community in Dubai."
         breadcrumb={{ label: "Villa Movers in Dubai" }}
@@ -141,35 +142,28 @@ export default function VillaMoversPage() {
 
       {/* Villa Moving Gallery */}
       <section className="py-10 px-4 bg-white border-t border-slate-100">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
-              "Professional crew disassembling and wrapping villa furniture",
-              "Heavy-duty moving truck loaded and ready for villa relocation",
-            ].map((label, i) => (
+              {
+                src: "/villa-moving-services-dubai-packing-furniture-disassembly.jpg",
+                alt: "villa moving services dubai, packing furniture disassembly",
+              },
+              {
+                src: "/same-day-villa-relocation-dubai.jpg",
+                alt: "same day villa relocation dubai",
+              },
+            ].map((img, i) => (
               <div
                 key={i}
-                className="rounded-2xl overflow-hidden aspect-video bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200"
+                className="rounded-2xl overflow-hidden aspect-4/3 bg-slate-100 relative "
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="44"
-                  height="44"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-slate-300"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                  <circle cx="8.5" cy="8.5" r="1.5" />
-                  <polyline points="21 15 16 10 5 21" />
-                </svg>
-                <p className="text-slate-400 text-xs font-medium text-center px-4">
-                  {label}
-                </p>
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover"
+                />
               </div>
             ))}
           </div>
@@ -193,28 +187,7 @@ export default function VillaMoversPage() {
             We handle villa relocations across all of Dubai, including:
           </p>
           {/* Villa community banner */}
-          <div className="mb-8 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="52"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-slate-300"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-            <p className="text-slate-400 text-sm font-medium text-center px-4">
-              Dubai villa communities we serve — Arabian Ranches, Emirates
-              Hills, Palm Jumeirah & more
-            </p>
-          </div>
+
           <div className="flex flex-wrap gap-3 justify-center">
             {villaAreas.map((area) => (
               <span
@@ -274,26 +247,15 @@ export default function VillaMoversPage() {
                 ))}
               </div>
               {/* Image below trust points — in the left column */}
-              <div className="rounded-2xl overflow-hidden aspect-video bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200 mt-2">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="44"
-                  height="44"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-slate-300"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                  <circle cx="8.5" cy="8.5" r="1.5" />
-                  <polyline points="21 15 16 10 5 21" />
-                </svg>
-                <p className="text-slate-400 text-xs font-medium text-center px-4">
-                  Furniture fully reassembled and set up in the new villa
-                </p>
+              <div className="rounded-2xl overflow-hidden aspect-video bg-slate-100 relative mt-10">
+                <Image
+                  src={
+                    "/trusted-villa-movers-dubai-experienced-moving-team.jpg"
+                  }
+                  alt="Trusted villa movers dubai experienced moving team"
+                  fill
+                  className="object-cover"
+                />
               </div>
             </div>
             <div className="bg-[#00357A] rounded-2xl p-8">
