@@ -116,7 +116,8 @@ const dubaiAreas = [
   "Town Square",
 ];
 
-import imageSrc from "@/public/Najm-Al-Dhahabih-Movers-LLC.jpg";
+import imageSrc from "@/public/House-Movers-Home-Shifting-Services-in-Dubai.jpg";
+import Image from "next/image";
 
 export default function HouseMoversPage() {
   return (
@@ -128,43 +129,6 @@ export default function HouseMoversPage() {
         description="Whether you're moving from a studio in International City to a 2BHK in JVC, or shifting your family from a flat in Al Nahda to a bigger place in Mirdif — house moving is what we do every single day. We take care of the entire home shifting process from start to finish."
         breadcrumb={{ label: "House Movers Dubai" }}
       />
-
-      {/* House Moving Gallery */}
-      <section className="py-10 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {[
-              "Professional crew packing a full apartment, room by room",
-              "Loading household items into an enclosed moving truck",
-            ].map((label, i) => (
-              <div
-                key={i}
-                className="rounded-2xl overflow-hidden aspect-video bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="44"
-                  height="44"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-slate-300"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                  <circle cx="8.5" cy="8.5" r="1.5" />
-                  <polyline points="21 15 16 10 5 21" />
-                </svg>
-                <p className="text-slate-400 text-xs font-medium text-center px-4">
-                  {label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Process */}
       <section className="py-16 px-4 bg-white">
@@ -226,7 +190,35 @@ export default function HouseMoversPage() {
           </div>
         </div>
       </section>
-
+      {/* House Moving Gallery */}
+      <section className="py-10 px-4 bg-white border-t border-slate-100">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              {
+                src: "/free-moving-quote-dubai-home.jpg",
+                alt: "free moving quote dubai home",
+              },
+              {
+                src: "/house-moving-process-dubai-packing-transport-delivery-service.jpg",
+                alt: "house moving process dubai packing transport delivery service",
+              },
+            ].map((img, i) => (
+              <div
+                key={i}
+                className="rounded-2xl overflow-hidden aspect-4/3 bg-slate-100 relative "
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* What We Move */}
       <section className="py-16 px-4 bg-[#00357A]">
         <div className="max-w-5xl mx-auto">
@@ -272,26 +264,15 @@ export default function HouseMoversPage() {
             Estimated prices for different home sizes
           </p>
           {/* Package banner image */}
-          <div className="mb-8 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="52"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-slate-300"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-            <p className="text-slate-400 text-sm font-medium text-center px-4">
-              Our team completing a full 2BHK apartment shift in a single day
-            </p>
+          <div className="mb-8 rounded-2xl overflow-hidden md:aspect-21/9 aspect-4/3 bg-slate-100 relative">
+            <Image
+              src={
+                "/home-shifting-prices-dubai-studio-1bhk-2bhk-3bhk-4bhk-moving-cost.jpg"
+              }
+              alt="home shifting prices dubai studio 1bhk 2bhk 3bhk 4bhk moving cost"
+              fill
+              className="object-cover"
+            />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {packages.map((pkg) => (
