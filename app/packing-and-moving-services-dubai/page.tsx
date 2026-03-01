@@ -48,7 +48,8 @@ const packingMaterials = [
   "Mattress bags — to keep mattresses clean",
 ];
 
-import imageSrc from "@/public/Najm-Al-Dhahabih-Movers-LLC.jpg";
+import imageSrc from "@/public/Packing-and-Moving-Services-in-Dubai.jpg";
+import Image from "next/image";
 export default function PackingMovingPage() {
   return (
     <>
@@ -61,41 +62,6 @@ export default function PackingMovingPage() {
       />
 
       {/* Packing Gallery */}
-      <section className="py-10 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {[
-              "Professional packers wrapping fragile kitchen items one by one",
-              "All packing materials laid out — boxes, bubble wrap, tape & more",
-            ].map((label, i) => (
-              <div
-                key={i}
-                className="rounded-2xl overflow-hidden aspect-video bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="44"
-                  height="44"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-slate-300"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                  <circle cx="8.5" cy="8.5" r="1.5" />
-                  <polyline points="21 15 16 10 5 21" />
-                </svg>
-                <p className="text-slate-400 text-xs font-medium text-center px-4">
-                  {label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Packing Process */}
       <section className="py-16 px-4 bg-white">
@@ -143,6 +109,35 @@ export default function PackingMovingPage() {
                 <p className="text-[#666666] text-sm leading-relaxed">
                   {s.desc}
                 </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-10 px-4 bg-white border-t border-slate-100">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              {
+                src: "/Fragile-Items-Strategic-Loading.jpg",
+                alt: "fragile items strategic loading in dubai",
+              },
+              {
+                src: "/Room-by-Room-Packing-Labeling.jpg",
+                alt: "room by room packing labeling in dubai",
+              },
+            ].map((img, i) => (
+              <div
+                key={i}
+                className="rounded-2xl overflow-hidden aspect-4/3 bg-slate-100 relative "
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover"
+                />
               </div>
             ))}
           </div>
@@ -216,24 +211,14 @@ export default function PackingMovingPage() {
             boxes or tape.
           </p>
           {/* Materials banner */}
-          <div className="mb-8 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="52"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-slate-300"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-            <p className="text-slate-400 text-sm font-medium text-center px-4">
+          <div className="mb-10 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 relative">
+            <Image
+              src={"/Packing-Materials-Banner.jpg"}
+              alt="Packing Materials Banner"
+              fill
+              className="object-cover"
+            />
+            <p className="text-white text-shadow-2xs text-sm font-medium px-4 py-2 bg-black/30 absolute bottom-1 left-1">
               Our complete range of professional packing supplies — everything
               included, no extra cost
             </p>
@@ -262,24 +247,14 @@ export default function PackingMovingPage() {
             Why You Should Let Professionals Pack Your Stuff
           </h2>
           {/* Professional packing result banner */}
-          <div className="mb-10 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="52"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-slate-300"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-            <p className="text-slate-400 text-sm font-medium text-center px-4">
+          <div className="mb-10 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 relative">
+            <Image
+              src={"/Najm-Al-Dhahabih-Movers-In-Dubai.jpg"}
+              alt="Najm Al Dhahabih Movers in Dubai"
+              fill
+              className="object-cover"
+            />
+            <p className="text-white text-shadow-2xs text-sm font-medium px-4 py-2 bg-black/30 absolute bottom-1 left-1">
               Fully packed and labeled boxes — organized by room, ready to
               unload at the new home
             </p>

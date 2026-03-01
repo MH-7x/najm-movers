@@ -34,7 +34,7 @@ export default function RAKMoversPage() {
           alt: "ras al khaimah areas map movers packers rak uae",
         },
         {
-          src: "/professional-moving-team-ras-al-khaimah.jpg",
+          src: "/Najm-Al-Dhahabih-Movers-In-Dubai.jpg",
           alt: "professional moving team ras al khaimah",
         },
       ]}
