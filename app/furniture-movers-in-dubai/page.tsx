@@ -4,7 +4,7 @@ import ReviewsSection from "@/components/shared/ReviewsSection";
 import CTASection from "@/components/shared/CTASection";
 import QuoteFormSection from "@/components/shared/QuoteFormSection";
 import FAQSection from "@/components/shared/FAQSection";
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, CheckIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title:
@@ -67,7 +67,8 @@ const emirateServices = [
   { name: "Al Ain", desc: "Reliable furniture moving for the Garden City" },
 ];
 
-import imageSrc from "@/public/Najm-Al-Dhahabih-Movers-LLC.jpg";
+import imageSrc from "@/public/Furniture-Movers-in-Dubai.jpg";
+import Image from "next/image";
 export default function FurnitureMoversPage() {
   return (
     <>
@@ -80,41 +81,6 @@ export default function FurnitureMoversPage() {
       />
 
       {/* Furniture Moving Gallery */}
-      <section className="py-10 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {[
-              "Sofa wrapped in protective moving blankets before transport",
-              "Wardrobe being carefully disassembled for relocation",
-            ].map((label, i) => (
-              <div
-                key={i}
-                className="rounded-2xl overflow-hidden aspect-video bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="44"
-                  height="44"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-slate-300"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                  <circle cx="8.5" cy="8.5" r="1.5" />
-                  <polyline points="21 15 16 10 5 21" />
-                </svg>
-                <p className="text-slate-400 text-xs font-medium text-center px-4">
-                  {label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Services */}
       <section className="py-16 px-4 bg-white">
@@ -157,7 +123,7 @@ export default function FurnitureMoversPage() {
                 className="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="w-10 h-10 bg-[#FF2828]/10 rounded-lg flex items-center justify-center mb-4">
-                  <div className="w-4 h-4 rounded-full bg-[#FF2828]" />
+                  <CheckIcon className="w-6 h-6 text-[#FF2828] font-bold" />
                 </div>
                 <h3 className="text-[#00357A] font-bold text-lg mb-2">
                   {s.title}
@@ -171,6 +137,34 @@ export default function FurnitureMoversPage() {
         </div>
       </section>
 
+      <section className="py-10 px-4 bg-white border-t border-slate-100">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              {
+                src: "/best-furniture-moving-company-in-dubai.jpg",
+                alt: "best furniture moving company in dubai",
+              },
+              {
+                src: "/single-furniture-moving-dubai.jpg",
+                alt: "single furniture moving in dubai",
+              },
+            ].map((img, i) => (
+              <div
+                key={i}
+                className="rounded-2xl overflow-hidden aspect-4/3 bg-slate-100 relative "
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* What We Move */}
       <section className="py-16 px-4 bg-[#00357A]">
         <div className="max-w-5xl mx-auto">
@@ -180,29 +174,7 @@ export default function FurnitureMoversPage() {
           <p className="text-blue-200 text-center mb-8">
             If it has legs, drawers, shelves, or cushions — we move it.
           </p>
-          {/* Furniture types banner */}
-          <div className="mb-8 rounded-2xl overflow-hidden aspect-[21/9] bg-white/10 flex flex-col items-center justify-center gap-3 border border-white/20">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="52"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-white/30"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-            <p className="text-white/50 text-sm font-medium text-center px-4">
-              From single sofas to grand pianos — every piece of furniture
-              handled with precision
-            </p>
-          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {furnitureTypes.map((item) => (
               <div
@@ -273,7 +245,7 @@ export default function FurnitureMoversPage() {
 
       {/* UAE Coverage */}
       <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
             Furniture Movers Across the UAE
           </h2>
@@ -281,29 +253,8 @@ export default function FurnitureMoversPage() {
             Our furniture moving service isn&apos;t limited to Dubai.
           </p>
           {/* UAE map / routes banner */}
-          <div className="mb-8 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="52"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-slate-300"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-            <p className="text-slate-400 text-sm font-medium text-center px-4">
-              Delivering furniture across all UAE emirates — Dubai, Abu Dhabi,
-              Sharjah & beyond
-            </p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-4">
             {emirateServices.map((e) => (
               <div
                 key={e.name}
