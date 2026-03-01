@@ -70,7 +70,8 @@ const industries = [
   "Government and semi-government offices",
 ];
 
-import imageSrc from "@/public/Najm-Al-Dhahabih-Movers-LLC.jpg";
+import imageSrc from "@/public/Office-Movers-in-Dubai.jpg";
+import Image from "next/image";
 export default function OfficeMoversPage() {
   return (
     <>
@@ -81,44 +82,6 @@ export default function OfficeMoversPage() {
         description="Moving an office is different from moving a home. There's more at stake. Najm Al Dhahabih handles commercial and corporate relocations across Dubai — from small startup offices in Business Bay to full-floor corporate setups in DIFC. We plan the move around your schedule."
         breadcrumb={{ label: "Office Movers Dubai" }}
       />
-
-      {/* Office Moving Gallery */}
-      <section className="py-10 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            {[
-              "Modern office being prepared for relocation",
-              "IT equipment carefully packed in anti-static materials",
-              "New office fully set up and operational after the move",
-            ].map((label, i) => (
-              <div
-                key={i}
-                className="rounded-2xl overflow-hidden aspect-video bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="44"
-                  height="44"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="text-slate-300"
-                >
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                  <circle cx="8.5" cy="8.5" r="1.5" />
-                  <polyline points="21 15 16 10 5 21" />
-                </svg>
-                <p className="text-slate-400 text-xs font-medium text-center px-4">
-                  {label}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Services */}
       <section className="py-16 px-4 bg-white">
@@ -179,6 +142,35 @@ export default function OfficeMoversPage() {
         </div>
       </section>
 
+      <section className="py-10 px-4 bg-white border-t border-slate-100">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              {
+                src: "/it-equipment-moving-services-dubai.jpg",
+                alt: "it equipment moving services dubai",
+              },
+              {
+                src: "/weekend-office-setup-services-dubai.jpg",
+                alt: "weekend office setup services dubai",
+              },
+            ].map((img, i) => (
+              <div
+                key={i}
+                className="rounded-2xl overflow-hidden aspect-4/3 bg-slate-100 relative "
+              >
+                <Image
+                  src={img.src}
+                  alt={img.alt}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <CTASection
         title="Need to Relocate Your Office? Let's Plan It."
         subtitle="Call +971-55-4495331 or email us your requirements. We'll send a detailed proposal within 24 hours."
@@ -187,7 +179,7 @@ export default function OfficeMoversPage() {
 
       {/* Why Choose Us */}
       <section className="py-16 px-4 bg-white">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold text-[#00357A] text-center mb-12">
             Why Businesses in Dubai Trust Us for Office Moves
           </h2>
@@ -232,32 +224,18 @@ export default function OfficeMoversPage() {
 
       {/* Office Types */}
       <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-[#00357A] text-center mb-8">
             Types of Office Relocations We Handle
           </h2>
           {/* Office types banner */}
-          <div className="mb-10 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="52"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-slate-300"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-            <p className="text-slate-400 text-sm font-medium text-center px-4">
-              Corporate office relocation in Business Bay — zero downtime, full
-              weekend move
-            </p>
+          <div className="mb-10 rounded-2xl overflow-hidden aspect-[21/9] relative">
+            <Image
+              src={"/office-relocation-types-dubai-startup-corporate.jpg"}
+              alt="office relocation types dubai startup corporate"
+              fill
+              className="object-cover"
+            />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {officeTypes.map((ot) => (
@@ -293,27 +271,13 @@ export default function OfficeMoversPage() {
             it carefully, move it fast, set it up properly.
           </p>
           {/* Industries banner */}
-          <div className="mb-8 rounded-2xl overflow-hidden aspect-[21/9] bg-white/10 flex flex-col items-center justify-center gap-3 border border-white/20">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="52"
-              height="52"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-white/30"
-            >
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-              <circle cx="8.5" cy="8.5" r="1.5" />
-              <polyline points="21 15 16 10 5 21" />
-            </svg>
-            <p className="text-white/50 text-sm font-medium text-center px-4">
-              Offices across every sector — from tech startups to government
-              buildings
-            </p>
+          <div className="mb-8 rounded-2xl overflow-hidden aspect-[21/9] bg-white/10 relative border border-white/20">
+            <Image
+              src={"/industry-specific-office-movers-dubai.jpg"}
+              alt="industry specific office movers dubai"
+              fill
+              className="object-cover"
+            />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {industries.map((industry) => (
