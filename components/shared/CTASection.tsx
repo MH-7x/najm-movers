@@ -15,14 +15,15 @@ export default function CTASection({
 }: CTASectionProps) {
   const bgClass =
     variant === "primary"
-      ? "bg-[#FF2828]"
+      ? "bg-brand-primary"
       : variant === "secondary"
-        ? "bg-[#00357A]"
+        ? "bg-brand-secondary"
         : "bg-gray-50 border border-gray-200";
 
-  const titleClass = variant === "light" ? "text-[#00357A]" : "text-white";
+  const titleClass =
+    variant === "light" ? "text-brand-secondary" : "text-white";
   const subtitleClass =
-    variant === "light" ? "text-[#666666]" : "text-white/85";
+    variant === "light" ? "text-brand-text" : "text-white/85";
 
   return (
     <section className={`${bgClass} py-20 px-4`}>

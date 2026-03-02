@@ -11,7 +11,7 @@ export default function QuoteFormSection({
   subtitle = "Fill out the form below and we'll get back to you within 30 minutes with a price.",
 }: QuoteFormSectionProps) {
   return (
-    <section className="py-16 mt-10 px-4 bg-[#00357A]">
+    <section className="py-16 mt-10 px-4 bg-brand-secondary">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left: info */}
@@ -43,7 +43,7 @@ export default function QuoteFormSection({
                 },
               ].map((item) => (
                 <div key={item.title} className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-[#FF2828] rounded-lg flex items-center justify-center flex-shrink-0 text-lg">
+                  <div className="w-10 h-10 bg-brand-primary rounded-lg flex items-center justify-center flex-shrink-0 text-lg">
                     {item.icon}
                   </div>
                   <div>

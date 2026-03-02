@@ -107,11 +107,11 @@ export default function LocationPage({
       {/* Services */}
       <section className="pt-16 pb-24 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-3">
             Our Moving Services in{" "}
             <span className="text-brand-primary">{locationName}</span>
           </h2>
-          <p className="text-[#666666] text-center mb-12">
+          <p className="text-brand-text text-center mb-12">
             Complete relocation services available across {locationName}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -121,13 +121,13 @@ export default function LocationPage({
                 href={s.href}
                 className="group bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-[#FF2828]/30 hover:shadow-md transition-all"
               >
-                <h3 className="text-[#00357A] font-bold text-lg mb-2 group-hover:text-[#FF2828] transition-colors">
+                <h3 className="text-brand-secondary font-bold text-lg mb-2 group-hover:text-brand-primary transition-colors">
                   {s.title}
                 </h3>
-                <p className="text-[#666666] text-sm leading-relaxed mb-3">
+                <p className="text-brand-text text-sm leading-relaxed mb-3">
                   {s.desc}
                 </p>
-                <span className="text-[#FF2828] text-sm font-semibold flex items-center gap-1">
+                <span className="text-brand-primary text-sm font-semibold flex items-center gap-1">
                   Learn More <ArrowRight size={14} />
                 </span>
               </Link>
@@ -145,10 +145,10 @@ export default function LocationPage({
       {/* Areas */}
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-3">
             Areas We Cover in {locationName}
           </h2>
-          <p className="text-[#666666] text-center mb-8">
+          <p className="text-brand-text text-center mb-8">
             We provide moving services across all areas of {locationName}
           </p>
           {/* City/areas banner */}
@@ -183,7 +183,7 @@ export default function LocationPage({
             {areas.map((area) => (
               <span
                 key={area}
-                className="bg-white border border-gray-200 text-[#00357A] text-sm font-medium px-4 py-2 rounded-full hover:border-[#FF2828] hover:text-[#FF2828] transition-colors"
+                className="bg-white border border-gray-200 text-brand-secondary text-sm font-medium px-4 py-2 rounded-full hover:border-[#FF2828] hover:text-brand-primary transition-colors"
               >
                 {area}
               </span>
@@ -194,7 +194,7 @@ export default function LocationPage({
 
       {/* Cross-emirate */}
       {crossEmirate && (
-        <section className="py-16 px-4 bg-[#00357A]">
+        <section className="py-16 px-4 bg-brand-secondary">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-white text-center mb-3">
               Moving Between {locationName} and Other Emirates
@@ -211,7 +211,7 @@ export default function LocationPage({
                 >
                   <CheckCircle
                     size={16}
-                    className="text-[#FF2828] flex-shrink-0"
+                    className="text-brand-primary flex-shrink-0"
                   />
                   <div>
                     <p className="text-white font-semibold text-sm">
@@ -230,7 +230,7 @@ export default function LocationPage({
       {whyChooseUs && (
         <section className="py-16 px-4 bg-white">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#00357A] text-center mb-8">
+            <h2 className="text-3xl font-bold text-brand-secondary text-center mb-8">
               Why {locationName} Residents Choose Us
             </h2>
             {/* Why choose us banner */}
@@ -263,9 +263,9 @@ export default function LocationPage({
                 >
                   <CheckCircle
                     size={16}
-                    className="text-[#FF2828] flex-shrink-0"
+                    className="text-brand-primary flex-shrink-0"
                   />
-                  <p className="text-[#666666] text-sm">{item}</p>
+                  <p className="text-brand-text text-sm">{item}</p>
                 </div>
               ))}
             </div>
@@ -277,7 +277,7 @@ export default function LocationPage({
       {pricing && (
         <section className="py-16 px-4 bg-gray-50">
           <div className="max-w-5xl mx-auto">
-            <h2 className="text-3xl font-bold text-[#00357A] text-center mb-10">
+            <h2 className="text-3xl font-bold text-brand-secondary text-center mb-10">
               Estimated Moving Costs in {locationName}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">
@@ -286,16 +286,20 @@ export default function LocationPage({
                   key={p.type}
                   className="bg-white rounded-xl p-6 border border-gray-100 text-center hover:shadow-md transition-shadow"
                 >
-                  <h3 className="text-[#00357A] font-bold mb-2">{p.type}</h3>
-                  <p className="text-[#FF2828] font-bold text-xl">{p.price}</p>
+                  <h3 className="text-brand-secondary font-bold mb-2">
+                    {p.type}
+                  </h3>
+                  <p className="text-brand-primary font-bold text-xl">
+                    {p.price}
+                  </p>
                 </div>
               ))}
             </div>
-            <p className="text-center text-[#666666] text-sm mt-5">
+            <p className="text-center text-brand-text text-sm mt-5">
               These are estimates. Call{" "}
               <a
                 href="tel:+971554495331"
-                className="text-[#FF2828] font-semibold"
+                className="text-brand-primary font-semibold"
               >
                 +971-55-4495331
               </a>{" "}

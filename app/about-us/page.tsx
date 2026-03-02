@@ -75,10 +75,10 @@ export default function AboutUsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#00357A] py-16 px-4 relative overflow-hidden">
+      <section className="bg-brand-secondary py-16 px-4 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-white transform translate-x-24 -translate-y-24" />
-          <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-[#FF2828] transform -translate-x-12 translate-y-12" />
+          <div className="absolute bottom-0 left-0 w-48 h-48 rounded-full bg-brand-primary transform -translate-x-12 translate-y-12" />
         </div>
         <div className="relative max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-5">
@@ -97,10 +97,10 @@ export default function AboutUsPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-[#00357A] mb-5">
+              <h2 className="text-3xl font-bold text-brand-secondary mb-5">
                 Who We Are
               </h2>
-              <div className="space-y-4 text-[#666666] leading-relaxed">
+              <div className="space-y-4 text-brand-text leading-relaxed">
                 <p>
                   Najm Al Dhahabih Furniture Movers LLC is a professional moving
                   and relocation company based in the UAE. We provide packing,
@@ -125,14 +125,14 @@ export default function AboutUsPage() {
               <div className="flex items-center gap-4 mt-6">
                 <a
                   href="tel:+971554495331"
-                  className="flex items-center gap-2 bg-[#FF2828] hover:bg-[#cc1f1f] text-white font-bold py-3 px-6 rounded-lg transition-colors"
+                  className="flex items-center gap-2 bg-brand-primary hover:bg-[#cc1f1f] text-white font-bold py-3 px-6 rounded-lg transition-colors"
                 >
                   <Phone size={16} />
                   Call Us Now
                 </a>
                 <Link
                   href="/contact-us/"
-                  className="text-[#00357A] font-semibold flex items-center gap-1 hover:text-[#FF2828] transition-colors"
+                  className="text-brand-secondary font-semibold flex items-center gap-1 hover:text-brand-primary transition-colors"
                 >
                   Get a Quote <ArrowRight size={16} />
                 </Link>
@@ -162,9 +162,9 @@ export default function AboutUsPage() {
                 ].map((stat) => (
                   <div
                     key={stat.label}
-                    className="bg-[#00357A] rounded-xl p-6 text-center"
+                    className="bg-brand-secondary rounded-xl p-6 text-center"
                   >
-                    <p className="text-[#FF2828] font-bold text-3xl mb-1">
+                    <p className="text-brand-primary font-bold text-3xl mb-1">
                       {stat.num}
                     </p>
                     <p className="text-blue-200 text-sm">{stat.label}</p>
@@ -179,7 +179,7 @@ export default function AboutUsPage() {
       {/* What We Do */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-8">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-8">
             What We Do
           </h2>
 
@@ -191,9 +191,9 @@ export default function AboutUsPage() {
               >
                 <CheckCircle
                   size={18}
-                  className="text-[#FF2828] flex-shrink-0"
+                  className="text-brand-primary flex-shrink-0"
                 />
-                <p className="text-[#666666] text-sm">{item}</p>
+                <p className="text-brand-text text-sm">{item}</p>
               </div>
             ))}
           </div>
@@ -203,10 +203,10 @@ export default function AboutUsPage() {
       {/* Our Approach / Values */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-3">
             How We Work
           </h2>
-          <p className="text-[#666666] text-center mb-10 max-w-2xl mx-auto">
+          <p className="text-brand-text text-center mb-10 max-w-2xl mx-auto">
             Four core principles that guide every move we do
           </p>
           {/* Values banner */}
@@ -228,13 +228,13 @@ export default function AboutUsPage() {
                 key={v.title}
                 className="text-center bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="w-16 h-16 bg-[#00357A] rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">
+                <div className="w-16 h-16 bg-brand-secondary rounded-2xl flex items-center justify-center text-3xl mx-auto mb-4">
                   {v.icon}
                 </div>
-                <h3 className="text-[#00357A] font-bold text-base mb-2">
+                <h3 className="text-brand-secondary font-bold text-base mb-2">
                   {v.title}
                 </h3>
-                <p className="text-[#666666] text-sm leading-relaxed">
+                <p className="text-brand-text text-sm leading-relaxed">
                   {v.desc}
                 </p>
               </div>
@@ -244,7 +244,7 @@ export default function AboutUsPage() {
       </section>
 
       {/* Emirates We Cover */}
-      <section className="py-16 px-4 bg-[#00357A]">
+      <section className="py-16 px-4 bg-brand-secondary">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-white text-center mb-3">
             Moving Services in All Emirates
@@ -282,14 +282,14 @@ export default function AboutUsPage() {
       {/* Credentials */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[#00357A] mb-6">
+          <h2 className="text-3xl font-bold text-brand-secondary mb-6">
             Licensed and Registered
           </h2>
           <div className="bg-gray-50 rounded-2xl p-8 border border-gray-100">
             <div className="mb-4 flex items-center justify-center">
               <Trophy className="text-brand-primary " size={60} />
             </div>
-            <p className="text-[#666666] leading-relaxed mb-6">
+            <p className="text-brand-text leading-relaxed mb-6">
               Najm Al Dhahabih Furniture Movers LLC is a fully licensed and
               registered company in the UAE. We operate with all required trade
               licenses, transport permits, and insurance documentation. When you
@@ -308,10 +308,12 @@ export default function AboutUsPage() {
                 >
                   <CheckCircle
                     size={24}
-                    className="text-[#FF2828] mx-auto mb-2"
+                    className="text-brand-primary mx-auto mb-2"
                   />
-                  <p className="text-[#00357A] font-bold text-sm">{c.label}</p>
-                  <p className="text-[#666666] text-xs">{c.desc}</p>
+                  <p className="text-brand-secondary font-bold text-sm">
+                    {c.label}
+                  </p>
+                  <p className="text-brand-text text-xs">{c.desc}</p>
                 </div>
               ))}
             </div>

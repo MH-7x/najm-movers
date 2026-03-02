@@ -102,10 +102,10 @@ export default function OfficeMoversPage() {
       {/* Services */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-3">
             Our Office Moving Services
           </h2>
-          <p className="text-[#666666] text-center mb-12">
+          <p className="text-brand-text text-center mb-12">
             Everything your office move needs, handled professionally
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -146,10 +146,10 @@ export default function OfficeMoversPage() {
                 className="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="text-3xl mb-3">{s.icon}</div>
-                <h3 className="text-[#00357A] font-bold text-lg mb-2">
+                <h3 className="text-brand-secondary font-bold text-lg mb-2">
                   {s.title}
                 </h3>
-                <p className="text-[#666666] text-sm leading-relaxed">
+                <p className="text-brand-text text-sm leading-relaxed">
                   {s.desc}
                 </p>
               </div>
@@ -196,7 +196,7 @@ export default function OfficeMoversPage() {
       {/* Why Choose Us */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-12">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-12">
             Why Businesses in Dubai Trust Us for Office Moves
           </h2>
           <div className="space-y-6">
@@ -224,13 +224,13 @@ export default function OfficeMoversPage() {
               >
                 <CheckCircle
                   size={20}
-                  className="text-[#FF2828] flex-shrink-0 mt-0.5"
+                  className="text-brand-primary flex-shrink-0 mt-0.5"
                 />
                 <div>
-                  <h3 className="text-[#00357A] font-bold mb-1">
+                  <h3 className="text-brand-secondary font-bold mb-1">
                     {item.title}
                   </h3>
-                  <p className="text-[#666666] text-sm">{item.desc}</p>
+                  <p className="text-brand-text text-sm">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -241,7 +241,7 @@ export default function OfficeMoversPage() {
       {/* Office Types */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-8">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-8">
             Types of Office Relocations We Handle
           </h2>
           {/* Office types banner */}
@@ -260,14 +260,14 @@ export default function OfficeMoversPage() {
                 className="bg-white rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow"
               >
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-[#00357A] font-bold text-base">
+                  <h3 className="text-brand-secondary font-bold text-base">
                     {ot.type}
                   </h3>
-                  <span className="text-[#FF2828] text-xs font-semibold bg-red-50 px-2.5 py-1 rounded-full flex-shrink-0 ml-2">
+                  <span className="text-brand-primary text-xs font-semibold bg-red-50 px-2.5 py-1 rounded-full flex-shrink-0 ml-2">
                     {ot.highlight}
                   </span>
                 </div>
-                <p className="text-[#666666] text-sm leading-relaxed">
+                <p className="text-brand-text text-sm leading-relaxed">
                   {ot.desc}
                 </p>
               </div>
@@ -277,7 +277,7 @@ export default function OfficeMoversPage() {
       </section>
 
       {/* Industries */}
-      <section className="py-16 px-4 bg-[#00357A]">
+      <section className="py-16 px-4 bg-brand-secondary">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-white text-center mb-3">
             Industries We&apos;ve Helped Relocate
@@ -303,7 +303,7 @@ export default function OfficeMoversPage() {
               >
                 <CheckCircle
                   size={16}
-                  className="text-[#FF2828] flex-shrink-0"
+                  className="text-brand-primary flex-shrink-0"
                 />
                 <p className="text-blue-100 text-sm">{industry}</p>
               </div>

@@ -131,10 +131,10 @@ export default function VillaMoversPage() {
       {/* What's Included */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-3">
             What Our Villa Moving Service Covers
           </h2>
-          <p className="text-[#666666] text-center max-w-2xl mx-auto mb-12">
+          <p className="text-brand-text text-center max-w-2xl mx-auto mb-12">
             When you book a villa move with us, here&apos;s what happens:
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -143,13 +143,13 @@ export default function VillaMoversPage() {
                 key={i}
                 className="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="w-10 h-10 bg-[#FF2828] rounded-lg flex items-center justify-center text-white font-bold text-sm mb-4">
+                <div className="w-10 h-10 bg-brand-primary rounded-lg flex items-center justify-center text-white font-bold text-sm mb-4">
                   {String(i + 1).padStart(2, "0")}
                 </div>
-                <h3 className="text-[#00357A] font-bold text-lg mb-2">
+                <h3 className="text-brand-secondary font-bold text-lg mb-2">
                   {s.title}
                 </h3>
-                <p className="text-[#666666] text-sm leading-relaxed">
+                <p className="text-brand-text text-sm leading-relaxed">
                   {s.description}
                 </p>
               </div>
@@ -198,10 +198,10 @@ export default function VillaMoversPage() {
       {/* Villa Areas */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-3">
             Villa Communities in Dubai We Regularly Move
           </h2>
-          <p className="text-[#666666] text-center mb-8">
+          <p className="text-brand-text text-center mb-8">
             We handle villa relocations across all of Dubai, including:
           </p>
           {/* Villa community banner */}
@@ -210,13 +210,13 @@ export default function VillaMoversPage() {
             {villaAreas.map((area) => (
               <span
                 key={area}
-                className="bg-white border border-gray-200 text-[#00357A] font-medium text-sm px-4 py-2 rounded-full hover:border-[#FF2828] hover:text-[#FF2828] transition-colors"
+                className="bg-white border border-gray-200 text-brand-secondary font-medium text-sm px-4 py-2 rounded-full hover:border-[#FF2828] hover:text-brand-primary transition-colors"
               >
                 {area}
               </span>
             ))}
           </div>
-          <p className="text-center text-[#666666] mt-6 text-sm">
+          <p className="text-center text-brand-text mt-6 text-sm">
             We also move villas from Dubai to Abu Dhabi, Sharjah, Ajman, Ras Al
             Khaimah, and Al Ain.
           </p>
@@ -228,7 +228,7 @@ export default function VillaMoversPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-[#00357A] mb-6">
+              <h2 className="text-3xl font-bold text-brand-secondary mb-6">
                 Why Families Trust Us for Villa Moves
               </h2>
               <div className="space-y-5">
@@ -253,13 +253,13 @@ export default function VillaMoversPage() {
                   <div key={item.title} className="flex items-start gap-4">
                     <CheckCircle
                       size={20}
-                      className="text-[#FF2828] flex-shrink-0 mt-0.5"
+                      className="text-brand-primary flex-shrink-0 mt-0.5"
                     />
                     <div>
-                      <p className="text-[#00357A] font-semibold">
+                      <p className="text-brand-secondary font-semibold">
                         {item.title}
                       </p>
-                      <p className="text-[#666666] text-sm">{item.desc}</p>
+                      <p className="text-brand-text text-sm">{item.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -276,14 +276,14 @@ export default function VillaMoversPage() {
                 />
               </div>
             </div>
-            <div className="bg-[#00357A] rounded-2xl p-8">
+            <div className="bg-brand-secondary rounded-2xl p-8">
               <h3 className="text-white font-bold text-xl mb-6">
                 Things to Prepare Before Your Villa Move
               </h3>
               <div className="space-y-4">
                 {checklist.map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <div className="w-6 h-6 bg-[#FF2828] rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 mt-0.5">
+                    <div className="w-6 h-6 bg-brand-primary rounded-full flex items-center justify-center text-white text-xs font-bold flex-shrink-0 mt-0.5">
                       {i + 1}
                     </div>
                     <p className="text-blue-100 text-sm">{item}</p>

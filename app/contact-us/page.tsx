@@ -45,7 +45,7 @@ const contactInfo = [
     label: "Phone",
     value: "+971-55-4495331",
     href: "tel:+971554495331",
-    color: "bg-[#FF2828]",
+    color: "bg-brand-primary",
   },
   {
     icon: MessageCircle,
@@ -59,7 +59,7 @@ const contactInfo = [
     label: "Email",
     value: "info@najmaldhahbih.com",
     href: "mailto:info@najmaldhahbih.com",
-    color: "bg-[#00357A]",
+    color: "bg-brand-secondary",
   },
   {
     icon: Clock,
@@ -85,7 +85,7 @@ export default function ContactUsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#00357A] py-16 px-4 relative overflow-hidden">
+      <section className="bg-brand-secondary py-16 px-4 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-white transform translate-x-24 -translate-y-24" />
         </div>
@@ -107,7 +107,7 @@ export default function ContactUsPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             {/* Contact Info */}
             <div>
-              <h2 className="text-2xl font-bold text-[#00357A] mb-6">
+              <h2 className="text-2xl font-bold text-brand-secondary mb-6">
                 Get in Touch
               </h2>
               <div className="space-y-4 mb-8">
@@ -119,18 +119,18 @@ export default function ContactUsPage() {
                       <item.icon size={18} className="text-white" />
                     </div>
                     <div>
-                      <p className="text-[#666666] text-xs font-medium uppercase tracking-wide">
+                      <p className="text-brand-text text-xs font-medium uppercase tracking-wide">
                         {item.label}
                       </p>
                       {item.href ? (
                         <a
                           href={item.href}
-                          className="text-[#00357A] font-semibold hover:text-[#FF2828] transition-colors"
+                          className="text-brand-secondary font-semibold hover:text-brand-primary transition-colors"
                         >
                           {item.value}
                         </a>
                       ) : (
-                        <p className="text-[#00357A] font-semibold">
+                        <p className="text-brand-secondary font-semibold">
                           {item.value}
                         </p>
                       )}
@@ -143,7 +143,7 @@ export default function ContactUsPage() {
               <div className="space-y-3">
                 <a
                   href="tel:+971554495331"
-                  className="flex items-center justify-center gap-2 bg-[#FF2828] hover:bg-[#cc1f1f] text-white font-bold py-3.5 rounded-lg transition-colors w-full"
+                  className="flex items-center justify-center gap-2 bg-brand-primary hover:bg-[#cc1f1f] text-white font-bold py-3.5 rounded-lg transition-colors w-full"
                 >
                   <Phone size={16} />
                   Call +971-55-4495331
@@ -161,14 +161,14 @@ export default function ContactUsPage() {
 
               {/* Locations Served */}
               <div className="mt-8">
-                <h3 className="text-[#00357A] font-bold mb-4">
+                <h3 className="text-brand-secondary font-bold mb-4">
                   We Serve All Emirates
                 </h3>
                 <div className="flex flex-wrap gap-2">
                   {locationServed.map((loc) => (
                     <span
                       key={loc}
-                      className="bg-[#00357A] text-white text-xs font-medium px-3 py-1.5 rounded-full"
+                      className="bg-brand-secondary text-white text-xs font-medium px-3 py-1.5 rounded-full"
                     >
                       {loc}
                     </span>
@@ -194,7 +194,7 @@ export default function ContactUsPage() {
       <FAQSection faqs={contactFaqs} title="Quick Answers" />
 
       {/* Final band */}
-      <section className="bg-[#FF2828] py-12 px-4">
+      <section className="bg-brand-primary py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
             No matter where you&apos;re moving from or to, call us. We&apos;ll
@@ -202,7 +202,7 @@ export default function ContactUsPage() {
           </h2>
           <a
             href="tel:+971554495331"
-            className="inline-flex items-center gap-2 bg-white text-[#FF2828] font-bold py-4 px-10 rounded-lg mt-4 hover:bg-gray-100 transition-colors text-lg"
+            className="inline-flex items-center gap-2 bg-white text-brand-primary font-bold py-4 px-10 rounded-lg mt-4 hover:bg-gray-100 transition-colors text-lg"
           >
             <Phone size={20} />
             +971-55-4495331

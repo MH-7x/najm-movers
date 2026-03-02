@@ -52,7 +52,7 @@ export default function Header() {
   return (
     <header className="w-full sticky top-0 z-50 shadow-md">
       {/* Top bar */}
-      <div className="bg-[#00357A] py-2 px-4">
+      <div className="bg-brand-secondary py-2 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <p className="text-white text-sm hidden sm:block font-medium">
             Professional Movers & Packers Across UAE — 24/7 Service
@@ -60,7 +60,7 @@ export default function Header() {
           <div className="flex items-center gap-4 ml-auto">
             <a
               href="tel:+971554495331"
-              className="flex items-center gap-2 text-white hover:text-[#FF2828] transition-colors font-semibold text-sm"
+              className="flex items-center gap-2 text-white hover:text-brand-primary transition-colors font-semibold text-sm"
             >
               <Phone size={14} />
               +971-55-4495331
@@ -99,7 +99,7 @@ export default function Header() {
           <div className="hidden lg:flex items-center gap-1">
             <Link
               href="/"
-              className="px-3 py-2 text-[#00357A] font-semibold text-sm hover:text-[#FF2828] transition-colors rounded-md hover:bg-red-50"
+              className="px-3 py-2 text-brand-secondary font-semibold text-sm hover:text-brand-primary transition-colors rounded-md hover:bg-red-50"
             >
               Home
             </Link>
@@ -110,7 +110,7 @@ export default function Header() {
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setServicesOpen(false)}
             >
-              <button className="flex items-center gap-1 px-3 py-2 text-[#00357A] font-semibold text-sm hover:text-[#FF2828] transition-colors rounded-md hover:bg-red-50">
+              <button className="flex items-center gap-1 px-3 py-2 text-brand-secondary font-semibold text-sm hover:text-brand-primary transition-colors rounded-md hover:bg-red-50">
                 Services <ChevronDown size={14} />
               </button>
               {servicesOpen && (
@@ -119,7 +119,7 @@ export default function Header() {
                     <Link
                       key={service.href}
                       href={service.href}
-                      className="block px-4 py-2.5 text-sm text-[#666666] hover:text-[#FF2828] hover:bg-red-50 transition-colors"
+                      className="block px-4 py-2.5 text-sm text-brand-text hover:text-brand-primary hover:bg-red-50 transition-colors"
                     >
                       {service.name}
                     </Link>
@@ -134,7 +134,7 @@ export default function Header() {
               onMouseEnter={() => setLocationsOpen(true)}
               onMouseLeave={() => setLocationsOpen(false)}
             >
-              <button className="flex items-center gap-1 px-3 py-2 text-[#00357A] font-semibold text-sm hover:text-[#FF2828] transition-colors rounded-md hover:bg-red-50">
+              <button className="flex items-center gap-1 px-3 py-2 text-brand-secondary font-semibold text-sm hover:text-brand-primary transition-colors rounded-md hover:bg-red-50">
                 Locations <ChevronDown size={14} />
               </button>
               {locationsOpen && (
@@ -143,7 +143,7 @@ export default function Header() {
                     <Link
                       key={loc.href}
                       href={loc.href}
-                      className="block px-4 py-2.5 text-sm text-[#666666] hover:text-[#FF2828] hover:bg-red-50 transition-colors"
+                      className="block px-4 py-2.5 text-sm text-brand-text hover:text-brand-primary hover:bg-red-50 transition-colors"
                     >
                       {loc.name}
                     </Link>
@@ -154,13 +154,13 @@ export default function Header() {
 
             <Link
               href="/about-us/"
-              className="px-3 py-2 text-[#00357A] font-semibold text-sm hover:text-[#FF2828] transition-colors rounded-md hover:bg-red-50"
+              className="px-3 py-2 text-brand-secondary font-semibold text-sm hover:text-brand-primary transition-colors rounded-md hover:bg-red-50"
             >
               About Us
             </Link>
             <Link
               href="/contact-us/"
-              className="px-3 py-2 text-[#00357A] font-semibold text-sm hover:text-[#FF2828] transition-colors rounded-md hover:bg-red-50"
+              className="px-3 py-2 text-brand-secondary font-semibold text-sm hover:text-brand-primary transition-colors rounded-md hover:bg-red-50"
             >
               Contact
             </Link>
@@ -170,14 +170,14 @@ export default function Header() {
           <div className="flex items-center gap-3">
             <a
               href="tel:+971554495331"
-              className="hidden md:flex items-center gap-2 bg-[#FF2828] hover:bg-[#cc1f1f] text-white font-semibold text-sm px-4 py-2 rounded-lg transition-colors"
+              className="hidden md:flex items-center gap-2 bg-brand-primary hover:bg-[#cc1f1f] text-white font-semibold text-sm px-4 py-2 rounded-lg transition-colors"
             >
               <Phone size={14} />
               Call Now
             </a>
             <Link
               href="/contact-us/"
-              className="hidden md:flex bg-[#00357A] hover:bg-[#002a60] text-white font-semibold text-sm px-4 py-2 rounded-lg transition-colors"
+              className="hidden md:flex bg-brand-secondary hover:bg-[#002a60] text-white font-semibold text-sm px-4 py-2 rounded-lg transition-colors"
             >
               Free Quote
             </Link>
@@ -185,12 +185,12 @@ export default function Header() {
             {/* Mobile menu */}
             <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
               <SheetTrigger asChild>
-                <button className="lg:hidden p-2 text-[#00357A]">
+                <button className="lg:hidden p-2 text-brand-secondary">
                   <Menu size={24} />
                 </button>
               </SheetTrigger>
               <SheetContent side="right" className="w-80 p-0 overflow-y-auto">
-                <div className="bg-[#00357A] p-4 flex items-center justify-between">
+                <div className="bg-brand-secondary p-4 flex items-center justify-between">
                   <div>
                     <p className="text-white font-bold">Najm Al Dhahabih</p>
                     <p className="text-blue-200 text-xs">
@@ -207,14 +207,14 @@ export default function Header() {
                 <div className="py-4">
                   <Link
                     href="/"
-                    className="block px-6 py-3 text-[#00357A] font-semibold border-b border-gray-100"
+                    className="block px-6 py-3 text-brand-secondary font-semibold border-b border-gray-100"
                     onClick={() => setMobileOpen(false)}
                   >
                     Home
                   </Link>
 
                   <button
-                    className="w-full flex items-center justify-between px-6 py-3 text-[#00357A] font-semibold border-b border-gray-100"
+                    className="w-full flex items-center justify-between px-6 py-3 text-brand-secondary font-semibold border-b border-gray-100"
                     onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                   >
                     Services{" "}
@@ -229,7 +229,7 @@ export default function Header() {
                         <Link
                           key={s.href}
                           href={s.href}
-                          className="block px-8 py-2.5 text-sm text-[#666666] border-b border-gray-100 hover:text-[#FF2828]"
+                          className="block px-8 py-2.5 text-sm text-brand-text border-b border-gray-100 hover:text-brand-primary"
                           onClick={() => setMobileOpen(false)}
                         >
                           {s.name}
@@ -239,7 +239,7 @@ export default function Header() {
                   )}
 
                   <button
-                    className="w-full flex items-center justify-between px-6 py-3 text-[#00357A] font-semibold border-b border-gray-100"
+                    className="w-full flex items-center justify-between px-6 py-3 text-brand-secondary font-semibold border-b border-gray-100"
                     onClick={() => setMobileLocationsOpen(!mobileLocationsOpen)}
                   >
                     Locations{" "}
@@ -254,7 +254,7 @@ export default function Header() {
                         <Link
                           key={l.href}
                           href={l.href}
-                          className="block px-8 py-2.5 text-sm text-[#666666] border-b border-gray-100 hover:text-[#FF2828]"
+                          className="block px-8 py-2.5 text-sm text-brand-text border-b border-gray-100 hover:text-brand-primary"
                           onClick={() => setMobileOpen(false)}
                         >
                           {l.name}
@@ -265,14 +265,14 @@ export default function Header() {
 
                   <Link
                     href="/about-us/"
-                    className="block px-6 py-3 text-[#00357A] font-semibold border-b border-gray-100"
+                    className="block px-6 py-3 text-brand-secondary font-semibold border-b border-gray-100"
                     onClick={() => setMobileOpen(false)}
                   >
                     About Us
                   </Link>
                   <Link
                     href="/contact-us/"
-                    className="block px-6 py-3 text-[#00357A] font-semibold border-b border-gray-100"
+                    className="block px-6 py-3 text-brand-secondary font-semibold border-b border-gray-100"
                     onClick={() => setMobileOpen(false)}
                   >
                     Contact
@@ -281,7 +281,7 @@ export default function Header() {
                   <div className="p-6 space-y-3">
                     <a
                       href="tel:+971554495331"
-                      className="flex items-center justify-center gap-2 bg-[#FF2828] text-white font-semibold py-3 rounded-lg w-full"
+                      className="flex items-center justify-center gap-2 bg-brand-primary text-white font-semibold py-3 rounded-lg w-full"
                     >
                       <Phone size={16} /> +971-55-4495331
                     </a>

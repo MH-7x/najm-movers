@@ -147,10 +147,10 @@ export default function HouseMoversPage() {
       {/* Process */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-3">
             How We Handle Your Home Move — Step by Step
           </h2>
-          <p className="text-[#666666] text-center mb-12">
+          <p className="text-brand-text text-center mb-12">
             From your first call to the last box placed
           </p>
           <div className="space-y-6">
@@ -190,14 +190,14 @@ export default function HouseMoversPage() {
                 key={step.num}
                 className="flex items-start gap-5 p-5 bg-gray-50 rounded-xl border border-gray-100"
               >
-                <div className="w-10 h-10 bg-[#00357A] rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
+                <div className="w-10 h-10 bg-brand-secondary rounded-full flex items-center justify-center text-white font-bold flex-shrink-0">
                   {step.num}
                 </div>
                 <div>
-                  <h3 className="text-[#00357A] font-bold mb-1">
+                  <h3 className="text-brand-secondary font-bold mb-1">
                     {step.title}
                   </h3>
-                  <p className="text-[#666666] text-sm">{step.text}</p>
+                  <p className="text-brand-text text-sm">{step.text}</p>
                 </div>
               </div>
             ))}
@@ -234,7 +234,7 @@ export default function HouseMoversPage() {
         </div>
       </section>
       {/* What We Move */}
-      <section className="py-16 px-4 bg-[#00357A]">
+      <section className="py-16 px-4 bg-brand-secondary">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-white text-center mb-3">
             What&apos;s Included in Our Home Shifting Service
@@ -250,7 +250,7 @@ export default function HouseMoversPage() {
               >
                 <CheckCircle
                   size={16}
-                  className="text-[#FF2828] flex-shrink-0"
+                  className="text-brand-primary flex-shrink-0"
                 />
                 <p className="text-blue-100 text-sm">{item}</p>
               </div>
@@ -271,10 +271,10 @@ export default function HouseMoversPage() {
       {/* Packages */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-3">
             Home Shifting by Apartment Size
           </h2>
-          <p className="text-[#666666] text-center mb-8">
+          <p className="text-brand-text text-center mb-8">
             Estimated prices for different home sizes
           </p>
           {/* Package banner image */}
@@ -294,35 +294,37 @@ export default function HouseMoversPage() {
                 key={pkg.size}
                 className={`rounded-xl p-6 border ${pkg.color}`}
               >
-                <h3 className="text-[#00357A] font-bold text-xl mb-2">
+                <h3 className="text-brand-secondary font-bold text-xl mb-2">
                   {pkg.size}
                 </h3>
-                <p className="text-[#666666] text-sm mb-4">{pkg.desc}</p>
+                <p className="text-brand-text text-sm mb-4">{pkg.desc}</p>
                 <div className="space-y-2">
-                  <div className="flex items-center gap-2 text-sm text-[#666666]">
-                    <span className="w-2 h-2 bg-[#00357A] rounded-full"></span>
+                  <div className="flex items-center gap-2 text-sm text-brand-text">
+                    <span className="w-2 h-2 bg-brand-secondary rounded-full"></span>
                     {pkg.movers}
                   </div>
-                  <div className="flex items-center gap-2 text-sm text-[#666666]">
-                    <span className="w-2 h-2 bg-[#00357A] rounded-full"></span>
+                  <div className="flex items-center gap-2 text-sm text-brand-text">
+                    <span className="w-2 h-2 bg-brand-secondary rounded-full"></span>
                     {pkg.trucks}
                   </div>
                 </div>
                 <div className="mt-4 pt-4 border-t border-current/10">
-                  <p className="text-[#00357A] font-bold">Estimated Cost</p>
-                  <p className="text-[#FF2828] font-bold text-lg">
+                  <p className="text-brand-secondary font-bold">
+                    Estimated Cost
+                  </p>
+                  <p className="text-brand-primary font-bold text-lg">
                     {pkg.price}
                   </p>
                 </div>
               </div>
             ))}
           </div>
-          <p className="text-center text-[#666666] text-sm mt-6">
+          <p className="text-center text-brand-text text-sm mt-6">
             These are estimates. Your actual price depends on the distance,
             floor level, and specific items.{" "}
             <a
               href="tel:+971554495331"
-              className="text-[#FF2828] font-semibold"
+              className="text-brand-primary font-semibold"
             >
               Call us for an exact figure.
             </a>
@@ -333,10 +335,10 @@ export default function HouseMoversPage() {
       {/* Areas */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-3">
             House Moving Services Across Dubai
           </h2>
-          <p className="text-[#666666] text-center mb-8">
+          <p className="text-brand-text text-center mb-8">
             We handle house shifting in every neighborhood and community in
             Dubai
           </p>
@@ -346,13 +348,13 @@ export default function HouseMoversPage() {
             {dubaiAreas.map((area) => (
               <span
                 key={area}
-                className="bg-white border border-gray-200 text-[#00357A] text-sm font-medium px-4 py-2 rounded-full hover:border-[#FF2828] hover:text-[#FF2828] transition-colors"
+                className="bg-white border border-gray-200 text-brand-secondary text-sm font-medium px-4 py-2 rounded-full hover:border-[#FF2828] hover:text-brand-primary transition-colors"
               >
                 {area}
               </span>
             ))}
           </div>
-          <p className="text-center text-[#666666] text-sm mt-6">
+          <p className="text-center text-brand-text text-sm mt-6">
             We also handle cross-emirate home shifting — from Dubai to Sharjah,
             Abu Dhabi, Ajman, Ras Al Khaimah, and Al Ain.
           </p>

@@ -106,10 +106,10 @@ export default function CheapMoversPage() {
       {/* What Cheap Doesn't Mean */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-3">
             Budget-Friendly, Not Low-Quality
           </h2>
-          <p className="text-[#666666] text-center mb-10">
+          <p className="text-brand-text text-center mb-10">
             Let&apos;s clear something up: our prices are low, but our service
             isn&apos;t. Here&apos;s what you still get with our budget packages:
           </p>
@@ -139,9 +139,9 @@ export default function CheapMoversPage() {
               >
                 <CheckCircle
                   size={16}
-                  className="text-[#FF2828] flex-shrink-0"
+                  className="text-brand-primary flex-shrink-0"
                 />
-                <p className="text-[#666666] text-sm">{item.point}</p>
+                <p className="text-brand-text text-sm">{item.point}</p>
               </div>
             ))}
           </div>
@@ -180,10 +180,10 @@ export default function CheapMoversPage() {
       {/* Packages */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-3">
             Our Budget Moving Packages
           </h2>
-          <p className="text-[#666666] text-center mb-8">
+          <p className="text-brand-text text-center mb-8">
             All prices are starting rates. Your actual quote depends on the
             distance and volume — but we promise, no surprises.
           </p>
@@ -195,21 +195,21 @@ export default function CheapMoversPage() {
                 className={`bg-white rounded-xl p-6 border-2 ${pkg.color} hover:shadow-lg transition-shadow`}
               >
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-[#00357A] font-bold text-lg">
+                  <h3 className="text-brand-secondary font-bold text-lg">
                     {pkg.name}
                   </h3>
-                  <span className="text-[#FF2828] font-bold text-lg flex-shrink-0 ml-2">
+                  <span className="text-brand-primary font-bold text-lg flex-shrink-0 ml-2">
                     {pkg.price}
                   </span>
                 </div>
-                <p className="text-[#666666] text-sm mb-4">{pkg.desc}</p>
+                <p className="text-brand-text text-sm mb-4">{pkg.desc}</p>
                 <div className="space-y-1.5">
                   {pkg.includes.map((inc) => (
                     <div
                       key={inc}
-                      className="flex items-center gap-2 text-sm text-[#666666]"
+                      className="flex items-center gap-2 text-sm text-brand-text"
                     >
-                      <div className="w-1.5 h-1.5 bg-[#00357A] rounded-full" />
+                      <div className="w-1.5 h-1.5 bg-brand-secondary rounded-full" />
                       {inc}
                     </div>
                   ))}
@@ -229,7 +229,7 @@ export default function CheapMoversPage() {
       {/* How We Keep Prices Low */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-12">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-12">
             How We Offer Lower Prices Without Cutting Corners
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -257,13 +257,13 @@ export default function CheapMoversPage() {
               >
                 <CheckCircle
                   size={20}
-                  className="text-[#FF2828] flex-shrink-0 mt-0.5"
+                  className="text-brand-primary flex-shrink-0 mt-0.5"
                 />
                 <div>
-                  <h3 className="text-[#00357A] font-bold mb-1">
+                  <h3 className="text-brand-secondary font-bold mb-1">
                     {item.title}
                   </h3>
-                  <p className="text-[#666666] text-sm">{item.desc}</p>
+                  <p className="text-brand-text text-sm">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -272,7 +272,7 @@ export default function CheapMoversPage() {
       </section>
 
       {/* Who This Is For */}
-      <section className="py-16 px-4 bg-[#00357A]">
+      <section className="py-16 px-4 bg-brand-secondary">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-white text-center mb-3">
             Our Budget Service Works Great For
@@ -288,7 +288,7 @@ export default function CheapMoversPage() {
               >
                 <CheckCircle
                   size={16}
-                  className="text-[#FF2828] flex-shrink-0"
+                  className="text-brand-primary flex-shrink-0"
                 />
                 <p className="text-blue-100 text-sm">{item}</p>
               </div>
@@ -300,7 +300,7 @@ export default function CheapMoversPage() {
       {/* Affordable UAE-wide */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-8">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-8">
             Cheap Movers in Abu Dhabi, Sharjah, Ajman & More
           </h2>
           {/* UAE-wide affordable moving banner */}
@@ -343,11 +343,11 @@ export default function CheapMoversPage() {
                 key={e.name}
                 className="bg-white rounded-xl p-5 border border-gray-100 text-center hover:shadow-md transition-shadow"
               >
-                <h3 className="text-[#00357A] font-bold text-lg mb-1">
+                <h3 className="text-brand-secondary font-bold text-lg mb-1">
                   {e.name}
                 </h3>
-                <p className="text-[#FF2828] font-bold mb-2">{e.price}</p>
-                <p className="text-[#666666] text-sm">{e.desc}</p>
+                <p className="text-brand-primary font-bold mb-2">{e.price}</p>
+                <p className="text-brand-text text-sm">{e.desc}</p>
               </div>
             ))}
           </div>

@@ -43,8 +43,8 @@ export default function QuoteForm({
   const isDark = variant === "dark";
   const labelClass = isDark
     ? "text-blue-100 font-medium text-sm"
-    : "text-[#00357A] font-medium text-sm";
-  const inputClass = `w-full px-4 py-3 rounded-lg border ${isDark ? "bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-[#FF2828]" : "bg-white border-gray-200 text-[#00357A] placeholder:text-gray-400 focus:border-[#00357A]"} outline-none transition-colors text-sm`;
+    : "text-brand-secondary font-medium text-sm";
+  const inputClass = `w-full px-4 py-3 rounded-lg border ${isDark ? "bg-white/10 border-white/20 text-white placeholder:text-white/50 focus:border-[#FF2828]" : "bg-white border-gray-200 text-brand-secondary placeholder:text-gray-400 focus:border-[#00357A]"} outline-none transition-colors text-sm`;
 
   if (submitted) {
     return (
@@ -65,14 +65,17 @@ export default function QuoteForm({
           </svg>
         </div>
         <h3
-          className={`text-xl font-bold mb-2 ${isDark ? "text-white" : "text-[#00357A]"}`}
+          className={`text-xl font-bold mb-2 ${isDark ? "text-white" : "text-brand-secondary"}`}
         >
           Quote Request Received!
         </h3>
-        <p className={isDark ? "text-blue-200" : "text-[#666666]"}>
+        <p className={isDark ? "text-blue-200" : "text-brand-text"}>
           We&apos;ll get back to you within 30 minutes. For immediate
           assistance, call{" "}
-          <a href="tel:+971554495331" className="text-[#FF2828] font-semibold">
+          <a
+            href="tel:+971554495331"
+            className="text-brand-primary font-semibold"
+          >
             +971-55-4495331
           </a>
         </p>
@@ -86,14 +89,14 @@ export default function QuoteForm({
         <div className="mb-6">
           {title && (
             <h2
-              className={`text-2xl font-bold mb-2 ${isDark ? "text-white" : "text-[#00357A]"}`}
+              className={`text-2xl font-bold mb-2 ${isDark ? "text-white" : "text-brand-secondary"}`}
             >
               {title}
             </h2>
           )}
           {subtitle && (
             <p
-              className={`text-sm ${isDark ? "text-blue-200" : "text-[#666666]"}`}
+              className={`text-sm ${isDark ? "text-blue-200" : "text-brand-text"}`}
             >
               {subtitle}
             </p>
@@ -224,7 +227,7 @@ export default function QuoteForm({
           <Button
             type="submit"
             size={"lg"}
-            className="flex-1 bg-[#FF2828] hover:bg-[#cc1f1f] text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors"
+            className="flex-1 bg-brand-primary hover:bg-[#cc1f1f] text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors"
           >
             <Send size={16} />
             Get My Free Quote

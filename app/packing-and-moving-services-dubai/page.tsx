@@ -82,7 +82,7 @@ export default function PackingMovingPage() {
       {/* Packing Process */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-12">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-12">
             How Our Packing Service Works
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -116,13 +116,13 @@ export default function PackingMovingPage() {
                 key={i}
                 className="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="w-10 h-10 bg-[#00357A] rounded-xl flex items-center justify-center text-white font-bold text-sm mb-4">
+                <div className="w-10 h-10 bg-brand-secondary rounded-xl flex items-center justify-center text-white font-bold text-sm mb-4">
                   {String(i + 1).padStart(2, "0")}
                 </div>
-                <h3 className="text-[#00357A] font-bold text-lg mb-2">
+                <h3 className="text-brand-secondary font-bold text-lg mb-2">
                   {s.title}
                 </h3>
-                <p className="text-[#666666] text-sm leading-relaxed">
+                <p className="text-brand-text text-sm leading-relaxed">
                   {s.desc}
                 </p>
               </div>
@@ -161,7 +161,7 @@ export default function PackingMovingPage() {
       </section>
 
       {/* Packing Options */}
-      <section className="py-16 px-4 bg-[#00357A]">
+      <section className="py-16 px-4 bg-brand-secondary">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-white text-center mb-3">
             Packing Options for Every Situation
@@ -194,14 +194,14 @@ export default function PackingMovingPage() {
             ].map((opt) => (
               <div key={opt.title} className="bg-white rounded-xl p-6">
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-[#00357A] font-bold text-lg">
+                  <h3 className="text-brand-secondary font-bold text-lg">
                     {opt.title}
                   </h3>
-                  <span className="bg-[#FF2828] text-white text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0 ml-2">
+                  <span className="bg-brand-primary text-white text-xs font-semibold px-2.5 py-1 rounded-full flex-shrink-0 ml-2">
                     {opt.badge}
                   </span>
                 </div>
-                <p className="text-[#666666] text-sm leading-relaxed">
+                <p className="text-brand-text text-sm leading-relaxed">
                   {opt.desc}
                 </p>
               </div>
@@ -219,10 +219,10 @@ export default function PackingMovingPage() {
       {/* Materials */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-3">
             Packing Materials We Use
           </h2>
-          <p className="text-[#666666] text-center mb-8">
+          <p className="text-brand-text text-center mb-8">
             All materials are included in our service. No extra charges for
             boxes or tape.
           </p>
@@ -247,9 +247,9 @@ export default function PackingMovingPage() {
               >
                 <CheckCircle
                   size={16}
-                  className="text-[#FF2828] flex-shrink-0"
+                  className="text-brand-primary flex-shrink-0"
                 />
-                <p className="text-[#666666] text-sm">{item}</p>
+                <p className="text-brand-text text-sm">{item}</p>
               </div>
             ))}
           </div>
@@ -259,7 +259,7 @@ export default function PackingMovingPage() {
       {/* Why Professional */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-8">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-8">
             Why You Should Let Professionals Pack Your Stuff
           </h2>
           {/* Professional packing result banner */}
@@ -300,13 +300,13 @@ export default function PackingMovingPage() {
               >
                 <CheckCircle
                   size={20}
-                  className="text-[#FF2828] flex-shrink-0 mt-0.5"
+                  className="text-brand-primary flex-shrink-0 mt-0.5"
                 />
                 <div>
-                  <h3 className="text-[#00357A] font-bold mb-1">
+                  <h3 className="text-brand-secondary font-bold mb-1">
                     {item.title}
                   </h3>
-                  <p className="text-[#666666] text-sm">{item.desc}</p>
+                  <p className="text-brand-text text-sm">{item.desc}</p>
                 </div>
               </div>
             ))}

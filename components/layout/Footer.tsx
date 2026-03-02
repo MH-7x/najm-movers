@@ -37,14 +37,14 @@ const locations = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#00357A] text-white">
+    <footer className="bg-brand-secondary text-white">
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-[#FF2828] flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-full bg-brand-primary flex items-center justify-center flex-shrink-0">
                 <span className="text-white font-bold text-sm">NA</span>
               </div>
               <div>
@@ -64,9 +64,9 @@ export default function Footer() {
             <div className="space-y-2">
               <a
                 href="tel:+971554495331"
-                className="flex items-center gap-2 text-white hover:text-[#FF2828] transition-colors text-sm font-medium"
+                className="flex items-center gap-2 text-white hover:text-brand-primary transition-colors text-sm font-medium"
               >
-                <Phone size={14} className="flex-shrink-0 text-[#FF2828]" />
+                <Phone size={14} className="flex-shrink-0 text-brand-primary" />
                 +971-55-4495331
               </a>
               <a
@@ -84,8 +84,8 @@ export default function Footer() {
                 WhatsApp Us
               </a>
               <div className="flex items-center gap-2 text-blue-200 text-sm">
-                <Clock size={14} className="flex-shrink-0 text-[#FF2828]" />7
-                Days, 8 AM – 10 PM
+                <Clock size={14} className="flex-shrink-0 text-brand-primary" />
+                7 Days, 8 AM – 10 PM
               </div>
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function Footer() {
                 <li key={s.href}>
                   <Link
                     href={s.href}
-                    className="text-blue-200 hover:text-[#FF2828] transition-colors text-sm"
+                    className="text-blue-200 hover:text-brand-primary transition-colors text-sm"
                   >
                     {s.name}
                   </Link>
@@ -119,7 +119,7 @@ export default function Footer() {
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className="text-blue-200 hover:text-[#FF2828] transition-colors text-sm"
+                    className="text-blue-200 hover:text-brand-primary transition-colors text-sm"
                   >
                     {l.name}
                   </Link>
@@ -137,7 +137,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/"
-                  className="text-blue-200 hover:text-[#FF2828] transition-colors text-sm"
+                  className="text-blue-200 hover:text-brand-primary transition-colors text-sm"
                 >
                   Home
                 </Link>
@@ -145,7 +145,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/about-us/"
-                  className="text-blue-200 hover:text-[#FF2828] transition-colors text-sm"
+                  className="text-blue-200 hover:text-brand-primary transition-colors text-sm"
                 >
                   About Us
                 </Link>
@@ -153,7 +153,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact-us/"
-                  className="text-blue-200 hover:text-[#FF2828] transition-colors text-sm"
+                  className="text-blue-200 hover:text-brand-primary transition-colors text-sm"
                 >
                   Contact Us
                 </Link>
@@ -161,19 +161,19 @@ export default function Footer() {
               <li>
                 <Link
                   href="/contact-us/"
-                  className="text-blue-200 hover:text-[#FF2828] transition-colors text-sm"
+                  className="text-blue-200 hover:text-brand-primary transition-colors text-sm"
                 >
                   Get a Free Quote
                 </Link>
               </li>
             </ul>
-            <div className="bg-[#FF2828] rounded-lg p-4">
+            <div className="bg-brand-primary rounded-lg p-4">
               <p className="text-white font-semibold text-sm mb-2">
                 Ready to Move?
               </p>
               <a
                 href="tel:+971554495331"
-                className="block text-center bg-white text-[#FF2828] font-bold text-sm py-2 rounded-md hover:bg-gray-100 transition-colors"
+                className="block text-center bg-white text-brand-primary font-bold text-sm py-2 rounded-md hover:bg-gray-100 transition-colors"
               >
                 Call +971-55-4495331
               </a>

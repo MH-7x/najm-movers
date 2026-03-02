@@ -252,7 +252,7 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-white transform translate-x-48 -translate-y-48" />
-          <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-[#FF2828] transform -translate-x-16 translate-y-16" />
+          <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-brand-primary transform -translate-x-16 translate-y-16" />
         </div>
 
         <div className="relative max-w-6xl mx-auto ">
@@ -314,7 +314,7 @@ export default function HomePage() {
                   key={b}
                   className="flex items-center gap-1.5 text-blue-200 text-sm bg-white/10 md:py-3 py-2 md:px-6 px-4 rounded-2xl "
                 >
-                  <CheckCircle size={14} className="text-[#FF2828]" />
+                  <CheckCircle size={14} className="text-brand-primary" />
                   {b}
                 </div>
               ))}
@@ -383,13 +383,13 @@ export default function HomePage() {
       <section className="py-24 px-4 bg-white ">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="md:text-4xl text-3xl font-bold text-[#00357A] mb-3">
+            <h2 className="md:text-4xl text-3xl font-bold text-brand-secondary mb-3">
               Why Families and Businesses in Dubai <br />{" "}
               <span className="underline underline-offset-4 text-primary">
                 Trust Us With Their Moves
               </span>
             </h2>
-            <p className="text-[#666666] max-w-2xl mx-auto">
+            <p className="text-brand-text max-w-2xl mx-auto">
               Moving is stressful. We get that. That&apos;s exactly why we keep
               things simple and straightforward.
             </p>
@@ -410,13 +410,13 @@ export default function HomePage() {
                 key={point.title}
                 className="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:border-[#00357A]/20 hover:shadow-md transition-all"
               >
-                <div className="w-12 h-12 bg-[#00357A] rounded-xl flex items-center justify-center text-xl mb-4">
+                <div className="w-12 h-12 bg-brand-secondary rounded-xl flex items-center justify-center text-xl mb-4">
                   {point.icon}
                 </div>
-                <h3 className="text-[#00357A] font-bold text-lg mb-2">
+                <h3 className="text-brand-secondary font-bold text-lg mb-2">
                   {point.title}
                 </h3>
-                <p className="text-[#666666] text-sm leading-relaxed">
+                <p className="text-brand-text text-sm leading-relaxed">
                   {point.description}
                 </p>
               </div>
@@ -445,19 +445,19 @@ export default function HomePage() {
                 href={service.href}
                 className="group bg-white rounded-xl p-6 border border-gray-100 hover:border-[#FF2828]/30 hover:shadow-lg transition-all"
               >
-                <div className="w-12 h-12 bg-[#FF2828]/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-[#FF2828] transition-colors">
+                <div className="w-12 h-12 bg-brand-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-brand-primary transition-colors">
                   <service.icon
                     size={22}
-                    className="text-[#FF2828] group-hover:text-white transition-colors"
+                    className="text-brand-primary group-hover:text-white transition-colors"
                   />
                 </div>
-                <h3 className="text-[#00357A] font-bold text-base mb-2 leading-snug">
+                <h3 className="text-brand-secondary font-bold text-base mb-2 leading-snug">
                   {service.title}
                 </h3>
-                <p className="text-[#666666] text-sm leading-relaxed mb-4">
+                <p className="text-brand-text text-sm leading-relaxed mb-4">
                   {service.description}
                 </p>
-                <span className="text-[#FF2828] text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span className="text-brand-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
                   Contact Now <ArrowRight size={14} />
                 </span>
               </Link>
@@ -467,7 +467,7 @@ export default function HomePage() {
       </section>
 
       {/* Locations */}
-      <section className="py-16 px-4 bg-[#00357A]">
+      <section className="py-16 px-4 bg-brand-secondary">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-white mb-3">
@@ -487,7 +487,7 @@ export default function HomePage() {
                 className="group bg-white/10 hover:bg-white/20 rounded-xl p-6 border border-white/20 hover:border-[#FF2828] transition-all"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 bg-[#FF2828] rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-8 h-8 bg-brand-primary rounded-lg flex items-center justify-center flex-shrink-0">
                     <Truck size={16} className="text-white" />
                   </div>
                   <h3 className="text-white font-bold text-lg">{loc.name}</h3>
@@ -508,10 +508,10 @@ export default function HomePage() {
       <section className="py-24 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-[#00357A] mb-3">
+            <h2 className="text-3xl font-bold text-brand-secondary mb-3">
               How Our Moving Process Works
             </h2>
-            <p className="text-[#666666]">
+            <p className="text-brand-text">
               Four simple steps to a stress-free move
             </p>
           </div>
@@ -541,15 +541,15 @@ export default function HomePage() {
                 },
               ].map((step) => (
                 <div key={step.step} className="text-center">
-                  <div className="w-16 h-16 bg-[#00357A] rounded-2xl flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 bg-brand-secondary rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <span className="text-white font-bold text-lg">
                       {step.step}
                     </span>
                   </div>
-                  <h3 className="text-[#00357A] font-bold text-base mb-2">
+                  <h3 className="text-brand-secondary font-bold text-base mb-2">
                     {step.title}
                   </h3>
-                  <p className="text-[#666666] text-sm leading-relaxed">
+                  <p className="text-brand-text text-sm leading-relaxed">
                     {step.text}
                   </p>
                 </div>
@@ -572,10 +572,10 @@ export default function HomePage() {
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl font-bold text-[#00357A] mb-3">
+            <h2 className="text-3xl font-bold text-brand-secondary mb-3">
               Dubai Areas We Serve
             </h2>
-            <p className="text-[#666666]">
+            <p className="text-brand-text">
               We operate across all major areas in Dubai. No matter where you
               are, we&apos;ll come to you.
             </p>
@@ -584,7 +584,7 @@ export default function HomePage() {
             {dubaiAreas.map((area) => (
               <span
                 key={area}
-                className="bg-white border border-gray-200 text-[#00357A] text-sm font-medium px-4 py-2 rounded-full hover:border-[#FF2828] hover:text-[#FF2828] transition-colors cursor-default"
+                className="bg-white border border-gray-200 text-brand-secondary text-sm font-medium px-4 py-2 rounded-full hover:border-[#FF2828] hover:text-brand-primary transition-colors cursor-default"
               >
                 {area}
               </span>

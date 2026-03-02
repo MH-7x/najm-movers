@@ -33,7 +33,7 @@ export default function ServiceHero({
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-30 -z-10">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-white transform translate-x-48 -translate-y-48" />
-        <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-[#FF2828] transform -translate-x-16 translate-y-16" />
+        <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-brand-primary transform -translate-x-16 translate-y-16" />
       </div>
 
       <div className=" max-w-6xl mx-auto ">
@@ -59,7 +59,7 @@ export default function ServiceHero({
 
         <div className="max-w-3xl">
           {subtitle && (
-            <span className="inline-block bg-[#FF2828] text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
+            <span className="inline-block bg-brand-primary text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
               {subtitle}
             </span>
           )}
@@ -100,7 +100,7 @@ export default function ServiceHero({
                 key={badge}
                 className="flex items-center gap-1.5 text-blue-200 text-sm"
               >
-                <div className="w-4 h-4 rounded-full bg-[#FF2828] flex items-center justify-center flex-shrink-0">
+                <div className="w-4 h-4 rounded-full bg-brand-primary flex items-center justify-center flex-shrink-0">
                   <svg
                     className="w-2.5 h-2.5 text-white"
                     fill="none"

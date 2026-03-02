@@ -100,10 +100,10 @@ export default function FurnitureMoversPage() {
       {/* Services */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-3">
             Our Furniture Moving Services
           </h2>
-          <p className="text-[#666666] text-center mb-12">
+          <p className="text-brand-text text-center mb-12">
             From a single sofa to a complete home setup
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -137,13 +137,13 @@ export default function FurnitureMoversPage() {
                 key={s.title}
                 className="bg-gray-50 rounded-xl p-6 border border-gray-100 hover:shadow-md transition-shadow"
               >
-                <div className="w-10 h-10 bg-[#FF2828]/10 rounded-lg flex items-center justify-center mb-4">
-                  <CheckIcon className="w-6 h-6 text-[#FF2828] font-bold" />
+                <div className="w-10 h-10 bg-brand-primary/10 rounded-lg flex items-center justify-center mb-4">
+                  <CheckIcon className="w-6 h-6 text-brand-primary font-bold" />
                 </div>
-                <h3 className="text-[#00357A] font-bold text-lg mb-2">
+                <h3 className="text-brand-secondary font-bold text-lg mb-2">
                   {s.title}
                 </h3>
-                <p className="text-[#666666] text-sm leading-relaxed">
+                <p className="text-brand-text text-sm leading-relaxed">
                   {s.desc}
                 </p>
               </div>
@@ -181,7 +181,7 @@ export default function FurnitureMoversPage() {
         </div>
       </section>
       {/* What We Move */}
-      <section className="py-16 px-4 bg-[#00357A]">
+      <section className="py-16 px-4 bg-brand-secondary">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl font-bold text-white text-center mb-3">
             Types of Furniture We Handle
@@ -198,7 +198,7 @@ export default function FurnitureMoversPage() {
               >
                 <CheckCircle
                   size={16}
-                  className="text-[#FF2828] flex-shrink-0"
+                  className="text-brand-primary flex-shrink-0"
                 />
                 <p className="text-blue-100 text-sm">{item}</p>
               </div>
@@ -216,7 +216,7 @@ export default function FurnitureMoversPage() {
       {/* Why We're Different */}
       <section className="py-16 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-12">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-12">
             Why People Call Us for Furniture Moving
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -244,13 +244,13 @@ export default function FurnitureMoversPage() {
               >
                 <CheckCircle
                   size={20}
-                  className="text-[#FF2828] flex-shrink-0 mt-0.5"
+                  className="text-brand-primary flex-shrink-0 mt-0.5"
                 />
                 <div>
-                  <h3 className="text-[#00357A] font-bold mb-1">
+                  <h3 className="text-brand-secondary font-bold mb-1">
                     {item.title}
                   </h3>
-                  <p className="text-[#666666] text-sm">{item.desc}</p>
+                  <p className="text-brand-text text-sm">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -261,10 +261,10 @@ export default function FurnitureMoversPage() {
       {/* UAE Coverage */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-3">
+          <h2 className="text-3xl font-bold text-brand-secondary text-center mb-3">
             Furniture Movers Across the UAE
           </h2>
-          <p className="text-[#666666] text-center mb-8">
+          <p className="text-brand-text text-center mb-8">
             Our furniture moving service isn&apos;t limited to Dubai.
           </p>
           {/* UAE map / routes banner */}
@@ -275,8 +275,10 @@ export default function FurnitureMoversPage() {
                 key={e.name}
                 className="bg-white rounded-xl p-5 border border-gray-100 text-center hover:shadow-md transition-shadow"
               >
-                <h3 className="text-[#00357A] font-bold mb-2">{e.name}</h3>
-                <p className="text-[#666666] text-sm">{e.desc}</p>
+                <h3 className="text-brand-secondary font-bold mb-2">
+                  {e.name}
+                </h3>
+                <p className="text-brand-text text-sm">{e.desc}</p>
               </div>
             ))}
           </div>
