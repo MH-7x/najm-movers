@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Send, Phone } from "lucide-react";
+import { Send, Phone, X, MailWarningIcon } from "lucide-react";
+import { SendMail } from "@/lib/FormSubmission";
 
 interface QuoteFormProps {
   title?: string;
@@ -10,12 +11,24 @@ interface QuoteFormProps {
   variant?: "default" | "dark" | "light";
 }
 
+export interface FormDataType {
+  name: string;
+  phone: string;
+  movingFrom: string;
+  movingTo: string;
+  moveType: string;
+  date?: string;
+  size?: string;
+  message?: string;
+}
+
 export default function QuoteForm({
   title = "Get a Free Moving Quote",
   subtitle = "Fill out the form below and we'll get back to you within 30 minutes.",
   variant = "default",
 }: QuoteFormProps) {
-  const [formData, setFormData] = useState({
+  const [errorMsg, setErrorMsg] = useState<string | null>(null);
+  const [formData, setFormData] = useState<FormDataType>({
     name: "",
     phone: "",
     movingFrom: "",
@@ -35,9 +48,24 @@ export default function QuoteForm({
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
+    setErrorMsg(null);
     e.preventDefault();
-    setSubmitted(true);
+    console.log("Form Data ::", formData);
+    try {
+      const response = await SendMail({ data: { ...formData } });
+
+      if (response.success) {
+        setSubmitted(true);
+      }
+      if (response.error) {
+        setErrorMsg(response.error);
+      }
+    } catch (error) {
+      setErrorMsg(
+        error instanceof Error ? error.message : "An error occurred.",
+      );
+    }
   };
 
   const isDark = variant === "dark";
@@ -48,7 +76,16 @@ export default function QuoteForm({
 
   if (submitted) {
     return (
-      <div className="text-center py-12 px-6">
+      <div className="text-center py-12 px-6 fixed bg-white/70 max-w-xl mx-auto shadow-2xl backdrop-blur-lg w-11/12 rounded-2xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div
+          onClick={(_) => {
+            setSubmitted(false);
+            window.location.reload();
+          }}
+          className="w-10 h-10 cursor-pointer bg-gray-200 rounded-full absolute top-3 right-3 flex items-center justify-center"
+        >
+          <X />
+        </div>
         <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
           <svg
             className="w-8 h-8 text-white"
@@ -222,7 +259,12 @@ export default function QuoteForm({
             className={inputClass + " resize-none"}
           />
         </div>
-
+        {errorMsg && (
+          <div className="w-full p-4 rounded-2xl bg-red-200 text-red-700 flex items-center gap-2">
+            <MailWarningIcon />
+            <p className=" text-sm">{errorMsg}</p>
+          </div>
+        )}
         <div className="flex flex-col sm:flex-row gap-3">
           <Button
             type="submit"
