@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import ServiceHero from "@/components/shared/ServiceHero";
 import ReviewsSection from "@/components/shared/ReviewsSection";
 import CTASection from "@/components/shared/CTASection";
@@ -6,11 +5,19 @@ import QuoteFormSection from "@/components/shared/QuoteFormSection";
 import FAQSection from "@/components/shared/FAQSection";
 import { CheckCircle } from "lucide-react";
 
-export const metadata: Metadata = {
-  title: "Cheap Movers and Packers in Dubai | Affordable Moving Services",
-  description:
-    "Affordable movers and packers in Dubai. Budget-friendly moving services without cutting corners. Call Najm Al Dhahabih at +971-55-4495331 for a low-cost quote.",
-};
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Cheap Movers and Packers in Dubai | Affordable Moving Services",
+      desc: "Affordable movers and packers in Dubai. Budget-friendly moving services without cutting corners. Call Najm Al Dhahabih at +971-55-4495331 for a low-cost quote.",
+    },
+    image: {
+      path: "/Cheap-Movers-and-Packers-in-Dubai.jpg",
+      alt: "Cheap Movers and Packers in Dubai",
+    },
+    path: "/cheap-movers-and-packers-in-dubai",
+  },
+});
 
 const cheapFaqs = [
   {
@@ -76,9 +83,18 @@ const cheapClients = [
 ];
 import imageSrc from "@/public/Cheap-Movers-and-Packers-in-Dubai.jpg";
 import Image from "next/image";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
+import Script from "next/script";
+const FaqSchema = generateFAQSchema(cheapFaqs);
 export default function CheapMoversPage() {
   return (
     <>
+      <Script
+        id="FAQSchema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: FaqSchema }}
+      />
       <ServiceHero
         imageSrc={imageSrc}
         title="Cheap Movers and Packers in Dubai — Affordable Moving Services"

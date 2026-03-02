@@ -1,17 +1,9 @@
-import type { Metadata } from "next";
 import ServiceHero from "@/components/shared/ServiceHero";
 import ReviewsSection from "@/components/shared/ReviewsSection";
 import CTASection from "@/components/shared/CTASection";
 import QuoteFormSection from "@/components/shared/QuoteFormSection";
 import FAQSection from "@/components/shared/FAQSection";
 import { CheckCircle } from "lucide-react";
-
-export const metadata: Metadata = {
-  title:
-    "House Movers Dubai | Home Shifting Services in Dubai | Najm Al Dhahabih",
-  description:
-    "Reliable house movers in Dubai for stress-free home shifting. We handle packing, furniture, and complete home relocation. Call +971-55-4495331 for a free quote.",
-};
 
 const homeFaqs = [
   {
@@ -118,10 +110,32 @@ const dubaiAreas = [
 
 import imageSrc from "@/public/House-Movers-Home-Shifting-Services-in-Dubai.jpg";
 import Image from "next/image";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
+import Script from "next/script";
 
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "House Movers Dubai | Home Shifting Services in Dubai",
+      desc: "Reliable house movers in Dubai for stress-free home shifting. We handle packing, furniture, and complete home relocation. Call +971-55-4495331 for a free quote.",
+    },
+    image: {
+      path: "/House-Movers-Home-Shifting-Services-in-Dubai.jpg",
+      alt: "House Movers Dubai | Home Shifting Services in Dubai",
+    },
+    path: "/house-movers-and-home-shifting-dubai",
+  },
+});
+const FaqSchema = generateFAQSchema(homeFaqs);
 export default function HouseMoversPage() {
   return (
     <>
+      <Script
+        id="FAQSchema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: FaqSchema }}
+      />
       <ServiceHero
         imageSrc={imageSrc}
         title="House Movers & Home Shifting Services in Dubai"

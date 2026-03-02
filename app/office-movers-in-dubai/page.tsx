@@ -6,13 +6,6 @@ import QuoteFormSection from "@/components/shared/QuoteFormSection";
 import FAQSection from "@/components/shared/FAQSection";
 import { CheckCircle } from "lucide-react";
 
-export const metadata: Metadata = {
-  title:
-    "Office Movers in Dubai | Commercial & Corporate Relocation | Najm Al Dhahabih",
-  description:
-    "Professional office movers in Dubai for smooth commercial relocation. We handle furniture, IT equipment & setup with zero downtime. Call +971-55-4495331.",
-};
-
 const officeFaqs = [
   {
     question: "Can you move our office over the weekend?",
@@ -70,11 +63,34 @@ const industries = [
   "Government and semi-government offices",
 ];
 
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Office Movers in Dubai | Commercial & Corporate Relocation",
+      desc: "Professional office movers in Dubai for smooth commercial relocation. We handle furniture, IT equipment & setup with zero downtime. Call +971-55-4495331.",
+    },
+    image: {
+      path: "/Office-Movers-in-Dubai.jpg",
+      alt: "Office Movers in Dubai",
+    },
+    path: "/office-movers-in-dubai",
+  },
+});
+
 import imageSrc from "@/public/Office-Movers-in-Dubai.jpg";
 import Image from "next/image";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
+import Script from "next/script";
+const FaqSchema = generateFAQSchema(officeFaqs);
 export default function OfficeMoversPage() {
   return (
     <>
+      <Script
+        id="FAQSchema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: FaqSchema }}
+      />
       <ServiceHero
         imageSrc={imageSrc}
         title="Office Movers in Dubai — Commercial & Corporate Relocation"

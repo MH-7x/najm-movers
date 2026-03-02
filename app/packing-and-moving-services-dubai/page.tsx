@@ -1,16 +1,9 @@
-import type { Metadata } from "next";
 import ServiceHero from "@/components/shared/ServiceHero";
 import ReviewsSection from "@/components/shared/ReviewsSection";
 import CTASection from "@/components/shared/CTASection";
 import QuoteFormSection from "@/components/shared/QuoteFormSection";
 import FAQSection from "@/components/shared/FAQSection";
 import { CheckCircle } from "lucide-react";
-
-export const metadata: Metadata = {
-  title: "Packers and Movers in Dubai | Professional Packing & Moving Services",
-  description:
-    "Trusted packers and movers in Dubai. Full packing, moving & unpacking services for homes and offices. Call Najm Al Dhahabih at +971-55-4495331.",
-};
 
 const packingFaqs = [
   {
@@ -48,11 +41,34 @@ const packingMaterials = [
   "Mattress bags — to keep mattresses clean",
 ];
 
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title:
+        "Packers and Movers in Dubai | Professional Packing & Moving Services",
+      desc: "Trusted packers and movers in Dubai. Full packing, moving & unpacking services for homes and offices. Call Najm Al Dhahabih at +971-55-4495331.",
+    },
+    image: {
+      path: "/Packing-and-Moving-Services-in-Dubai.jpg",
+      alt: "Packing and Moving Services in Dubai",
+    },
+    path: "/packing-and-moving-services-dubai",
+  },
+});
 import imageSrc from "@/public/Packing-and-Moving-Services-in-Dubai.jpg";
 import Image from "next/image";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
+import Script from "next/script";
+const FaqSchema = generateFAQSchema(packingFaqs);
 export default function PackingMovingPage() {
   return (
     <>
+      <Script
+        id="FAQSchema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: FaqSchema }}
+      />
       <ServiceHero
         imageSrc={imageSrc}
         title="Professional Packing and Moving Services in Dubai"

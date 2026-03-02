@@ -1,16 +1,9 @@
-import type { Metadata } from "next";
 import ServiceHero from "@/components/shared/ServiceHero";
 import ReviewsSection from "@/components/shared/ReviewsSection";
 import CTASection from "@/components/shared/CTASection";
 import QuoteFormSection from "@/components/shared/QuoteFormSection";
 import FAQSection from "@/components/shared/FAQSection";
 import { CheckCircle } from "lucide-react";
-
-export const metadata: Metadata = {
-  title: "Villa Movers and Packers in Dubai | Professional Villa Relocation",
-  description:
-    "Need villa movers in Dubai? Najm Al Dhahabih provides complete villa moving services including packing, furniture handling & setup. Call +971-55-4495331.",
-};
 
 const villaFaqs = [
   {
@@ -97,11 +90,36 @@ const checklist = [
   "If you have pets, arrange for someone to watch them on moving day.",
   "Let your building security or villa community management know about the move in advance.",
 ];
+
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title:
+        "Villa Movers and Packers in Dubai | Professional Villa Relocation",
+      desc: "Need villa movers in Dubai? Najm Al Dhahabih provides complete villa moving services including packing, furniture handling & setup. Call +971-55-4495331.",
+    },
+    image: {
+      path: "/Villa-Movers-and-Packers-in-Dubai.jpg",
+      alt: "Villa Movers and Packers in Dubai",
+    },
+    path: "/villa-movers-and-packers-in-dubai",
+  },
+});
+
 import imageSrc from "@/public/Villa-Movers-and-Packers-in-Dubai.jpg";
 import Image from "next/image";
+import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
+import Script from "next/script";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+const FaqSchema = generateFAQSchema(villaFaqs);
 export default function VillaMoversPage() {
   return (
     <>
+      <Script
+        id="FAQSchema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: FaqSchema }}
+      />
       <ServiceHero
         imageSrc={imageSrc}
         title="Villa Movers and Packers in Dubai - Najm Al Dhahabih"

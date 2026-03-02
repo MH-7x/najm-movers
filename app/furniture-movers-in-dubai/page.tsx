@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import ServiceHero from "@/components/shared/ServiceHero";
 import ReviewsSection from "@/components/shared/ReviewsSection";
 import CTASection from "@/components/shared/CTASection";
@@ -6,12 +5,19 @@ import QuoteFormSection from "@/components/shared/QuoteFormSection";
 import FAQSection from "@/components/shared/FAQSection";
 import { CheckCircle, CheckIcon } from "lucide-react";
 
-export const metadata: Metadata = {
-  title:
-    "Furniture Movers in Dubai | Safe Furniture Relocation | Najm Al Dhahabih",
-  description:
-    "Professional furniture movers in Dubai. We disassemble, pack, transport & reassemble your furniture safely. Serving all UAE. Call +971-55-4495331.",
-};
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Furniture Movers in Dubai | Safe Furniture Relocation",
+      desc: "Professional furniture movers in Dubai. We disassemble, pack, transport & reassemble your furniture safely. Serving all UAE. Call +971-55-4495331.",
+    },
+    image: {
+      path: "/Furniture-Movers-in-Dubai.jpg",
+      alt: "Furniture Movers in Dubai",
+    },
+    path: "/furniture-movers-in-dubai",
+  },
+});
 
 const furnitureFaqs = [
   {
@@ -69,9 +75,18 @@ const emirateServices = [
 
 import imageSrc from "@/public/Furniture-Movers-in-Dubai.jpg";
 import Image from "next/image";
+import { generateFAQSchema } from "@/lib/GenerateFaqSchema";
+import Script from "next/script";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
+const FaqSchema = generateFAQSchema(furnitureFaqs);
 export default function FurnitureMoversPage() {
   return (
     <>
+      <Script
+        id="FAQSchema"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: FaqSchema }}
+      />
       <ServiceHero
         imageSrc={imageSrc}
         title="Furniture Movers in Dubai — Safe Furniture Relocation"
