@@ -1,13 +1,21 @@
-import type { Metadata } from "next";
-import { Phone, Mail, Clock, MapPin, MessageCircle } from "lucide-react";
+import { Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import QuoteForm from "@/components/shared/QuoteForm";
 import FAQSection from "@/components/shared/FAQSection";
+import MetadataTemplate from "@/lib/MetaDataTemplate";
 
-export const metadata: Metadata = {
-  title: "Contact Us | Najm Al Dhahabih Furniture Movers | Get a Free Moving Quote",
-  description:
-    "Contact Najm Al Dhahabih Furniture Movers for a free moving quote. Call +971-55-4495331 or fill the form. Serving Dubai, Abu Dhabi, Sharjah & all UAE.",
-};
+export const metadata = MetadataTemplate({
+  data: {
+    meta: {
+      title: "Contact Najm Al Dhahabih Movers |Free Moving Quote",
+      desc: "Contact Najm Al Dhahabih Furniture Movers for a free moving quote. Call +971-55-4495331 or fill the form. Serving Dubai, Abu Dhabi, Sharjah & all UAE.",
+    },
+    image: {
+      path: "/Najm-Al-Dhahabih-Movers-LLC.jpg",
+      alt: "Najm Al Dhahabih Movers LLC",
+    },
+    path: "",
+  },
+});
 
 const contactFaqs = [
   {
@@ -16,15 +24,18 @@ const contactFaqs = [
   },
   {
     question: "Do you do free site surveys?",
-    answer: "For large moves (villas, offices, commercial), yes — we can visit your location to give you a more accurate quote.",
+    answer:
+      "For large moves (villas, offices, commercial), yes — we can visit your location to give you a more accurate quote.",
   },
   {
     question: "Can I book a move for tomorrow?",
-    answer: "Possibly. Call us and we'll check availability. We try to accommodate last-minute bookings whenever we can.",
+    answer:
+      "Possibly. Call us and we'll check availability. We try to accommodate last-minute bookings whenever we can.",
   },
   {
     question: "What are your working hours?",
-    answer: "We're available 7 days a week, from 8:00 AM to 10:00 PM. This includes Fridays and public holidays.",
+    answer:
+      "We're available 7 days a week, from 8:00 AM to 10:00 PM. This includes Fridays and public holidays.",
   },
 ];
 
@@ -60,8 +71,14 @@ const contactInfo = [
 ];
 
 const locationServed = [
-  "Dubai", "Abu Dhabi", "Sharjah", "Ajman",
-  "Ras Al Khaimah", "Al Ain", "Umm Al Quwain", "Fujairah",
+  "Dubai",
+  "Abu Dhabi",
+  "Sharjah",
+  "Ajman",
+  "Ras Al Khaimah",
+  "Al Ain",
+  "Umm Al Quwain",
+  "Fujairah",
 ];
 
 export default function ContactUsPage() {
@@ -77,39 +94,45 @@ export default function ContactUsPage() {
             Contact Us — Get a Free Moving Quote
           </h1>
           <p className="text-blue-200 text-lg">
-            Have a question? Need a quote? Ready to book your move? Reach out to us through any of the options below. We respond fast — usually within 30 minutes during working hours.
+            Have a question? Need a quote? Ready to book your move? Reach out to
+            us through any of the options below. We respond fast — usually
+            within 30 minutes during working hours.
           </p>
         </div>
       </section>
 
       {/* Contact Info + Form */}
       <section className="py-16 px-4 bg-white">
-        <div className="max-w-7xl mx-auto">
-          {/* Contact page banner image */}
-          <div className="mb-10 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-            <svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-slate-300">
-              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
-            </svg>
-            <p className="text-slate-400 text-sm font-medium text-center px-4">Reach out to our team — we respond within 30 minutes during working hours</p>
-          </div>
+        <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
             {/* Contact Info */}
             <div>
-              <h2 className="text-2xl font-bold text-[#00357A] mb-6">Get in Touch</h2>
+              <h2 className="text-2xl font-bold text-[#00357A] mb-6">
+                Get in Touch
+              </h2>
               <div className="space-y-4 mb-8">
                 {contactInfo.map((item) => (
                   <div key={item.label} className="flex items-center gap-4">
-                    <div className={`w-11 h-11 ${item.color} rounded-xl flex items-center justify-center flex-shrink-0`}>
+                    <div
+                      className={`w-11 h-11 ${item.color} rounded-xl flex items-center justify-center flex-shrink-0`}
+                    >
                       <item.icon size={18} className="text-white" />
                     </div>
                     <div>
-                      <p className="text-[#666666] text-xs font-medium uppercase tracking-wide">{item.label}</p>
+                      <p className="text-[#666666] text-xs font-medium uppercase tracking-wide">
+                        {item.label}
+                      </p>
                       {item.href ? (
-                        <a href={item.href} className="text-[#00357A] font-semibold hover:text-[#FF2828] transition-colors">
+                        <a
+                          href={item.href}
+                          className="text-[#00357A] font-semibold hover:text-[#FF2828] transition-colors"
+                        >
                           {item.value}
                         </a>
                       ) : (
-                        <p className="text-[#00357A] font-semibold">{item.value}</p>
+                        <p className="text-[#00357A] font-semibold">
+                          {item.value}
+                        </p>
                       )}
                     </div>
                   </div>
@@ -138,10 +161,15 @@ export default function ContactUsPage() {
 
               {/* Locations Served */}
               <div className="mt-8">
-                <h3 className="text-[#00357A] font-bold mb-4">We Serve All Emirates</h3>
+                <h3 className="text-[#00357A] font-bold mb-4">
+                  We Serve All Emirates
+                </h3>
                 <div className="flex flex-wrap gap-2">
                   {locationServed.map((loc) => (
-                    <span key={loc} className="bg-[#00357A] text-white text-xs font-medium px-3 py-1.5 rounded-full">
+                    <span
+                      key={loc}
+                      className="bg-[#00357A] text-white text-xs font-medium px-3 py-1.5 rounded-full"
+                    >
                       {loc}
                     </span>
                   ))}
@@ -163,46 +191,14 @@ export default function ContactUsPage() {
         </div>
       </section>
 
-      {/* Location + Gallery */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl font-bold text-[#00357A] text-center mb-10">Our Location</h2>
-          {/* Map placeholder (to be replaced with Google Maps embed) */}
-          <div className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm mb-6">
-            <div className="bg-[#00357A]/5 h-80 flex items-center justify-center border-2 border-dashed border-[#00357A]/20 rounded-2xl">
-              <div className="text-center">
-                <MapPin size={48} className="text-[#00357A] mx-auto mb-3" />
-                <p className="text-[#00357A] font-bold text-lg">Google Maps</p>
-                <p className="text-[#666666] text-sm">Map will be embedded here</p>
-                <p className="text-[#666666] text-sm mt-2">Dubai, UAE</p>
-              </div>
-            </div>
-          </div>
-          {/* Office and team images */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
-            {[
-              "Our Dubai operations base — trucks ready for daily dispatch",
-              "Customer service team ready to take your call or WhatsApp",
-              "Crew completing a successful same-day home move in Dubai",
-            ].map((label, i) => (
-              <div key={i} className="rounded-2xl overflow-hidden aspect-video bg-slate-100 flex flex-col items-center justify-center gap-3 border border-slate-200">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="text-slate-300">
-                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
-                </svg>
-                <p className="text-slate-400 text-xs font-medium text-center px-4">{label}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <FAQSection faqs={contactFaqs} title="Quick Answers" />
 
       {/* Final band */}
       <section className="bg-[#FF2828] py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
-            No matter where you&apos;re moving from or to, call us. We&apos;ll make it happen.
+            No matter where you&apos;re moving from or to, call us. We&apos;ll
+            make it happen.
           </h2>
           <a
             href="tel:+971554495331"
