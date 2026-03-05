@@ -142,7 +142,7 @@ export default function QuoteForm({
       )}
 
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 ">
           <div>
             <label className={labelClass}>Full Name *</label>
             <input
@@ -198,9 +198,12 @@ export default function QuoteForm({
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div>
-            <label className={labelClass}>Type of Move *</label>
+            <label htmlFor="moveType" className={labelClass}>
+              Type of Move *
+            </label>
             <select
               name="moveType"
+              id="moveType"
               required
               value={formData.moveType}
               onChange={handleChange}
@@ -215,10 +218,13 @@ export default function QuoteForm({
             </select>
           </div>
           <div>
-            <label className={labelClass}>Preferred Date</label>
+            <label htmlFor="date" className={labelClass}>
+              Preferred Date
+            </label>
             <input
               type="date"
               name="date"
+              id="date"
               value={formData.date}
               onChange={handleChange}
               className={inputClass}
@@ -227,9 +233,12 @@ export default function QuoteForm({
         </div>
 
         <div>
-          <label className={labelClass}>Home/Office Size</label>
+          <label htmlFor="size" className={labelClass}>
+            Home/Office Size
+          </label>
           <select
             name="size"
+            id="size"
             value={formData.size}
             onChange={handleChange}
             className={inputClass}

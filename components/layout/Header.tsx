@@ -185,7 +185,10 @@ export default function Header() {
             {/* Mobile menu */}
             <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
               <SheetTrigger asChild>
-                <button className="lg:hidden p-2 text-brand-secondary">
+                <button
+                  title="Toggle Menu"
+                  className="lg:hidden p-2 text-brand-secondary"
+                >
                   <Menu size={24} />
                 </button>
               </SheetTrigger>
