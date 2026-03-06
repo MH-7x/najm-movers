@@ -6,7 +6,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Movers and Packers in Sharjah | Najm Al Dhahabih",
-      desc: "Trusted movers and packers in Sharjah. Affordable house, villa, office & furniture moving services. Call +971-55-4495331 for a free Sharjah moving quote.",
+      desc: "Trusted movers and packers in Sharjah. Affordable house, villa, office & furniture moving services. Call +971 55 4495331 for a free Sharjah moving quote.",
     },
     image: {
       path: "/Movers-and-Packers-in-Sharjah.jpg",

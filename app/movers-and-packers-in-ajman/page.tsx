@@ -6,7 +6,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Movers and Packers in Ajman | Affordable Moving Company",
-      desc: "Affordable movers and packers in Ajman. Complete moving services for houses, offices & furniture. Call +971-55-4495331 for a free Ajman moving quote.",
+      desc: "Affordable movers and packers in Ajman. Complete moving services for houses, offices & furniture. Call +971 55 4495331 for a free Ajman moving quote.",
     },
     image: {
       path: "/Movers-and-Packers-in-Ajman.jpg",

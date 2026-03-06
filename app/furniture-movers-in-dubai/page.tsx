@@ -9,7 +9,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Furniture Movers in Dubai | Safe Furniture Relocation",
-      desc: "Professional furniture movers in Dubai. We disassemble, pack, transport & reassemble your furniture safely. Serving all UAE. Call +971-55-4495331.",
+      desc: "Professional furniture movers in Dubai. We disassemble, pack, transport & reassemble your furniture safely. Serving all UAE. Call +971 55 4495331.",
     },
     image: {
       path: "/Furniture-Movers-in-Dubai.jpg",
@@ -209,7 +209,7 @@ export default function FurnitureMoversPage() {
 
       <CTASection
         title="Need Furniture Moved? Give Us a Call."
-        subtitle="Call +971-55-4495331 or WhatsApp us a photo of what you need moved. We'll respond with a price within minutes."
+        subtitle="Call +971 55 4495331 or WhatsApp us a photo of what you need moved. We'll respond with a price within minutes."
         variant="primary"
       />
 
@@ -293,7 +293,7 @@ export default function FurnitureMoversPage() {
       />
       <CTASection
         title="Ready to Move Your Furniture?"
-        subtitle="Call +971-55-4495331 — No job is too small."
+        subtitle="Call +971 55 4495331 — No job is too small."
         variant="secondary"
       />
     </>

@@ -10,7 +10,7 @@ interface CTASectionProps {
 
 export default function CTASection({
   title = "Ready to Move? Get a Free Quote Today",
-  subtitle = "Call us at +971-55-4495331 or fill out the form. We'll get back to you within 30 minutes.",
+  subtitle = "Call us at +971 55 4495331 or fill out the form. We'll get back to you within 30 minutes.",
   variant = "primary",
 }: CTASectionProps) {
   const bgClass =
@@ -37,7 +37,7 @@ export default function CTASection({
           <a href="tel:+971554495331" className="md:w-max w-full">
             <Button variant={"outline"} className=" w-full" size={"lg"}>
               <Phone size={18} />
-              +971-55-4495331
+              +971 55 4495331
             </Button>
           </a>
           <a

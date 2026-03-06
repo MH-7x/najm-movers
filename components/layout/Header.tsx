@@ -63,7 +63,7 @@ export default function Header() {
               className="flex items-center gap-2 text-white hover:text-brand-primary transition-colors font-semibold text-sm"
             >
               <Phone size={14} />
-              +971-55-4495331
+              +971 55 4495331
             </a>
             <a
               href="https://wa.me/971554495331"
@@ -286,7 +286,7 @@ export default function Header() {
                       href="tel:+971554495331"
                       className="flex items-center justify-center gap-2 bg-brand-primary text-white font-semibold py-3 rounded-lg w-full"
                     >
-                      <Phone size={16} /> +971-55-4495331
+                      <Phone size={16} /> +971 55 4495331
                     </a>
                     <a
                       href="https://wa.me/971554495331"

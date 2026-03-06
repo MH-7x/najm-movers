@@ -96,7 +96,7 @@ export const metadata = MetadataTemplate({
     meta: {
       title:
         "Villa Movers and Packers in Dubai | Professional Villa Relocation",
-      desc: "Need villa movers in Dubai? Najm Al Dhahabih provides complete villa moving services including packing, furniture handling & setup. Call +971-55-4495331.",
+      desc: "Need villa movers in Dubai? Najm Al Dhahabih provides complete villa moving services including packing, furniture handling & setup. Call +971 55 4495331.",
     },
     image: {
       path: "/Villa-Movers-and-Packers-in-Dubai.jpg",
@@ -191,7 +191,7 @@ export default function VillaMoversPage() {
       {/* CTA band */}
       <CTASection
         title="Need to Move Your Villa? Let's Talk."
-        subtitle="Call +971-55-4495331 or send us a WhatsApp message. We'll give you a clear quote within the hour."
+        subtitle="Call +971 55 4495331 or send us a WhatsApp message. We'll give you a clear quote within the hour."
         variant="secondary"
       />
 
@@ -306,7 +306,7 @@ export default function VillaMoversPage() {
       />
       <CTASection
         title="Ready to Move Your Villa?"
-        subtitle="Call +971-55-4495331 for a free quote. We're available 7 days a week."
+        subtitle="Call +971 55 4495331 for a free quote. We're available 7 days a week."
         variant="primary"
       />
     </>

@@ -323,7 +323,7 @@ export default function AboutUsPage() {
 
       <CTASection
         title="Ready to Work With Us?"
-        subtitle="Call +971-55-4495331 to discuss your move, or visit our Contact page to send us a message."
+        subtitle="Call +971 55 4495331 to discuss your move, or visit our Contact page to send us a message."
         variant="primary"
       />
     </>

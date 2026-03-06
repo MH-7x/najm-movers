@@ -30,7 +30,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Movers and Packers in Abu Dhabi | Best Moving Company",
-      desc: "Trusted movers and packers in Abu Dhabi. Villa, house, office & furniture moving services across Abu Dhabi. Call +971-55-4495331 for a free quote.",
+      desc: "Trusted movers and packers in Abu Dhabi. Villa, house, office & furniture moving services across Abu Dhabi. Call +971 55 4495331 for a free quote.",
     },
     image: {
       path: "/Movers-and-Packers-in-Abu-Dhabi.jpg",

@@ -46,7 +46,7 @@ export const metadata = MetadataTemplate({
     meta: {
       title:
         "Packers and Movers in Dubai | Professional Packing & Moving Services",
-      desc: "Trusted packers and movers in Dubai. Full packing, moving & unpacking services for homes and offices. Call Najm Al Dhahabih at +971-55-4495331.",
+      desc: "Trusted packers and movers in Dubai. Full packing, moving & unpacking services for homes and offices. Call Najm Al Dhahabih at +971 55 4495331.",
     },
     image: {
       path: "/Packing-and-Moving-Services-in-Dubai.jpg",
@@ -212,7 +212,7 @@ export default function PackingMovingPage() {
 
       <CTASection
         title="Get Professional Packers and Movers in Dubai"
-        subtitle="Call +971-55-4495331 or fill out the form. Tell us what you need packed and moved, and we'll send you a price."
+        subtitle="Call +971 55 4495331 or fill out the form. Tell us what you need packed and moved, and we'll send you a price."
         variant="primary"
       />
 
@@ -322,7 +322,7 @@ export default function PackingMovingPage() {
       />
       <CTASection
         title="Ready to Book Professional Packers?"
-        subtitle="Call +971-55-4495331 — All packing materials included, no hidden charges."
+        subtitle="Call +971 55 4495331 — All packing materials included, no hidden charges."
         variant="secondary"
       />
     </>

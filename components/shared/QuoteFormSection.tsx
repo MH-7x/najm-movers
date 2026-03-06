@@ -24,7 +24,7 @@ export default function QuoteFormSection({
                 {
                   icon: <Phone className="text-white" size={19} />,
                   title: "Call or WhatsApp",
-                  text: "+971-55-4495331 — We're available 7 days a week, 8 AM to 10 PM.",
+                  text: "+971 55 4495331 — We're available 7 days a week, 8 AM to 10 PM.",
                 },
                 {
                   icon: <AlarmClockCheck className="text-white" size={19} />,

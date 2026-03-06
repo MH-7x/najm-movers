@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import Image from "next/image";
 
 const services = [
   {
@@ -43,20 +44,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company info */}
           <div>
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-brand-primary flex items-center justify-center flex-shrink-0">
-                <span className="text-white font-bold text-sm">NA</span>
-              </div>
-              <div>
-                <p className="text-white font-bold leading-tight">
-                  Najm Al Dhahabih
-                </p>
-                <p className="text-blue-200 text-xs leading-tight">
-                  Furniture Movers LLC
-                </p>
-              </div>
-            </div>
-            <p className="text-blue-200 text-sm leading-relaxed mb-4">
+            <Image
+              src={"/logo-white.svg"}
+              width={180}
+              height={180}
+              alt="Najm Al Dhahabih Furniture Movers LLC Logo"
+            />
+            <p className="text-blue-200 text-sm leading-relaxed mb-4 mt-4">
               Professional movers and packers in Dubai and across all UAE
               emirates. Trusted by thousands of families and businesses for
               safe, reliable relocation services.
@@ -67,7 +61,7 @@ export default function Footer() {
                 className="flex items-center gap-2 text-white hover:text-brand-primary transition-colors text-sm font-medium"
               >
                 <Phone size={14} className="flex-shrink-0 text-brand-primary" />
-                +971-55-4495331
+                +971 55 4495331
               </a>
               <a
                 href="https://wa.me/971554495331"
@@ -175,7 +169,7 @@ export default function Footer() {
                 href="tel:+971554495331"
                 className="block text-center bg-white text-brand-primary font-bold text-sm py-2 rounded-md hover:bg-gray-100 transition-colors"
               >
-                Call +971-55-4495331
+                Call +971 55 4495331
               </a>
             </div>
           </div>

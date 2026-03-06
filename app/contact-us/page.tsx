@@ -7,7 +7,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Contact Najm Al Dhahabih Movers |Free Moving Quote",
-      desc: "Contact Najm Al Dhahabih Furniture Movers for a free moving quote. Call +971-55-4495331 or fill the form. Serving Dubai, Abu Dhabi, Sharjah & all UAE.",
+      desc: "Contact Najm Al Dhahabih Furniture Movers for a free moving quote. Call +971 55 4495331 or fill the form. Serving Dubai, Abu Dhabi, Sharjah & all UAE.",
     },
     image: {
       path: "/Najm-Al-Dhahabih-Movers-LLC.jpg",
@@ -43,14 +43,14 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+971-55-4495331",
+    value: "+971 55 4495331",
     href: "tel:+971554495331",
     color: "bg-brand-primary",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp",
-    value: "+971-55-4495331",
+    value: "+971 55 4495331",
     href: "https://wa.me/971554495331",
     color: "bg-green-500",
   },
@@ -146,7 +146,7 @@ export default function ContactUsPage() {
                   className="flex items-center justify-center gap-2 bg-brand-primary hover:bg-[#cc1f1f] text-white font-bold py-3.5 rounded-lg transition-colors w-full"
                 >
                   <Phone size={16} />
-                  Call +971-55-4495331
+                  Call +971 55 4495331
                 </a>
                 <a
                   href="https://wa.me/971554495331"
@@ -205,7 +205,7 @@ export default function ContactUsPage() {
             className="inline-flex items-center gap-2 bg-white text-brand-primary font-bold py-4 px-10 rounded-lg mt-4 hover:bg-gray-100 transition-colors text-lg"
           >
             <Phone size={20} />
-            +971-55-4495331
+            +971 55 4495331
           </a>
         </div>
       </section>

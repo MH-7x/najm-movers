@@ -27,7 +27,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Movers and Packers in Dubai | Najm Al Dhahabih Furniture Movers",
-      desc: "Looking for trusted movers and packers in Dubai? Najm Al Dhahabih offers house, villa, office & furniture moving services across UAE. Call +971-55-4495331 for a free quote.",
+      desc: "Looking for trusted movers and packers in Dubai? Najm Al Dhahabih offers house, villa, office & furniture moving services across UAE. Call +971 55 4495331 for a free quote.",
     },
     image: {
       path: "/Najm-Al-Dhahabih-Movers-LLC.jpg",
@@ -194,7 +194,7 @@ const homeFaqs = [
   {
     question: "How much do movers and packers charge in Dubai?",
     answer:
-      "It depends on the size of your move. A studio apartment might cost around AED 800–1,200, while a 2-bedroom apartment typically ranges from AED 1,500–2,500. Villa moves start from AED 3,000 and go up based on the number of rooms and items. Call us at +971-55-4495331 for an exact quote.",
+      "It depends on the size of your move. A studio apartment might cost around AED 800–1,200, while a 2-bedroom apartment typically ranges from AED 1,500–2,500. Villa moves start from AED 3,000 and go up based on the number of rooms and items. Call us at +971 55 4495331 for an exact quote.",
   },
   {
     question: "How early should I book movers in Dubai?",
@@ -329,7 +329,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10">
             {[
               {
-                src: "/Expert-team-wrapping-and-packing-furniture-for-transport.jpg",
+                src: "/Fragile-Items-Strategic-Loading.jpg",
                 title:
                   "Professional moving crew handling a full villa relocation",
               },
@@ -457,7 +457,10 @@ export default function HomePage() {
                 <p className="text-brand-text text-sm leading-relaxed mb-4">
                   {service.description}
                 </p>
-                <span className="text-brand-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all">
+                <span
+                  title={service.title}
+                  className="text-brand-primary text-sm font-semibold flex items-center gap-1 group-hover:gap-2 transition-all"
+                >
                   Contact Now <ArrowRight size={14} />
                 </span>
               </Link>
@@ -603,7 +606,7 @@ export default function HomePage() {
       {/* Final CTA */}
       <CTASection
         title="Ready to Move? Get a Free Quote Today"
-        subtitle="Call us at +971-55-4495331 or fill out the form. We'll get back to you within 30 minutes with a quote."
+        subtitle="Call us at +971 55 4495331 or fill out the form. We'll get back to you within 30 minutes with a quote."
         variant="primary"
       />
     </>

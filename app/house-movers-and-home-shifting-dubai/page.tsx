@@ -118,7 +118,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "House Movers Dubai | Home Shifting Services in Dubai",
-      desc: "Reliable house movers in Dubai for stress-free home shifting. We handle packing, furniture, and complete home relocation. Call +971-55-4495331 for a free quote.",
+      desc: "Reliable house movers in Dubai for stress-free home shifting. We handle packing, furniture, and complete home relocation. Call +971 55 4495331 for a free quote.",
     },
     image: {
       path: "/House-Movers-Home-Shifting-Services-in-Dubai.jpg",
@@ -264,7 +264,7 @@ export default function HouseMoversPage() {
 
       <CTASection
         title="Planning a Home Move? Call Us Now."
-        subtitle="Call +971-55-4495331 or WhatsApp us with your move details. We'll send you a quote within 30 minutes."
+        subtitle="Call +971 55 4495331 or WhatsApp us with your move details. We'll send you a quote within 30 minutes."
         variant="primary"
       />
 
@@ -369,7 +369,7 @@ export default function HouseMoversPage() {
       />
       <CTASection
         title="Ready to Move Your Home?"
-        subtitle="Call +971-55-4495331 — We're available 7 days a week, 8 AM to 10 PM."
+        subtitle="Call +971 55 4495331 — We're available 7 days a week, 8 AM to 10 PM."
         variant="primary"
       />
     </>

@@ -9,7 +9,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Cheap Movers and Packers in Dubai | Affordable Moving Services",
-      desc: "Affordable movers and packers in Dubai. Budget-friendly moving services without cutting corners. Call Najm Al Dhahabih at +971-55-4495331 for a low-cost quote.",
+      desc: "Affordable movers and packers in Dubai. Budget-friendly moving services without cutting corners. Call Najm Al Dhahabih at +971 55 4495331 for a low-cost quote.",
     },
     image: {
       path: "/Cheap-Movers-and-Packers-in-Dubai.jpg",
@@ -222,7 +222,7 @@ export default function CheapMoversPage() {
 
       <CTASection
         title="Moving on a Budget? We've Got You."
-        subtitle="Call +971-55-4495331 and tell us what you need. We'll give you the most affordable option — no pressure, no hidden costs."
+        subtitle="Call +971 55 4495331 and tell us what you need. We'll give you the most affordable option — no pressure, no hidden costs."
         variant="primary"
       />
 
@@ -362,7 +362,7 @@ export default function CheapMoversPage() {
       />
       <CTASection
         title="Moving on a Budget? Call Us Now."
-        subtitle="Call +971-55-4495331 — Honest quotes, no hidden costs, real professional service."
+        subtitle="Call +971 55 4495331 — Honest quotes, no hidden costs, real professional service."
         variant="primary"
       />
     </>

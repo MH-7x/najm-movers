@@ -138,7 +138,7 @@ export default function LocationPage({
 
       <CTASection
         title={`Moving in ${locationName}? Call Us Today.`}
-        subtitle="Call +971-55-4495331 or WhatsApp us your details. Free quotes provided within 30 minutes."
+        subtitle="Call +971 55 4495331 or WhatsApp us your details. Free quotes provided within 30 minutes."
         variant="secondary"
       />
 
@@ -301,7 +301,7 @@ export default function LocationPage({
                 href="tel:+971554495331"
                 className="text-brand-primary font-semibold"
               >
-                +971-55-4495331
+                +971 55 4495331
               </a>{" "}
               for an exact quote.
             </p>
@@ -316,7 +316,7 @@ export default function LocationPage({
       />
       <CTASection
         title={`Ready to Move in ${locationName}?`}
-        subtitle="Call +971-55-4495331 — We're available 7 days a week, 8 AM to 10 PM."
+        subtitle="Call +971 55 4495331 — We're available 7 days a week, 8 AM to 10 PM."
         variant="primary"
       />
     </>

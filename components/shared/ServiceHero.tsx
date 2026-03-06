@@ -74,7 +74,7 @@ export default function ServiceHero({
             <a href="tel:+971554495331">
               <Button className="md:w-max w-full" size={"lg"}>
                 <Phone size={18} />
-                +971-55-4495331
+                +971 55 4495331
               </Button>
             </a>
             <Link href="/contact-us/">

@@ -6,7 +6,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Movers and Packers in Ras Al Khaimah | Instant Quotes",
-      desc: "Reliable movers and packers in Ras Al Khaimah. House, villa & office moving with full packing. Call +971-55-4495331 for a free RAK moving quote.",
+      desc: "Reliable movers and packers in Ras Al Khaimah. House, villa & office moving with full packing. Call +971 55 4495331 for a free RAK moving quote.",
     },
     image: {
       path: "/Movers-and-Packers-in-Ras-Al-Khaimah.jpg",

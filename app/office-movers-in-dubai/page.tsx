@@ -67,7 +67,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Office Movers in Dubai | Commercial & Corporate Relocation",
-      desc: "Professional office movers in Dubai for smooth commercial relocation. We handle furniture, IT equipment & setup with zero downtime. Call +971-55-4495331.",
+      desc: "Professional office movers in Dubai for smooth commercial relocation. We handle furniture, IT equipment & setup with zero downtime. Call +971 55 4495331.",
     },
     image: {
       path: "/Office-Movers-in-Dubai.jpg",
@@ -189,7 +189,7 @@ export default function OfficeMoversPage() {
 
       <CTASection
         title="Need to Relocate Your Office? Let's Plan It."
-        subtitle="Call +971-55-4495331 or email us your requirements. We'll send a detailed proposal within 24 hours."
+        subtitle="Call +971 55 4495331 or email us your requirements. We'll send a detailed proposal within 24 hours."
         variant="secondary"
       />
 
@@ -320,7 +320,7 @@ export default function OfficeMoversPage() {
       />
       <CTASection
         title="Ready to Move Your Office?"
-        subtitle="Call +971-55-4495331 — Weekend moves are our specialty for offices."
+        subtitle="Call +971 55 4495331 — Weekend moves are our specialty for offices."
         variant="primary"
       />
     </>

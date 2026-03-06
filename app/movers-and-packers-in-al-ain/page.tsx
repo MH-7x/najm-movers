@@ -6,7 +6,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Movers and Packers in Al Ain | Trusted Moving Company",
-      desc: "Professional movers and packers in Al Ain. House, villa & office relocation with full packing services. Call +971-55-4495331 for a free Al Ain moving quote.",
+      desc: "Professional movers and packers in Al Ain. House, villa & office relocation with full packing services. Call +971 55 4495331 for a free Al Ain moving quote.",
     },
     image: {
       path: "/Movers-and-Packers-in-in-Al-Ain.jpg",
