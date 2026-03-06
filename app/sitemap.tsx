@@ -105,7 +105,7 @@ const pages: MetadataRoute.Sitemap = [
 export default function sitemap(): MetadataRoute.Sitemap {
   return pages.map((page) => ({
     ...page,
-    url: `${APP.url}${page.url}`,
+    url: `${APP.url}${page.url}/`,
     images: page.images ? page.images.map((img) => `${APP.url}${img}`) : [],
     lastModified: page.lastModified,
   }));
