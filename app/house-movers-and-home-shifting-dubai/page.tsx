@@ -134,6 +134,7 @@ export default function HouseMoversPage() {
       <Script
         id="FAQSchema"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: FaqSchema }}
       />
       <ServiceHero

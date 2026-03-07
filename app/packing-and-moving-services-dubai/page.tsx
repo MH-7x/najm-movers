@@ -67,6 +67,7 @@ export default function PackingMovingPage() {
       <Script
         id="FAQSchema"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: FaqSchema }}
       />
       <ServiceHero

@@ -48,6 +48,7 @@ export default function AbuDhabiMoversPage() {
       <Script
         id="FAQSchema"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: FaqSchema }}
       />
       <LocationPage

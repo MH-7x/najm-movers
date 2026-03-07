@@ -118,6 +118,7 @@ export default function VillaMoversPage() {
       <Script
         id="FAQSchema"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: FaqSchema }}
       />
       <ServiceHero

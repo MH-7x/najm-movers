@@ -237,6 +237,7 @@ export default function HomePage() {
       <Script
         id="FAQSchema"
         type="application/ld+json"
+        strategy="beforeInteractive"
         dangerouslySetInnerHTML={{ __html: FaqSchema }}
       />
       {/* Hero Section */}

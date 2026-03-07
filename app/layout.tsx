@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ActionButton from "@/components/ActionButtons";
+import GTM from "@/components/GTM";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -42,6 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GTM />
       <body className={`${inter.variable} antialiased font-sans`}>
         <Header />
         <main>{children}</main>
