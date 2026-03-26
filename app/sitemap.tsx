@@ -89,16 +89,30 @@ const pages: MetadataRoute.Sitemap = [
   },
   {
     url: "/packing-and-moving-services-dubai",
-    changeFrequency: "yearly",
+    changeFrequency: "monthly",
     priority: 0.7, // was 7 -> now valid
     images: ["/Packing-and-Moving-Services-in-Dubai.jpg"],
     lastModified: "2026-03-07",
   },
   {
     url: "/villa-movers-and-packers-in-dubai",
-    changeFrequency: "yearly",
+    changeFrequency: "monthly",
     priority: 0.7, // was 7 -> now valid
     images: ["/Villa-Movers-and-Packers-in-Dubai.jpg"],
+    lastModified: "2026-03-07",
+  },
+  {
+    url: "/privacy-policy",
+    changeFrequency: "yearly",
+    priority: 0.7, // was 7 -> now valid
+    images: ["/Najm-Al-Dhahabih-Movers-In-Dubai.jpg"],
+    lastModified: "2026-03-07",
+  },
+  {
+    url: "/terms-and-conditions",
+    changeFrequency: "yearly",
+    priority: 0.7, // was 7 -> now valid
+    images: ["/Najm-Al-Dhahabih-Movers-In-Dubai.jpg"],
     lastModified: "2026-03-07",
   },
 ];
