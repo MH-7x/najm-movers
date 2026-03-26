@@ -9,7 +9,7 @@ export const metadata = MetadataTemplate({
   data: {
     meta: {
       title: "Cheap Movers and Packers in Dubai | Affordable Moving Services",
-      desc: "Affordable movers and packers in Dubai. Budget-friendly moving services without cutting corners. Call Najm Al Dhahabih at +971 55 4495331 for a low-cost quote.",
+      desc: "Affordable movers and packers in Dubai. Budget-friendly moving services without cutting corners. Call Al Dhahabih Movers and Packers at +971 55 4495331 for a low-cost quote.",
     },
     image: {
       path: "/Cheap-Movers-and-Packers-in-Dubai.jpg",
@@ -100,7 +100,7 @@ export default function CheapMoversPage() {
         imageSrc={imageSrc}
         title="Cheap Movers and Packers in Dubai — Affordable Moving Services"
         subtitle="Budget Friendly, Not Low Quality"
-        description="Let's be real — moving is expensive. Between the new rent deposit, DEWA connection, and a hundred other costs, the last thing you want is a moving bill that makes you wince. Najm Al Dhahabih offers affordable moving packages that are actually affordable — not 'affordable' with a bunch of hidden fees at the end."
+        description="Let's be real — moving is expensive. Between the new rent deposit, DEWA connection, and a hundred other costs, the last thing you want is a moving bill that makes you wince. Al Dhahabih Movers and Packers offers affordable moving packages that are actually affordable — not 'affordable' with a bunch of hidden fees at the end."
         breadcrumb={{ label: "Cheap Movers Dubai" }}
       />
 
@@ -159,7 +159,7 @@ export default function CheapMoversPage() {
               },
               {
                 src: "/Najm-al-dhahabih-affordable-movers-in-dubai.jpg",
-                alt: "najm al dhahabih affordable movers in dubai",
+                alt: "Al Dhahabih Movers and Packers affordable movers in dubai",
               },
             ].map((img, i) => (
               <div

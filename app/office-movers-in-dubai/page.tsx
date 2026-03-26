@@ -96,7 +96,7 @@ export default function OfficeMoversPage() {
         imageSrc={imageSrc}
         title="Office Movers in Dubai — Commercial & Corporate Relocation"
         subtitle="Zero Downtime Office Moves"
-        description="Moving an office is different from moving a home. There's more at stake. Najm Al Dhahabih handles commercial and corporate relocations across Dubai — from small startup offices in Business Bay to full-floor corporate setups in DIFC. We plan the move around your schedule."
+        description="Moving an office is different from moving a home. There's more at stake. Al Dhahabih Movers and Packers handles commercial and corporate relocations across Dubai — from small startup offices in Business Bay to full-floor corporate setups in DIFC. We plan the move around your schedule."
         breadcrumb={{ label: "Office Movers Dubai" }}
       />
 

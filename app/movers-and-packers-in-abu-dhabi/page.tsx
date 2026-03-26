@@ -56,7 +56,7 @@ export default function AbuDhabiMoversPage() {
         heroTitle="Movers and Packers in Abu Dhabi — Best Moving Company"
         imageSrc={imageSrc}
         heroSubtitle="Trusted Abu Dhabi Movers"
-        heroDescription="Looking for a reliable moving company in Abu Dhabi? Najm Al Dhahabih Furniture Movers provides complete moving and packing services across the capital — from small apartment shifts in Khalifa City to full villa relocations in Saadiyat Island. We handle everything: packing, furniture disassembly, loading, transport, unloading, reassembly, and unpacking."
+        heroDescription="Looking for a reliable moving company in Abu Dhabi? Al Dhahabih Movers and Packers provides complete moving and packing services across the capital — from small apartment shifts in Khalifa City to full villa relocations in Saadiyat Island. We handle everything: packing, furniture disassembly, loading, transport, unloading, reassembly, and unpacking."
         services={[
           {
             title: "Villa Movers in Abu Dhabi",
@@ -143,7 +143,7 @@ export default function AbuDhabiMoversPage() {
           { type: "Villa Move", price: "From AED 3,500" },
         ]}
         faqs={AbuDhabiFaqs}
-        metaTitle="Movers and Packers in Abu Dhabi | Best Moving Company | Najm Al Dhahabih"
+        metaTitle="Movers and Packers in Abu Dhabi | Best Moving Company "
         metaDescription="Trusted movers and packers in Abu Dhabi."
       />
     </>

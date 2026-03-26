@@ -40,7 +40,7 @@ export default function AjmanMoversPage() {
       locationName="Ajman"
       heroTitle="Movers and Packers in Ajman — Affordable Moving Services"
       heroSubtitle="Budget-Friendly Ajman Movers"
-      heroDescription="Ajman is known for its affordable living — and your moving service should match that. Najm Al Dhahabih provides budget-friendly moving services across Ajman without cutting corners on quality. Whether you're moving within Ajman, or relocating to or from Dubai, Sharjah, or anywhere in the UAE, we provide the same professional service: packing, loading, safe transport, and full setup."
+      heroDescription="Ajman is known for its affordable living — and your moving service should match that. Al Dhahabih Movers and Packers provides budget-friendly moving services across Ajman without cutting corners on quality. Whether you're moving within Ajman, or relocating to or from Dubai, Sharjah, or anywhere in the UAE, we provide the same professional service: packing, loading, safe transport, and full setup."
       services={[
         {
           title: "House Movers in Ajman",
@@ -134,7 +134,7 @@ export default function AjmanMoversPage() {
             "Yes. We operate 7 days a week including Fridays and public holidays.",
         },
       ]}
-      metaTitle="Movers and Packers in Ajman | Affordable Moving Company | Najm Al Dhahabih"
+      metaTitle="Movers and Packers in Ajman | Affordable Moving Company"
       metaDescription="Affordable movers and packers in Ajman."
     />
   );

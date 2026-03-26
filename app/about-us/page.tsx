@@ -16,8 +16,8 @@ import MetadataTemplate from "@/lib/MetaDataTemplate";
 export const metadata = MetadataTemplate({
   data: {
     meta: {
-      title: "About Us | Najm Al Dhahabih Furniture Movers LLC",
-      desc: "Learn about Najm Al Dhahabih Furniture Movers LLC — a trusted moving company in UAE offering professional relocation services across Dubai, Abu Dhabi, Sharjah & more.",
+      title: "About Us | Al Dhahabih Movers and Packers",
+      desc: "Learn about Al Dhahabih Movers and Packers — a trusted moving company in UAE offering professional relocation services across Dubai, Abu Dhabi, Sharjah & more.",
     },
     image: {
       path: "/trusted-villa-movers-dubai-experienced-moving-team.jpg",
@@ -82,7 +82,7 @@ export default function AboutUsPage() {
         </div>
         <div className="relative max-w-4xl mx-auto text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-5">
-            About Najm Al Dhahabih Furniture Movers LLC
+            About Al Dhahabih Movers and Packers
           </h1>
           <p className="text-blue-200 text-lg leading-relaxed">
             A professional moving and relocation company based in the UAE —
@@ -102,8 +102,8 @@ export default function AboutUsPage() {
               </h2>
               <div className="space-y-4 text-brand-text leading-relaxed">
                 <p>
-                  Najm Al Dhahabih Furniture Movers LLC is a professional moving
-                  and relocation company based in the UAE. We provide packing,
+                  Al Dhahabih Movers and Packers is a professional moving and
+                  relocation company based in the UAE. We provide packing,
                   moving, and storage services for homes, offices, and
                   businesses across all seven emirates.
                 </p>
@@ -145,7 +145,7 @@ export default function AboutUsPage() {
                   src={
                     "/trusted-villa-movers-dubai-experienced-moving-team.jpg"
                   }
-                  alt="Najm Al Dhahabih Furniture Movers LLC"
+                  alt="Al Dhahabih Movers and Packers"
                   fill
                   className="object-cover"
                 />
@@ -213,7 +213,7 @@ export default function AboutUsPage() {
           <div className="mb-10 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 relative ">
             <Image
               src={"/najm-al-dhahabih-movers-llc-truck.jpg"}
-              alt="Najm Al Dhahabih Movers LLC Truck"
+              alt="Al Dhahabih Movers and Packers Truck"
               fill
               className="object-cover"
             />
@@ -290,11 +290,11 @@ export default function AboutUsPage() {
               <Trophy className="text-brand-primary " size={60} />
             </div>
             <p className="text-brand-text leading-relaxed mb-6">
-              Najm Al Dhahabih Furniture Movers LLC is a fully licensed and
-              registered company in the UAE. We operate with all required trade
-              licenses, transport permits, and insurance documentation. When you
-              hire us, you hire a legitimate, professional company — not a
-              casual operation.
+              Al Dhahabih Movers and Packers is a fully licensed and registered
+              company in the UAE. We operate with all required trade licenses,
+              transport permits, and insurance documentation. When you hire us,
+              you hire a legitimate, professional company — not a casual
+              operation.
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {[

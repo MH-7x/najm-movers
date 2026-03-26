@@ -96,7 +96,7 @@ export const metadata = MetadataTemplate({
     meta: {
       title:
         "Villa Movers and Packers in Dubai | Professional Villa Relocation",
-      desc: "Need villa movers in Dubai? Najm Al Dhahabih provides complete villa moving services including packing, furniture handling & setup. Call +971 55 4495331.",
+      desc: "Need villa movers in Dubai? Al Dhahabih Movers and Packers provides complete villa moving services including packing, furniture handling & setup. Call +971 55 4495331.",
     },
     image: {
       path: "/Villa-Movers-and-Packers-in-Dubai.jpg",
@@ -123,9 +123,9 @@ export default function VillaMoversPage() {
       />
       <ServiceHero
         imageSrc={imageSrc}
-        title="Villa Movers and Packers in Dubai - Najm Al Dhahabih"
+        title="Villa Movers and Packers in Dubai - Al Dhahabih Movers"
         subtitle="Professional Villa Relocation"
-        description="Moving out of a villa is a different kind of job — more rooms, heavier furniture, outdoor items. At Najm Al Dhahabih, villa relocations are one of our core services. We've moved families out of villas in Arabian Ranches, Emirates Hills, JVC, Mirdif, Palm Jumeirah, Al Barsha, and just about every villa community in Dubai."
+        description="Moving out of a villa is a different kind of job — more rooms, heavier furniture, outdoor items. At Al Dhahabih Movers and Packers, villa relocations are one of our core services. We've moved families out of villas in Arabian Ranches, Emirates Hills, JVC, Mirdif, Palm Jumeirah, Al Barsha, and just about every villa community in Dubai."
         breadcrumb={{ label: "Villa Movers in Dubai" }}
       />
 

@@ -41,7 +41,7 @@ export default function RAKMoversPage() {
       locationName="Ras Al Khaimah"
       heroTitle="Movers and Packers in Ras Al Khaimah - Free Moving Quotes"
       heroSubtitle="Professional RAK Movers"
-      heroDescription="Ras Al Khaimah might be further from Dubai, but that doesn't mean you should settle for less when it comes to your moving service. Najm Al Dhahabih provides the same professional, fully-equipped moving service in RAK that we deliver in every other emirate. Whether you're relocating within RAK, moving from RAK to Dubai, or shifting from Dubai up to RAK, we've got you covered."
+      heroDescription="Ras Al Khaimah might be further from Dubai, but that doesn't mean you should settle for less when it comes to your moving service. Al Dhahabih Movers and Packers provides the same professional, fully-equipped moving service in RAK that we deliver in every other emirate. Whether you're relocating within RAK, moving from RAK to Dubai, or shifting from Dubai up to RAK, we've got you covered."
       services={[
         {
           title: "House Movers in RAK",
@@ -145,7 +145,7 @@ export default function RAKMoversPage() {
             "All items are padded with moving blankets, wrapped in stretch film, and secured with tie-down straps in the truck. Nothing moves during the highway drive.",
         },
       ]}
-      metaTitle="Movers and Packers in Ras Al Khaimah | Najm Al Dhahabih Movers"
+      metaTitle="Movers and Packers in Ras Al Khaimah | Al Dhahabih Movers and Packers Movers"
       metaDescription="Reliable movers and packers in Ras Al Khaimah."
     />
   );

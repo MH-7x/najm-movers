@@ -160,18 +160,23 @@ export default function Footer() {
                   Get a Free Quote
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/privacy-policy/"
+                  className="text-blue-200 hover:text-brand-primary transition-colors text-sm"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/terms-and-conditions/"
+                  className="text-blue-200 hover:text-brand-primary transition-colors text-sm"
+                >
+                  Terms and Conditions
+                </Link>
+              </li>
             </ul>
-            <div className="bg-brand-primary rounded-lg p-4">
-              <p className="text-white font-semibold text-sm mb-2">
-                Ready to Move?
-              </p>
-              <a
-                href="tel:+971554495331"
-                className="block text-center bg-white text-brand-primary font-bold text-sm py-2 rounded-md hover:bg-gray-100 transition-colors"
-              >
-                Call +971 55 4495331
-              </a>
-            </div>
           </div>
         </div>
       </div>
@@ -180,8 +185,8 @@ export default function Footer() {
       <div className="border-t border-blue-700 py-4 px-4">
         <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-blue-300 text-xs text-center sm:text-left">
-            © {new Date().getFullYear()} Najm Al Dhahabih Furniture Movers LLC.
-            All rights reserved.
+            © {new Date().getFullYear()} Al Dhahabih Movers and Packers. All
+            rights reserved.
           </p>
           <p className="text-blue-300 text-xs">
             Licensed & Registered in UAE | Serving All Emirates

@@ -10,7 +10,7 @@ const googleReviews = [
     time: "5 days ago",
     star: 5,
     review:
-      "Najm Al Dhahabih moved us from Dubai Marina to JVC without a single issue. The team was careful with every piece of furniture and finished faster than I expected.",
+      " Al Dhahabih Movers  moved us from Dubai Marina to JVC without a single issue. The team was careful with every piece of furniture and finished faster than I expected.",
     image: "/ava/32.jpg",
   },
   {
@@ -34,7 +34,7 @@ const googleReviews = [
     time: "1 month ago",
     star: 5,
     review:
-      "We used Najm Al Dhahabih for our villa move in Abu Dhabi. The workers were respectful, hardworking, and reassembled all the wardrobes without any problems.",
+      "We used  Al Dhahabih Movers for our villa move in Abu Dhabi. The workers were respectful, hardworking, and reassembled all the wardrobes without any problems.",
     image: "/ava/68.jpg",
   },
   {
@@ -50,7 +50,7 @@ const googleReviews = [
     time: "6 weeks ago",
     star: 5,
     review:
-      "I was nervous about moving my piano but Najm Al Dhahabih handled it like pros. Very careful team and good communication from start to finish.",
+      "I was nervous about moving my piano but Al Dhahabih Movers handled it like pros. Very careful team and good communication from start to finish.",
     image: "/ava/90.jpg",
   },
   {
@@ -66,7 +66,7 @@ const googleReviews = [
     time: "3 weeks ago",
     star: 5,
     review:
-      "They packed all my kitchen items and fragile stuff so well. Not a single scratch on anything. Will recommend Najm Al Dhahabih to my friends.",
+      "They packed all my kitchen items and fragile stuff so well. Not a single scratch on anything. Will recommend Al Dhahabih Movers to my friends.",
     image: "/ava/29.jpg",
   },
   {
@@ -82,7 +82,7 @@ const googleReviews = [
     time: "8 days ago",
     star: 5,
     review:
-      "Smooth move from Ajman to Dubai. The team was friendly and didn't rush through anything. Would definitely hire Najm Al Dhahabih again.",
+      "Smooth move from Ajman to Dubai. The team was friendly and didn't rush through anything. Would definitely hire Al Dhahabih Movers again.",
     image: "/ava/19.jpg",
   },
 ];

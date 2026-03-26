@@ -92,7 +92,7 @@ export default function FurnitureMoversPage() {
         imageSrc={imageSrc}
         title="Furniture Movers in Dubai — Safe Furniture Relocation"
         subtitle="Single Item to Full Home Furniture"
-        description="Sometimes you don't need a full house move. Maybe you bought a new sofa and need it delivered to your apartment. Or you're sending a dining set to Sharjah. Whether it's one piece or an entire home's worth of furniture, Najm Al Dhahabih handles it with the same level of care."
+        description="Sometimes you don't need a full house move. Maybe you bought a new sofa and need it delivered to your apartment. Or you're sending a dining set to Sharjah. Whether it's one piece or an entire home's worth of furniture, Al Dhahabih Movers and Packers handles it with the same level of care."
         breadcrumb={{ label: "Furniture Movers Dubai" }}
       />
 

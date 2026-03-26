@@ -26,12 +26,12 @@ import FAQSection from "@/components/shared/FAQSection";
 export const metadata = MetadataTemplate({
   data: {
     meta: {
-      title: "Movers and Packers in Dubai | Najm Al Dhahabih Furniture Movers",
-      desc: "Looking for trusted movers and packers in Dubai? Najm Al Dhahabih offers house, villa, office & furniture moving services across UAE. Call +971 55 4495331 for a free quote.",
+      title: "Movers and Packers in Dubai | Al Dhahabih Movers and Packers",
+      desc: "Looking for trusted movers and packers in Dubai? Al Dhahabih Movers and Packers offers house, villa, office & furniture moving services across UAE. Call +971 55 4495331 for a free quote.",
     },
     image: {
       path: "/Najm-Al-Dhahabih-Movers-LLC.jpg",
-      alt: "Najm Al Dhahabih Movers LLC",
+      alt: "Al Dhahabih Movers and Packers",
     },
     path: "",
   },
@@ -244,7 +244,7 @@ export default function HomePage() {
       <section className="relative bg-brand-secondary/70 overflow-hidden px-4 py-16 lg:py-24">
         <Image
           src={imageSrc}
-          alt="Najm Al Dhahabih Movers LLC"
+          alt=" Al Dhahabih Movers and Packers"
           fill
           className="object-cover -z-10"
           placeholder="blur"
@@ -336,7 +336,8 @@ export default function HomePage() {
               },
               {
                 src: "/moving-truck-of-Najm-al-dhahabih-movers.jpg",
-                title: "Moving truck of Najm Al Dhahabih Movers LLC in Dubai",
+                title:
+                  "Moving truck of Al Dhahabih Movers Movers and Packers in Dubai",
               },
 
               {
@@ -494,7 +495,9 @@ export default function HomePage() {
                   <div className="w-8 h-8 bg-brand-primary rounded-lg flex items-center justify-center flex-shrink-0">
                     <Truck size={16} className="text-white" />
                   </div>
-                  <h3 className="text-white font-bold text-lg">{loc.name}</h3>
+                  <h3 className="text-white font-bold text-lg">
+                    Movers in {loc.name}
+                  </h3>
                 </div>
                 <p className="text-blue-200 text-sm leading-relaxed mb-3">
                   {loc.desc}
@@ -563,7 +566,7 @@ export default function HomePage() {
             <div className="rounded-2xl overflow-hidden aspect-[4/3] bg-slate-100 relative">
               <Image
                 src={"/najm-al-dhahabih-movers-in-work.jpg"}
-                alt="najm al dhahabih movers in work"
+                alt="al dhahabih movers and packers in work"
                 fill
                 className="object-cover"
               />

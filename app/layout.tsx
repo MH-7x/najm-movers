@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  applicationName: "Najm Al Dhahabih Movers",
+  applicationName: "Al Dhahabih Movers and Packers",
   robots: {
     "max-image-preview": "large",
     follow: true,

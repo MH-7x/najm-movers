@@ -46,7 +46,7 @@ export const metadata = MetadataTemplate({
     meta: {
       title:
         "Packers and Movers in Dubai | Professional Packing & Moving Services",
-      desc: "Trusted packers and movers in Dubai. Full packing, moving & unpacking services for homes and offices. Call Najm Al Dhahabih at +971 55 4495331.",
+      desc: "Trusted packers and movers in Dubai. Full packing, moving & unpacking services for homes and offices. Call Al Dhahabih Movers and Packers at +971 55 4495331.",
     },
     image: {
       path: "/Packing-and-Moving-Services-in-Dubai.jpg",
@@ -267,7 +267,7 @@ export default function PackingMovingPage() {
           <div className="mb-10 rounded-2xl overflow-hidden aspect-[21/9] bg-slate-100 relative">
             <Image
               src={"/Najm-Al-Dhahabih-Movers-In-Dubai.jpg"}
-              alt="Najm Al Dhahabih Movers in Dubai"
+              alt="Al Dhahabih Movers and Packers in Dubai"
               fill
               className="object-cover"
             />

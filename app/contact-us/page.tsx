@@ -6,14 +6,14 @@ import MetadataTemplate from "@/lib/MetaDataTemplate";
 export const metadata = MetadataTemplate({
   data: {
     meta: {
-      title: "Contact Najm Al Dhahabih Movers |Free Moving Quote",
-      desc: "Contact Najm Al Dhahabih Furniture Movers for a free moving quote. Call +971 55 4495331 or fill the form. Serving Dubai, Abu Dhabi, Sharjah & all UAE.",
+      title: "Contact Al Dhahabih Movers and Packers Movers | Free Quote",
+      desc: "Contact Al Dhahabih Movers and Packers for a free moving quote. Call +971 55 4495331 or fill the form. Serving Dubai, Abu Dhabi, Sharjah & all UAE.",
     },
     image: {
       path: "/Najm-Al-Dhahabih-Movers-LLC.jpg",
-      alt: "Najm Al Dhahabih Movers LLC",
+      alt: "Al Dhahabih Movers and Packers ",
     },
-    path: "",
+    path: "/contact-us",
   },
 });
 

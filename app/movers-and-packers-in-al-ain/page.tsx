@@ -41,7 +41,7 @@ export default function AlAinMoversPage() {
       locationName="Al Ain"
       heroTitle="Movers and Packers in Al Ain — Trusted Moving Company"
       heroSubtitle="The Garden City's Trusted Movers"
-      heroDescription="Al Ain is a city that many families love — quieter, greener, and great for raising kids. Whether you're moving into Al Ain, moving within the city, or relocating from Al Ain to Abu Dhabi or Dubai, Najm Al Dhahabih provides full moving services for the Garden City. We pack your home, disassemble furniture, load the truck, drive it safely to your new place, unload, reassemble, and unpack. All in one day."
+      heroDescription="Al Ain is a city that many families love — quieter, greener, and great for raising kids. Whether you're moving into Al Ain, moving within the city, or relocating from Al Ain to Abu Dhabi or Dubai, Al Dhahabih Movers and Packers provides full moving services for the Garden City. We pack your home, disassemble furniture, load the truck, drive it safely to your new place, unload, reassemble, and unpack. All in one day."
       services={[
         {
           title: "House Movers in Al Ain",
@@ -138,7 +138,7 @@ export default function AlAinMoversPage() {
             "The drive is about 1.5 hours. With loading and unloading, a full move from Al Ain to Dubai typically takes one full day.",
         },
       ]}
-      metaTitle="Movers and Packers in Al Ain | Trusted Moving Company | Najm Al Dhahabih"
+      metaTitle="Movers and Packers in Al Ain | Trusted Moving Company | Al Dhahabih Movers and Packers"
       metaDescription="Professional movers and packers in Al Ain."
     />
   );

@@ -39,7 +39,7 @@ export default function QuoteFormSection({
                 {
                   icon: <ShieldCheck className="text-white" size={19} />,
                   title: "Licensed & Insured",
-                  text: "Najm Al Dhahabih is a fully licensed and registered company in the UAE.",
+                  text: "Al Dhahabih Movers and Packers is a fully licensed and registered company in the UAE.",
                 },
               ].map((item) => (
                 <div key={item.title} className="flex items-start gap-4">

@@ -5,7 +5,7 @@ import imageSrc from "@/public/Movers-and-Packers-in-Sharjah.jpg";
 export const metadata = MetadataTemplate({
   data: {
     meta: {
-      title: "Movers and Packers in Sharjah | Najm Al Dhahabih",
+      title: "Movers and Packers in Sharjah | Al Dhahabih Movers and Packers",
       desc: "Trusted movers and packers in Sharjah. Affordable house, villa, office & furniture moving services. Call +971 55 4495331 for a free Sharjah moving quote.",
     },
     image: {
@@ -41,7 +41,7 @@ export default function SharjahMoversPage() {
       locationName="Sharjah"
       heroTitle="Movers and Packers in Sharjah — Reliable Moving Company"
       heroSubtitle="Sharjah to Dubai & Beyond"
-      heroDescription="Sharjah is one of the busiest emirates for moving — people shift between Sharjah and Dubai every day, families upgrade to bigger apartments, and businesses relocate to areas with better rent. Najm Al Dhahabih provides complete moving and packing services across Sharjah. From a small flat in Al Nahda to a villa in Al Ramla, we pack it, move it, and set it up."
+      heroDescription="Sharjah is one of the busiest emirates for moving — people shift between Sharjah and Dubai every day, families upgrade to bigger apartments, and businesses relocate to areas with better rent. Al Dhahabih Movers and Packers provides complete moving and packing services across Sharjah. From a small flat in Al Nahda to a villa in Al Ramla, we pack it, move it, and set it up."
       services={[
         {
           title: "House Movers in Sharjah",
@@ -145,7 +145,7 @@ export default function SharjahMoversPage() {
             "Our drivers know the best times and routes to avoid the peak-hour traffic on the main Sharjah–Dubai highway. We factor this into your move schedule.",
         },
       ]}
-      metaTitle="Movers and Packers in Sharjah | Reliable Moving Company | Najm Al Dhahabih"
+      metaTitle="Movers and Packers in Sharjah | Reliable Moving Company | Al Dhahabih Movers and Packers"
       metaDescription="Trusted movers and packers in Sharjah."
     />
   );
